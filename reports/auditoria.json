@@ -1,0 +1,15 @@
+{
+  "mediciones": 428,
+  "registros_originales": 650,
+  "clases": {
+    "Negativo": 217,
+    "Positivo": 211
+  },
+  "coordenadas": 22,
+  "fechas": 47,
+  "fecha_min": "2024-09-02",
+  "fecha_max": "2026-03-02",
+  "ids_unicos": true,
+  "correspondencia_original": true,
+  "original_sha256": "da8ffcd46fa6c789390cd2e5dbc33b9027f046aa2dff2e47055efad4c9fed581"
+}

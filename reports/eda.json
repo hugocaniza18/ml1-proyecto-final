@@ -1,0 +1,39 @@
+{
+  "n_desarrollo": 359,
+  "clases": {
+    "Negativo": 188,
+    "Positivo": 171
+  },
+  "puntos": 22,
+  "meses_con_registros": 10,
+  "extremos_iqr_no_eliminados": {
+    "hr_media_pct": 0,
+    "hr_min_pct": 2,
+    "hr_max_pct": 24,
+    "temperatura_media_c": 6,
+    "temperatura_min_c": 5,
+    "temperatura_max_c": 8,
+    "precipitacion_mm": 4,
+    "viento_vel_media_10m_ms": 6,
+    "viento_u_media_10m_ms": 10,
+    "viento_v_media_10m_ms": 8,
+    "iith_h": 3
+  },
+  "correlacion_mayor": {
+    "variables": [
+      "temperatura_media_c",
+      "temperatura_max_c"
+    ],
+    "r": 0.770007929758982
+  },
+  "medianas_7dias": {
+    "temperatura_media_c": 19.27797619047619,
+    "precipitacion_mm": 35.9,
+    "iith_h": 39.0
+  },
+  "medianas_14dias": {
+    "temperatura_media_c": 19.129761904761903,
+    "precipitacion_mm": 79.1,
+    "iith_h": 80.0
+  }
+}

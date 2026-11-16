@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "checks": [
+    "428 objetivos únicos",
+    "ventanas completas y coincidentes",
+    "día objetivo excluido",
+    "ausencia distinta de negativo",
+    "purga temporal en folds y prueba",
+    "métricas recalculadas",
+    "modelos guardados reproducen probabilidades"
+  ],
+  "selected_confusion_counts": [
+    [
+      24,
+      5
+    ],
+    [
+      24,
+      13
+    ]
+  ]
+}
