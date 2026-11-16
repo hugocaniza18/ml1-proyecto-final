@@ -2,7 +2,7 @@
 
 Machine Learning 1 (23433), FIUNA, Ingeniería Electrónica, 2026.
 
-- Hugo Rene Caniza Portillo — hcaniza@fiuna.edu.py — https://github.com/hugocaniza18
+- Hugo Rene Caniza Portillo — hcaniza@fiuna.edu.py — [GitHub](https://github.com/hugocaniza18)
 - Ruben Dario Lopez Sanabria — rubenlopez@fiuna.edu.py — [GitHub](https://github.com/Rub3nL0pez)
 
 ## Problema, datos y metodología
