@@ -2,7 +2,7 @@
 
 ## Problema y propósito
 
-Estudiar si las condiciones meteorológicas anteriores a una observación permiten clasificar el resultado positivo o negativo publicado por CIRAM. Es una clasificación binaria retrospectiva, útil para evaluar asociaciones y construir una base experimental para investigaciones posteriores.
+Estudiamos si las condiciones meteorológicas anteriores a una observación permiten clasificar el resultado positivo o negativo publicado por CIRAM. Es una clasificación binaria retrospectiva, útil para evaluar asociaciones y construir una base experimental para investigaciones posteriores.
 
 **Entrada del modelo:** diez resúmenes meteorológicos de los 7 o 14 días completos anteriores a la fecha objetivo, con una variante que agrega IITH (once predictores). **Salida:** puntuación probabilística de resultado positivo y clasificación positiva si es mayor o igual a 0,5. La probabilidad no ha sido calibrada para uso agronómico.
 
@@ -10,7 +10,7 @@ La ubicación y fecha identifican qué registros meteorológicos recuperar, pero
 
 ## Etiquetas y unidad de observación
 
-El original contiene 650 registros deduplicados por punto y fecha: 211 `Positivo`, 217 `Negativo` y 222 `Não Avaliado`. Se retienen 428 objetivos binarios. Los códigos originales 79, 80 y 82 corresponden respectivamente a esas tres clases. La auditoría comprueba esta correspondencia y ausencia de conflictos. Un identificador `id_medicion` representa un único objetivo, incluso cuando aparece 14 veces en el archivo largo.
+El original contiene 650 registros deduplicados por punto y fecha: 211 `Positivo`, 217 `Negativo` y 222 `Não Avaliado`. Conservamos 428 objetivos binarios. Los códigos originales 79, 80 y 82 corresponden respectivamente a esas tres clases. La auditoría comprueba esta correspondencia y ausencia de conflictos. Un identificador `id_medicion` representa un único objetivo, incluso cuando aparece 14 veces en el archivo largo.
 
 La documentación pública de Epagri describe visitas semanales, evaluación de láminas de colectores y observación de síntomas. IFSC describe el monitoreo de esporos publicado en Agroconnect. Esto respalda interpretar los resultados como monitoreo fitosanitario, pero no confirma de forma individual el protocolo y momento de muestreo de cada fila del endpoint. Por ello la salida se denomina **resultado positivo registrado**, sin equipararla a infección clínica, incidencia, severidad ni riesgo futuro. Las fechas de consulta y snapshots tampoco constituyen muestras biológicas independientes. No se conoce la hora de disponibilidad de cada etiqueta.
 
@@ -18,13 +18,13 @@ Fuentes: [Epagri, descripción del monitoreo](https://blog.epagri.sc.gov.br/aler
 
 ## Meteorología y preprocesamiento
 
-Se consulta ERA5 mediante Open-Meteo, con resolución nominal 0,25°, hora local `America/Sao_Paulo` y viento en m/s. Es reanálisis de una celda y no medición de una estación situada en el punto. Se conserva cada respuesta JSON con URL y SHA-256. Las ventanas contienen exactamente 24 horas por día (00 a 23), d−14 a d−1. Los acumulados de precipitación usan la asignación temporal de la API, cuyas cantidades horarias describen la hora anterior. Excluir d0 no convierte ERA5 en un predictor disponible en tiempo real, pues tiene demora de publicación y asimilación retrospectiva.
+Consultamos ERA5 mediante Open-Meteo, con resolución nominal 0,25°, hora local `America/Sao_Paulo` y viento en m/s. Es reanálisis de una celda y no medición de una estación situada en el punto. Se conserva cada respuesta JSON con URL y SHA-256. Las ventanas contienen exactamente 24 horas por día (00 a 23), d−14 a d−1. Los acumulados de precipitación usan la asignación temporal de la API, cuyas cantidades horarias describen la hora anterior. Excluir d0 no convierte ERA5 en un predictor disponible en tiempo real, pues tiene demora de publicación y asimilación retrospectiva.
 
-Se calculan HR y temperatura media, mínima y máxima; precipitación total; velocidad media del viento y sus componentes vectoriales medias u/v. La dirección se expresa en grados de procedencia, u=−velocidad·sen(dirección), v=−velocidad·cos(dirección). Promediar u/v evita tratar 359° y 1° como direcciones opuestas.
+Calculamos HR y temperatura media, mínima y máxima; precipitación total; velocidad media del viento y sus componentes vectoriales medias u/v. La dirección se expresa en grados de procedencia, u=−velocidad·sen(dirección), v=−velocidad·cos(dirección). Promediar u/v evita tratar 359° y 1° como direcciones opuestas.
 
-IITH diario = número de horas con HR ≥ 85 % y 15 °C ≤ T ≤ 28 °C, inclusive. Se suma sobre la ventana. Es la definición operativa elegida para este TP, sin afirmar que sea el índice oficial CIRAM ni una regla validada de infección. HMF sigue pendiente y no se reemplaza por horas húmedas. Las horas con HR≥90 % se guardan solo como dato auxiliar.
+IITH diario = número de horas con HR ≥ 85 % y 15 °C ≤ T ≤ 28 °C, inclusive. Sumamos el valor diario en cada ventana. Es la definición operativa elegida para este TP, sin afirmar que sea el índice oficial CIRAM ni una regla validada de infección. HMF sigue pendiente y no se reemplaza por horas húmedas. Las horas con HR≥90 % se guardan solo como dato auxiliar.
 
-Se verifica integridad horaria, finitud, HR en [0,100] y precipitación/viento no negativos. Si falta clima se intenta recuperar y, si persiste, se excluye el objetivo de ambas ventanas; no se imputan series. Los extremos meteorológicos válidos se conservan y se describen mediante la regla exploratoria de 1,5 IQR. No se recortan valores según el conjunto de prueba.
+Verificamos la integridad horaria, finitud, HR en [0,100] y precipitación/viento no negativos. Si falta clima se intenta recuperar y, si persiste, se excluye el objetivo de ambas ventanas; no se imputan series. Los extremos meteorológicos válidos se conservan y se describen mediante la regla exploratoria de 1,5 IQR. No se recortan valores según el conjunto de prueba.
 
 La roya histórica se cruza exactamente por coordenadas y fecha: `evaluado`, `no_evaluado` o `sin_registro`. Los dos últimos mantienen vacía la clase binaria. No se arrastra el último valor. Solo son auxiliares.
 
@@ -36,9 +36,9 @@ Mismas mediciones para 7 y 14 días. Prueba reservada desde 2026-01-01 hasta la 
 
 Tres validaciones crecientes usan las últimas 21 fechas únicas de desarrollo, en bloques de siete fechas consecutivas **observadas**, no siete días calendario. En cada fold solo se entrenan objetivos con fecha estrictamente anterior al inicio de validación menos 14 días. No se dividen filas diarias ni se mezclan ubicaciones de una misma fecha entre entrenamiento y validación. Se verifican ambas clases. La irregularidad del muestreo hace que el primer bloque abarque diciembre de 2024 a septiembre de 2025.
 
-Ocho configuraciones: LR/RF × 7/14 días × sin/con IITH. LR: C en [0,1; 1; 10], máximo 3.000 iteraciones. RF: 300 árboles, profundidad [3,5,sin límite], mínimo por hoja [3,5,10]. Semilla 42. GridSearchCV usa las particiones guardadas. Se elige el mayor F1 medio de positivos. Empate redondeado a tres decimales: menor ventana, menos predictores, LR. La selección y hashes se escriben antes de evaluar prueba. Todas las configuraciones se reportan en prueba, sin cambiar la seleccionada.
+Ocho configuraciones: LR/RF × 7/14 días × sin/con IITH. LR: C en [0,1; 1; 10], máximo 3.000 iteraciones. RF: 300 árboles, profundidad [3,5,sin límite], mínimo por hoja [3,5,10]. Semilla 42. GridSearchCV usa las particiones guardadas. Elegimos el mayor F1 medio de positivos. Empate redondeado a tres decimales: menor ventana, menos predictores, LR. La selección y hashes se escriben antes de evaluar prueba. Todas las configuraciones se reportan en prueba, sin cambiar la seleccionada.
 
-Se reportan precisión, recall, F1, accuracy, balanced accuracy, ROC-AUC y average precision. F1 enfatiza el equilibrio entre detección de positivos y falsas alarmas, pero no fija un costo agronómico. La desviación entre folds describe sensibilidad temporal, no es intervalo de confianza. Las curvas de aprendizaje usan prefijos cronológicos de fechas completas (40 %, 70 % y 100 %) dentro de cada entrenamiento, conservando validación y purga.
+Reportamos precisión, recall, F1, accuracy, balanced accuracy, ROC-AUC y average precision. F1 enfatiza el equilibrio entre detección de positivos y falsas alarmas, pero no fija un costo agronómico. La desviación entre folds describe sensibilidad temporal, no es intervalo de confianza. Las curvas de aprendizaje usan prefijos cronológicos de fechas completas (40 %, 70 % y 100 %) dentro de cada entrenamiento, conservando validación y purga.
 
 ## Límites de interpretación
 
@@ -47,3 +47,5 @@ La prueba mide generalización temporal sobre puntos del mismo sistema, no nueva
 Un modelo climático puede captar estacionalidad asociada al monitoreo. No demuestra que el clima cause los positivos observados. Para una alerta futura serían necesarias nuevas campañas, validación por región, datos disponibles en tiempo real, definición de horizonte y evaluación prospectiva. HMF y meteorología de estaciones CIRAM quedan como ampliaciones.
 
 Documentación meteorológica: [Open-Meteo Historical Weather API](https://open-meteo.com/en/docs/historical-weather-api).
+
+Datos meteorológicos de [Open-Meteo](https://open-meteo.com/), modelo ERA5, bajo [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Calculamos agregaciones diarias y por ventana, IITH y componentes del viento a partir de la serie horaria.

@@ -11,7 +11,7 @@ def table_md(df):
     return '\n'.join(rows)
 
 def build():
-    if (ROOT/'docs/PUBLICAR.md').exists():
+    if (ROOT/'web/public/downloads/informe-con-figuras.zip').exists():
         raise SystemExit('Regenera los informes en el paquete local. Esta edición pública usa una exportación sin identificadores de origen.')
     result=json.loads((REPORTS/'resultados.json').read_text());eda=json.loads((REPORTS/'eda.json').read_text());audit=json.loads((REPORTS/'auditoria.json').read_text());coverage=json.loads((REPORTS/'cobertura.json').read_text());split=json.loads((PROCESSED/'particiones.json').read_text());team=json.loads((ROOT/'team.json').read_text())
     selected=next(r for r in result['results'] if r['config']==result['selected_config'])
@@ -43,7 +43,7 @@ def build():
         report+=f'![{caption}](figures/{file})\n\n{caption}\n\n'
     report+='## Resultados\n\n'+table_md(preview)+'\n\nF1, precisión y recall se refieren a la clase positiva. La dispersión CV corresponde a tres bloques temporales.\n\n### Efecto de la ventana\n\n'+table_md(pd.DataFrame(pairs).round(4))+'\n\n'
     for file in ['aprendizaje.png','confusion.png','roc.png','precision_recall.png']:report+=f'![{captions[file]}](figures/{file})\n\n{captions[file]}\n\n'
-    report+='## Conclusiones\n\n'+'\n\n'.join(conclusions)+'\n\n## Trabajo futuro y entrega\n\nValidar nuevas campañas y regiones; confirmar protocolo de etiqueta y disponibilidad temporal; incorporar HMF, estaciones y contexto agronómico. Explorar calibración y umbrales en un nuevo desarrollo, conservando una prueba futura intacta.\n\nLa versión local incluye datos, modelos y portal. La publicación requiere repositorio propio, acceso a Vercel, perfil GitHub de Rubén y aclarar redistribución de etiquetas. Ver `docs/FUENTES_Y_LICENCIAS.md`.\n'
+    report+='## Conclusiones\n\n'+'\n\n'.join(conclusions)+'\n\n## Trabajo futuro y entrega\n\nValidar nuevas campañas y regiones; confirmar protocolo de etiqueta y disponibilidad temporal; incorporar HMF, estaciones y contexto agronómico. Explorar calibración y umbrales en un nuevo desarrollo, conservando una prueba futura intacta.\n\nDatos meteorológicos de Open-Meteo (ERA5), CC BY 4.0.\n'
     (REPORTS/'INFORME.md').write_text(report,encoding='utf-8')
     dictionary=[]
     frame=pd.read_csv(PROCESSED/'monitoreo_ml_14dias.csv')
@@ -55,7 +55,7 @@ def build():
     (ROOT/'docs/DICCIONARIO.md').write_text('# Diccionario del archivo largo\n\n'+table_md(pd.DataFrame(dictionary))+'\n\nEn features_7dias y features_14dias se agregan medias como medias de días completos; mínimos/máximos como extremos; precipitación e IITH como sumas. objetivo_positivo: 1=Positivo, 0=Negativo. municipio y punto_id solo identifican. El archivo procedencia.csv conserva la celda ERA5, zona horaria y pendientes.\n',encoding='utf-8')
     public=ROOT/'web/public';(public/'figures').mkdir(exist_ok=True);(public/'downloads').mkdir(exist_ok=True)
     for f in (REPORTS/'figures').glob('*.png'):shutil.copy2(f,public/'figures'/f.name)
-    for src in [ROOT/'docs/METODOLOGIA.md',ROOT/'docs/DICCIONARIO.md',ROOT/'docs/FUENTES_Y_LICENCIAS.md',REPORTS/'comparacion_modelos.csv',REPORTS/'comparacion_ventanas.csv',REPORTS/'metricas_folds.csv']:shutil.copy2(src,public/'downloads'/src.name)
+    for src in [ROOT/'docs/METODOLOGIA.md',ROOT/'docs/DICCIONARIO.md',REPORTS/'comparacion_modelos.csv',REPORTS/'comparacion_ventanas.csv',REPORTS/'metricas_folds.csv']:shutil.copy2(src,public/'downloads'/src.name)
     # Informe con figuras accesibles en el mismo paquete descargable se construye aparte.
     shutil.copy2(REPORTS/'INFORME.md',public/'downloads/INFORME.md')
     predictions=pd.read_csv(REPORTS/'predicciones_prueba.csv').to_dict('records')
