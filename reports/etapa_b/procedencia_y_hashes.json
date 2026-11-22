@@ -1,0 +1,107 @@
+{
+  "recibido": "2026-11-22",
+  "entrenamientos_ejecutados": false,
+  "entradas": [
+    {
+      "copia": "data\\raw\\etapa_b_20261122\\royasoja_dataset_sin_iith.zip",
+      "sha256": "170c7a34665d323bf46099d2bf10fadb6c75fffb6a2478bec758daacfc2299ab",
+      "bytes": 97687,
+      "miembros": [
+        {
+          "archivo": "datos_horizontes_0_y_7.csv",
+          "bytes": 139805,
+          "sha256": "b3b0edbfc85eefa2e3fb2200584aa9f17967e20b15ed894005e0ad283fc19e43"
+        },
+        {
+          "archivo": "evaluaciones_futuras_validas.csv",
+          "bytes": 118160,
+          "sha256": "6879eb648c500b85353f3b9f981b3fc5b91a4e7e5cf9bbb8f4510badd4a38c85"
+        },
+        {
+          "archivo": "transiciones_desde_negativo.csv",
+          "bytes": 61565,
+          "sha256": "aca6107b1c79bd57481873305900f6957d5d095e5f3a1ce165af58f53b63c323"
+        },
+        {
+          "archivo": "LEEME.md",
+          "bytes": 2197,
+          "sha256": "a6a852972af23f32555d352432e05cf184235d6f88805e24ef97da34263807e6"
+        }
+      ]
+    },
+    {
+      "copia": "data\\raw\\etapa_b_20261122\\resultados_experimentos_royasoja_sin_iith.zip",
+      "sha256": "d5d8184cced5b0fd56f9d229c95b47b2e7db55885fb442f239948f1cf319b474",
+      "bytes": 111119,
+      "miembros": [
+        {
+          "archivo": "experimentos_royasoja_sin_iith/folds_temporales.csv",
+          "bytes": 234,
+          "sha256": "52fb0b3ba2f34c1d66511be494b516a6f97709bca19a71af0a2225855031ec2d"
+        },
+        {
+          "archivo": "experimentos_royasoja_sin_iith/INFORME_PRELIMINAR.md",
+          "bytes": 4735,
+          "sha256": "9e5ebaf3765325d02b229619293d0c9804c2c12597c8e4f30eb348bb2187bc6d"
+        },
+        {
+          "archivo": "experimentos_royasoja_sin_iith/predicciones_prueba.csv",
+          "bytes": 31399,
+          "sha256": "dcfd5630ebc874ef6632137ae57d9b1689ea09ffe40bbeb9dceb01096afb9f2f"
+        },
+        {
+          "archivo": "experimentos_royasoja_sin_iith/comparacion_modelos.csv",
+          "bytes": 2191,
+          "sha256": "07b00eb70780be833c1710073ec79af880bd50957986ecd146eb03655d64ea16"
+        },
+        {
+          "archivo": "ejecutar_experimentos_royasoja.py",
+          "bytes": 4999,
+          "sha256": "12104e88c6e51f5e6f44510d1e7d000d8c1f3b31b7271226f546179e24785145"
+        },
+        {
+          "archivo": "dataset_royasoja_sin_iith/transiciones_desde_negativo.csv",
+          "bytes": 61565,
+          "sha256": "aca6107b1c79bd57481873305900f6957d5d095e5f3a1ce165af58f53b63c323"
+        },
+        {
+          "archivo": "dataset_royasoja_sin_iith/datos_horizontes_0_y_7.csv",
+          "bytes": 139805,
+          "sha256": "b3b0edbfc85eefa2e3fb2200584aa9f17967e20b15ed894005e0ad283fc19e43"
+        },
+        {
+          "archivo": "dataset_royasoja_sin_iith/LEEME.md",
+          "bytes": 2197,
+          "sha256": "a6a852972af23f32555d352432e05cf184235d6f88805e24ef97da34263807e6"
+        },
+        {
+          "archivo": "dataset_royasoja_sin_iith/evaluaciones_futuras_validas.csv",
+          "bytes": 118160,
+          "sha256": "6879eb648c500b85353f3b9f981b3fc5b91a4e7e5cf9bbb8f4510badd4a38c85"
+        }
+      ]
+    }
+  ],
+  "respaldo": [
+    {
+      "archivo": "data\\raw\\etapa_b_20261122\\respaldo\\monitoreo_deduplicado.csv",
+      "sha256": "da8ffcd46fa6c789390cd2e5dbc33b9027f046aa2dff2e47055efad4c9fed581"
+    },
+    {
+      "archivo": "data\\raw\\etapa_b_20261122\\respaldo\\monitoreo_deduplicado_filtrado_nasa.csv",
+      "sha256": "5fa389c1bc6ffb864d658b17bdd899a62843a4274c0411b82fae6879cdfe4fba"
+    },
+    {
+      "archivo": "data\\raw\\etapa_b_20261122\\respaldo\\features_7dias.csv",
+      "sha256": "e5afa8a3eb184402440f5254996d4ddf538faf15da3ed7c06f0e467e96ca3d2d"
+    },
+    {
+      "archivo": "data\\raw\\etapa_b_20261122\\respaldo\\features_14dias.csv",
+      "sha256": "731372d1af356df67589326c6483916fee52c31ea4cc311755d167c64505cbc1"
+    },
+    {
+      "archivo": "data\\raw\\etapa_b_20261122\\respaldo\\monitoreo_ml_14dias.csv",
+      "sha256": "dccea58a20e54c07667322f5fbd5b277f314b6e57945b87e0d3974fa4838be14"
+    }
+  ]
+}

@@ -1,0 +1,464 @@
+[
+  {
+    "archivo": "weather/01.json",
+    "sha256": "6c70508aa120f2bf09ba4b95d7327389a87532d94df4433fd3dee438c7748299",
+    "horas": 13128,
+    "inicio": "2024-09-02T00:00",
+    "fin": "2026-03-02T23:00"
+  },
+  {
+    "archivo": "weather/02.json",
+    "sha256": "e1285e7cf487246c189d35c9cebc33c2fbd9ee62102238dc6e388a6aa7c8591f",
+    "horas": 13128,
+    "inicio": "2024-09-02T00:00",
+    "fin": "2026-03-02T23:00"
+  },
+  {
+    "archivo": "weather/03.json",
+    "sha256": "98d09462f56d0e2e930c4ca908153e5b343d5ae04fa5912403f8b84464dc473a",
+    "horas": 11280,
+    "inicio": "2024-09-02T00:00",
+    "fin": "2025-12-15T23:00"
+  },
+  {
+    "archivo": "weather/04.json",
+    "sha256": "e765ac4e45e983c8a999e405c4d5f63043ab87cdd2f20e9664d8800c173bd41c",
+    "horas": 12288,
+    "inicio": "2024-09-02T00:00",
+    "fin": "2026-01-26T23:00"
+  },
+  {
+    "archivo": "weather/05.json",
+    "sha256": "3a34d2ea2049c7aa6c4af8a31c4d2354117fd9c63addf5f59b525c9c940e541e",
+    "horas": 11280,
+    "inicio": "2024-09-02T00:00",
+    "fin": "2025-12-15T23:00"
+  },
+  {
+    "archivo": "weather/06.json",
+    "sha256": "fb57b8014efeb8437fdcb0aafd8fb19c0be70a4b40e4e3ea41fa97c856a5fe6a",
+    "horas": 12288,
+    "inicio": "2024-09-02T00:00",
+    "fin": "2026-01-26T23:00"
+  },
+  {
+    "archivo": "weather/07.json",
+    "sha256": "cce24744d89cec21f9e98280bbcfe2d5aa3466a5c80476d9e08313071486a657",
+    "horas": 13128,
+    "inicio": "2024-09-02T00:00",
+    "fin": "2026-03-02T23:00"
+  },
+  {
+    "archivo": "weather/08.json",
+    "sha256": "97fcba51e5ee01be6f9f4210e0e2b47fccb934bf5151006610fa4a782851eb01",
+    "horas": 12624,
+    "inicio": "2024-09-23T00:00",
+    "fin": "2026-03-02T23:00"
+  },
+  {
+    "archivo": "weather/09.json",
+    "sha256": "75eef41897177f3a7a68c9cc085e09d2daf266e5da61cbbfd935c261c1bee71f",
+    "horas": 11448,
+    "inicio": "2024-11-11T00:00",
+    "fin": "2026-03-02T23:00"
+  },
+  {
+    "archivo": "weather/10.json",
+    "sha256": "51186bb90e69903a8f4f731bad272881d54dcd4d6e17afe288f8b7a6abfd1ec6",
+    "horas": 864,
+    "inicio": "2024-11-11T00:00",
+    "fin": "2024-12-16T23:00"
+  },
+  {
+    "archivo": "weather/11.json",
+    "sha256": "b80d97e66516b3fb90a9f1d61578900f079b48ce12ad0f17cc7f82616fdcb7b2",
+    "horas": 9432,
+    "inicio": "2024-11-11T00:00",
+    "fin": "2025-12-08T23:00"
+  },
+  {
+    "archivo": "weather/12.json",
+    "sha256": "8fb728b6029a2611dc28534723128917e9caea8aed3f50030b1cd9ae74233573",
+    "horas": 9432,
+    "inicio": "2024-11-11T00:00",
+    "fin": "2025-12-08T23:00"
+  },
+  {
+    "archivo": "weather/13.json",
+    "sha256": "00e8cf084691c07dd0b37500a4e6e7921e3abbdf711a702b61b7941975bb63e8",
+    "horas": 696,
+    "inicio": "2024-11-18T00:00",
+    "fin": "2024-12-16T23:00"
+  },
+  {
+    "archivo": "weather/14.json",
+    "sha256": "9e07a63abc3b21dafe7ed93bcb27913ac337d1e4078c18ea3ab790d4b7f2a20f",
+    "horas": 11280,
+    "inicio": "2024-11-18T00:00",
+    "fin": "2026-03-02T23:00"
+  },
+  {
+    "archivo": "weather/15.json",
+    "sha256": "592a9587ba8ae5d18a30ef730df77173a74788b07c6a26665acdf1fda31bb1d6",
+    "horas": 10104,
+    "inicio": "2024-11-18T00:00",
+    "fin": "2026-01-12T23:00"
+  },
+  {
+    "archivo": "weather/16.json",
+    "sha256": "210a867dbd851fe8345cffc6a395cfe7a1bbc3d69c27a3fb48b960b9eb1205ab",
+    "horas": 528,
+    "inicio": "2024-11-25T00:00",
+    "fin": "2024-12-16T23:00"
+  },
+  {
+    "archivo": "weather/17.json",
+    "sha256": "ba1728dc351b5268b66ebdf791999ecf8cafdd3629ab13e320bc0232832b4431",
+    "horas": 9264,
+    "inicio": "2024-11-25T00:00",
+    "fin": "2025-12-15T23:00"
+  },
+  {
+    "archivo": "weather/18.json",
+    "sha256": "7d90b1a9bdec60b0bf25ea5041750da59e5fb047bdc552be15e4d2c2b97d58b6",
+    "horas": 3048,
+    "inicio": "2025-10-20T00:00",
+    "fin": "2026-02-23T23:00"
+  },
+  {
+    "archivo": "weather/19.json",
+    "sha256": "be47c628c5cd7035e022b2390cd5023cb3f558beb0be69208c289b677d7ae208",
+    "horas": 1032,
+    "inicio": "2025-11-03T00:00",
+    "fin": "2025-12-15T23:00"
+  },
+  {
+    "archivo": "weather/20.json",
+    "sha256": "60a737aadfec05109732cb288c9bc9c30300580e08107aa1dcf272e09363f5a9",
+    "horas": 696,
+    "inicio": "2025-11-10T00:00",
+    "fin": "2025-12-08T23:00"
+  },
+  {
+    "archivo": "weather/21.json",
+    "sha256": "ce5eefe18c959b6095f6a52def384ced31e5bbc3099074d7a22dce30c25cd594",
+    "horas": 1872,
+    "inicio": "2025-11-24T00:00",
+    "fin": "2026-02-09T23:00"
+  },
+  {
+    "archivo": "weather/22.json",
+    "sha256": "71dcb94ec7609653cfa4753ef9d4b213ba7bcc682c54df07b3d979dab8cb33bb",
+    "horas": 1032,
+    "inicio": "2025-12-01T00:00",
+    "fin": "2026-01-12T23:00"
+  },
+  {
+    "archivo": "weather_previos/01.json",
+    "sha256": "42ad9807dc1c980d81e155ad1cb3415b1d0c8fd2f343086071f2534a1d170e8e",
+    "horas": 168,
+    "inicio": "2024-08-26T00:00",
+    "fin": "2024-09-01T23:00"
+  },
+  {
+    "archivo": "weather_previos/02.json",
+    "sha256": "11c87efcc57063685798dad0ac6ab06159cd6bdd176b078107b30a414ea1e3a5",
+    "horas": 168,
+    "inicio": "2024-08-26T00:00",
+    "fin": "2024-09-01T23:00"
+  },
+  {
+    "archivo": "weather_previos/03.json",
+    "sha256": "43ba42633b193628bdfd1aa3db47d47f7508e86059b89fcefc7226075c979c89",
+    "horas": 168,
+    "inicio": "2024-08-26T00:00",
+    "fin": "2024-09-01T23:00"
+  },
+  {
+    "archivo": "weather_previos/04.json",
+    "sha256": "f5abd176e42c230df93f4f19edcdd654bbc34f50933fb95248e72eac22a81e01",
+    "horas": 168,
+    "inicio": "2024-08-26T00:00",
+    "fin": "2024-09-01T23:00"
+  },
+  {
+    "archivo": "weather_previos/05.json",
+    "sha256": "acfda8b77cd8f241ebaa6df7a1a0a23bea7e52dac4521214ea2a45bb665fcf7c",
+    "horas": 168,
+    "inicio": "2024-08-26T00:00",
+    "fin": "2024-09-01T23:00"
+  },
+  {
+    "archivo": "weather_previos/06.json",
+    "sha256": "5a12238a1d105b114fd61a5b8fc0a3a9baa26d7ce40991773433bcbe0ddb3290",
+    "horas": 168,
+    "inicio": "2024-08-26T00:00",
+    "fin": "2024-09-01T23:00"
+  },
+  {
+    "archivo": "weather_previos/07.json",
+    "sha256": "1a8c11d4936894d116b4f54edff1de046ec21792b684bc168e9c5ba8d912519b",
+    "horas": 168,
+    "inicio": "2024-08-26T00:00",
+    "fin": "2024-09-01T23:00"
+  },
+  {
+    "archivo": "weather_previos/08.json",
+    "sha256": "8f6766dac0b7f9e6821d31e3d0f6a6da86aabb74a956eb28b1dcc38b5785341b",
+    "horas": 168,
+    "inicio": "2024-09-16T00:00",
+    "fin": "2024-09-22T23:00"
+  },
+  {
+    "archivo": "weather_previos/09.json",
+    "sha256": "95729a4963508a8737a85abd7ce0082287bbe2765252aef583a27939051cc3e3",
+    "horas": 168,
+    "inicio": "2024-11-04T00:00",
+    "fin": "2024-11-10T23:00"
+  },
+  {
+    "archivo": "weather_previos/10.json",
+    "sha256": "113e3bb1156a42affedaccd54923911986bf6bdbe2ebb533e55c1e52fdc8420d",
+    "horas": 168,
+    "inicio": "2024-11-04T00:00",
+    "fin": "2024-11-10T23:00"
+  },
+  {
+    "archivo": "weather_previos/11.json",
+    "sha256": "ee5ab95a9f4c865cdc0c0347296e8dc68210eb465c02fd818dc5cd9c2c90cb76",
+    "horas": 168,
+    "inicio": "2024-11-04T00:00",
+    "fin": "2024-11-10T23:00"
+  },
+  {
+    "archivo": "weather_previos/12.json",
+    "sha256": "3885b3dafc4a2e8ce241a379d1ca0b67677dd04f614b03ba1fd54ed507933e39",
+    "horas": 168,
+    "inicio": "2024-11-04T00:00",
+    "fin": "2024-11-10T23:00"
+  },
+  {
+    "archivo": "weather_previos/13.json",
+    "sha256": "5d6bbe13805496a83d30557fdd4a8469c9f34fe283a0b6e3b09fa59fda6b4de1",
+    "horas": 168,
+    "inicio": "2024-11-11T00:00",
+    "fin": "2024-11-17T23:00"
+  },
+  {
+    "archivo": "weather_previos/14.json",
+    "sha256": "8be061f85568fca30c1456e56fbc1268934a5ee92a024d24a61e881d9cfca291",
+    "horas": 168,
+    "inicio": "2024-11-11T00:00",
+    "fin": "2024-11-17T23:00"
+  },
+  {
+    "archivo": "weather_previos/15.json",
+    "sha256": "b052576817d1a84f97b5094dd14d411ed61ced3eab42b478103f69b07ff03cba",
+    "horas": 168,
+    "inicio": "2024-11-11T00:00",
+    "fin": "2024-11-17T23:00"
+  },
+  {
+    "archivo": "weather_previos/16.json",
+    "sha256": "1fa42c6a0efed53549c7074376682046270b4fafa180d48798771a5a2b08ce27",
+    "horas": 168,
+    "inicio": "2024-11-18T00:00",
+    "fin": "2024-11-24T23:00"
+  },
+  {
+    "archivo": "weather_previos/17.json",
+    "sha256": "4f2353942c010fa6aeecc617e58cefbb0fda4bd6c9aa7fa74895373eff3f2018",
+    "horas": 168,
+    "inicio": "2024-11-18T00:00",
+    "fin": "2024-11-24T23:00"
+  },
+  {
+    "archivo": "weather_previos/18.json",
+    "sha256": "73797c132f6a4fcaecca814c613187089723f13abae8c3a62c87abef1d3a5529",
+    "horas": 168,
+    "inicio": "2025-10-13T00:00",
+    "fin": "2025-10-19T23:00"
+  },
+  {
+    "archivo": "weather_previos/19.json",
+    "sha256": "e7b39d94b13dfa0db5473aa2e3c4531ea30a9cb3d8898822c1a22ced690363e7",
+    "horas": 168,
+    "inicio": "2025-10-27T00:00",
+    "fin": "2025-11-02T23:00"
+  },
+  {
+    "archivo": "weather_previos/20.json",
+    "sha256": "3a02b437cf6cdb4bd750483a800dd5de55e74f441f9b42c4cb57a84028f27bee",
+    "horas": 168,
+    "inicio": "2025-11-03T00:00",
+    "fin": "2025-11-09T23:00"
+  },
+  {
+    "archivo": "weather_previos/21.json",
+    "sha256": "5fc6a010885b10862bb7ef4c27cfc33d591e88841f3d4316c19fd3d6ffcc27cf",
+    "horas": 168,
+    "inicio": "2025-11-17T00:00",
+    "fin": "2025-11-23T23:00"
+  },
+  {
+    "archivo": "weather_previos/22.json",
+    "sha256": "3286e7a373d208b4d8ac89eb5727fa5afd2fb8eab8b57aa843e675211868f29d",
+    "horas": 168,
+    "inicio": "2025-11-24T00:00",
+    "fin": "2025-11-30T23:00"
+  },
+  {
+    "archivo": "weather_14dias/01.json",
+    "sha256": "f266a471cf3363ab89af9425054d45c6a970dc08f0d331c3112572c97f500fb8",
+    "horas": 168,
+    "inicio": "2024-08-19T00:00",
+    "fin": "2024-08-25T23:00"
+  },
+  {
+    "archivo": "weather_14dias/02.json",
+    "sha256": "f54b75539996510a714c65b212e55607db7f5c92ffd9aa95d0286175b184742d",
+    "horas": 168,
+    "inicio": "2024-08-19T00:00",
+    "fin": "2024-08-25T23:00"
+  },
+  {
+    "archivo": "weather_14dias/03.json",
+    "sha256": "29031e2a0ba47005ccfa68233946d7ba0600305207788e6f250f30be35ebf6d3",
+    "horas": 168,
+    "inicio": "2024-08-19T00:00",
+    "fin": "2024-08-25T23:00"
+  },
+  {
+    "archivo": "weather_14dias/04.json",
+    "sha256": "a6e5ef334973dd340b6cfc7ace395ef194fd72795b45fbe9dbf2852bab5de131",
+    "horas": 168,
+    "inicio": "2024-08-19T00:00",
+    "fin": "2024-08-25T23:00"
+  },
+  {
+    "archivo": "weather_14dias/05.json",
+    "sha256": "643d0b8fb555fd1750e3523805e8aae8cac44729206715e207b90ce9f9ddf9c7",
+    "horas": 168,
+    "inicio": "2024-08-19T00:00",
+    "fin": "2024-08-25T23:00"
+  },
+  {
+    "archivo": "weather_14dias/06.json",
+    "sha256": "684cb80fb5bfcf859ae6c845480b96459c740bc54bc52479264092388bc84578",
+    "horas": 168,
+    "inicio": "2024-08-19T00:00",
+    "fin": "2024-08-25T23:00"
+  },
+  {
+    "archivo": "weather_14dias/07.json",
+    "sha256": "437f21853bc33c6ea7f69483bd4e0b0225a291e63147fd43f2b0032d2052634d",
+    "horas": 168,
+    "inicio": "2024-08-19T00:00",
+    "fin": "2024-08-25T23:00"
+  },
+  {
+    "archivo": "weather_14dias/08.json",
+    "sha256": "5c51d6fa437f01d7a786330fe0b0212db4c85b82aa805cc4843cb5abf8e4a95a",
+    "horas": 168,
+    "inicio": "2024-09-09T00:00",
+    "fin": "2024-09-15T23:00"
+  },
+  {
+    "archivo": "weather_14dias/09.json",
+    "sha256": "0da4728085ff788292304ea08a7c919695a858b09c0a80c9ebe933587856379a",
+    "horas": 168,
+    "inicio": "2024-10-28T00:00",
+    "fin": "2024-11-03T23:00"
+  },
+  {
+    "archivo": "weather_14dias/10.json",
+    "sha256": "fcca7482d0d813dcba2fa68e4e063a6f9bcf7d07ced91f60619d53cd76f59c04",
+    "horas": 168,
+    "inicio": "2024-10-28T00:00",
+    "fin": "2024-11-03T23:00"
+  },
+  {
+    "archivo": "weather_14dias/11.json",
+    "sha256": "531b83cf76c1653b5d1dd932c16c8f8f21cb2dee21a922bb5998e092a5f118f2",
+    "horas": 168,
+    "inicio": "2024-10-28T00:00",
+    "fin": "2024-11-03T23:00"
+  },
+  {
+    "archivo": "weather_14dias/12.json",
+    "sha256": "04aefda4900de28fc1a7940677907b188f82f469bfb34c14806459cce998daa7",
+    "horas": 168,
+    "inicio": "2024-10-28T00:00",
+    "fin": "2024-11-03T23:00"
+  },
+  {
+    "archivo": "weather_14dias/13.json",
+    "sha256": "b97a79218af33a155a3312818152d0e851dcce4c5c22003c524788800ad52555",
+    "horas": 168,
+    "inicio": "2024-11-04T00:00",
+    "fin": "2024-11-10T23:00"
+  },
+  {
+    "archivo": "weather_14dias/14.json",
+    "sha256": "1bc189f46d6e403dd2f15d0eeadeced656c0e7644871040da7e39740819f563c",
+    "horas": 168,
+    "inicio": "2024-11-04T00:00",
+    "fin": "2024-11-10T23:00"
+  },
+  {
+    "archivo": "weather_14dias/15.json",
+    "sha256": "22c3b6092009060c1f7b11568193aa35f69d03231ab019cfa31b368c635d82f2",
+    "horas": 168,
+    "inicio": "2024-11-04T00:00",
+    "fin": "2024-11-10T23:00"
+  },
+  {
+    "archivo": "weather_14dias/16.json",
+    "sha256": "bc007813b5b82cf605abfc6c5d7f29d1098680b191d8837e1635365d72384959",
+    "horas": 168,
+    "inicio": "2024-11-11T00:00",
+    "fin": "2024-11-17T23:00"
+  },
+  {
+    "archivo": "weather_14dias/17.json",
+    "sha256": "824d6892abc867adce1dc490531f3d6f71166d3ea9c0bcff4b2cd93759c87667",
+    "horas": 168,
+    "inicio": "2024-11-11T00:00",
+    "fin": "2024-11-17T23:00"
+  },
+  {
+    "archivo": "weather_14dias/18.json",
+    "sha256": "4a83eae99b7055f5053ff9298696714d6b854a472ba0c9eb492a57ea983077c5",
+    "horas": 168,
+    "inicio": "2025-10-06T00:00",
+    "fin": "2025-10-12T23:00"
+  },
+  {
+    "archivo": "weather_14dias/19.json",
+    "sha256": "c2c82a330ffffedeacb711f6a0035ad542644acb7a54c184860a163b01e0cd58",
+    "horas": 168,
+    "inicio": "2025-10-20T00:00",
+    "fin": "2025-10-26T23:00"
+  },
+  {
+    "archivo": "weather_14dias/20.json",
+    "sha256": "1a6db6fc84591f134855589d5157445fee0f0e78de4d69eedb085162451b0f9e",
+    "horas": 168,
+    "inicio": "2025-10-27T00:00",
+    "fin": "2025-11-02T23:00"
+  },
+  {
+    "archivo": "weather_14dias/21.json",
+    "sha256": "00c779b62004b526f183d9b919c40960d59cafeb11084b0797d0ce6dad170b88",
+    "horas": 168,
+    "inicio": "2025-11-10T00:00",
+    "fin": "2025-11-16T23:00"
+  },
+  {
+    "archivo": "weather_14dias/22.json",
+    "sha256": "c4a17a6d1e16e42c122182f9750b5181f708d74527e7502d6bc2564142d59324",
+    "horas": 168,
+    "inicio": "2025-11-17T00:00",
+    "fin": "2025-11-23T23:00"
+  }
+]

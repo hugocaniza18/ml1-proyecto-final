@@ -1,0 +1,7 @@
+config,historico_tn,historico_fp,historico_fn,historico_tp
+mayoria_h7,22.0,0.0,24.0,0.0
+persistencia_h7,15.0,7.0,6.0,18.0
+LR_7d_h7,18.0,4.0,16.0,8.0
+RF_7d_h7,18.0,4.0,16.0,8.0
+LR_14d_h7,21.0,1.0,16.0,8.0
+RF_14d_h7,17.0,5.0,18.0,6.0

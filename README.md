@@ -1,6 +1,6 @@
 # Predicción de roya de soja con datos climáticos
 
-Trabajo final de Machine Learning 1 (23433), Facultad de Ingeniería, Universidad Nacional de Asunción, 2026.
+Trabajo final de Machine Learning 1, Facultad de Ingeniería, Universidad Nacional de Asunción, 2026.
 
 **Integrantes:** [Hugo Rene Caniza Portillo](https://github.com/hugocaniza18) y [Ruben Dario Lopez Sanabria](https://github.com/Rub3nL0pez).
 

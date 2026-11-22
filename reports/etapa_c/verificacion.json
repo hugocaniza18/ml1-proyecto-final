@@ -1,0 +1,16 @@
+{
+  "poblaciones": {
+    "h0": 428,
+    "h7": 362
+  },
+  "filas_muestras": 1580,
+  "variables": 10,
+  "folds_verificados": 6,
+  "reproduccion_hashes": true,
+  "destino_ocupado_rechazado": true,
+  "antecedentes_coincidentes": true,
+  "disponibilidad_operativa": "no_acreditada",
+  "entrenamientos": 0,
+  "pruebas_contrato": 7,
+  "estado_etapa_c": "cerrada"
+}
