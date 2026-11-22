@@ -2,6 +2,6 @@
 /specs/** export-ignore
 *.py text eol=lf
 /requirements*.txt text eol=lf
-/results/** -text
-/provenance/** -text
-/reports/INFORME.md -text
+/results/** -text whitespace=cr-at-eol
+/provenance/** -text whitespace=cr-at-eol
+/reports/INFORME.md -text whitespace=cr-at-eol
