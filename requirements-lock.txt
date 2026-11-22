@@ -50,3 +50,6 @@ traitlets==5.14.3
 typing_extensions==4.12.2
 tzdata==2025.1
 wcwidth==0.2.13
+mistune==3.1.1
+beautifulsoup4==4.13.3
+soupsieve==2.6

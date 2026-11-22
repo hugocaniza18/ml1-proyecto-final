@@ -1,0 +1,11 @@
+{
+  "origen_predicciones_sha256": "ab48ae84e78fa68171b375aa30ab01405e36a0cadee8c707563222139f57f6ae",
+  "origen_particiones_sha256": "c00c5a24f0a77c4e13a532e8979d4d378d7c648a2d490f582d81f3137d469f89",
+  "seleccion_sha256": "91c611198f14d92348b6e3a17e70f3a940096f426318c7e53220c5a5f3a092c4",
+  "script_sha256": "a1d73f2da67b00826e3a90b83a8ce2f5d63dfa5f5a4c8d41daaaba5a0960c113",
+  "contenido": "Coordenadas de curvas agregadas; sin IDs, fechas individuales ni puntuaciones por muestra",
+  "salidas": {
+    "curvas.json": "52d415e3519ee69253c4d3400bfb1978bd88d45e6f6aacc50b3929eb52e015f4",
+    "particiones.csv": "c00c5a24f0a77c4e13a532e8979d4d378d7c648a2d490f582d81f3137d469f89"
+  }
+}
