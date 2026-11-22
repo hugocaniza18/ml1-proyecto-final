@@ -21,3 +21,8 @@ models/*.joblib
 /reports/exclusiones.json
 /web/*.tsbuildinfo
 /*.zip
+
+/data/interim/
+/models/
+/results/predictions/
+/.cache/

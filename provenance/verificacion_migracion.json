@@ -1,0 +1,33 @@
+{
+  "metricas_recalculadas": 44,
+  "predicciones_verificadas": 2603,
+  "modelos_recargados": 8,
+  "error_maximo_modelos": 8.326672684688674e-17,
+  "seleccion_exclusiva_cv": true,
+  "congelacion_previa_verificada": true,
+  "repeticion_completa_coincide": null,
+  "hashes_entrada_intactos": true,
+  "evaluacion": "histórica previamente observada",
+  "traza_sha256": "c52760e70ddd9655d8f5e3e25404b4618660a5dc9b97c6f84950f5b17b407880",
+  "horarios": {
+    "respuestas_verificadas": 66,
+    "horas_respaldadas": 177264,
+    "dias_unicos_respaldados": 7386,
+    "filas_diarias_verificadas": 5992,
+    "dias_requeridos_unicos": 3458,
+    "filas_ventanas_verificadas": 1580,
+    "error_maximo_diarios": 1.4210854715202004e-14,
+    "error_maximo_ventanas": 5.684341886080802e-14,
+    "tolerancia_absoluta": 1e-10,
+    "descargas": 0,
+    "evidencia_b_sha256": "54a6f48475b49cbbdc6f670c00787195d86e5b3587f0c3940136535dea4e800a",
+    "diario_fuente_sha256": "beeb3983521feff58ac7f4b579c4aad731e1c88cd39e924a47ad337f44cf86fd",
+    "muestras_sha256": "ec0f0e7187572a38162a06aec6b457bcbc9b2517cdea36defeda9851abb17496",
+    "script_sha256": "af103fb35b5d9663ef5ae43d16e6f92d0a3c3d62d3aed3d43dd645c2e17ab8cf",
+    "disponibilidad_operativa": "no_acreditada"
+  },
+  "procesamiento_reproducido": true,
+  "evaluacion_reproducida": true,
+  "artefactos_inmutables": 80,
+  "entrenamientos": 0
+}

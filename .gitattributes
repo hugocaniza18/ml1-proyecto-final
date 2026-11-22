@@ -1,0 +1,7 @@
+/specs export-ignore
+/specs/** export-ignore
+*.py text eol=lf
+/requirements*.txt text eol=lf
+/results/** -text
+/provenance/** -text
+/reports/INFORME.md -text

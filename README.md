@@ -4,24 +4,34 @@ Trabajo final de Machine Learning 1, Facultad de Ingeniería, Universidad Nacion
 
 **Integrantes:** [Hugo Rene Caniza Portillo](https://github.com/hugocaniza18) y [Ruben Dario Lopez Sanabria](https://github.com/Rub3nL0pez).
 
-Evaluamos si la humedad, la temperatura, la precipitación y el viento de los 7 o 14 días anteriores permiten clasificar el resultado de una medición de roya de soja. En una variante incorporamos el índice térmico-humedad (IITH). El modelo devuelve una puntuación para la clase positiva y una clasificación con umbral de 0,5.
+La implementación vigente utiliza diez variables meteorológicas, ventanas de 7 y 14 días y horizontes h0 y h7. Conservamos los ocho experimentos aprobados de regresión logística y Random Forest y las referencias de mayoría y persistencia. Enero–marzo de 2026 es evaluación histórica previamente observada.
 
-## Resultados
+## Organización técnica
 
-Analizamos 428 mediciones de 22 puntos. La ventana de 14 días reúne 5.992 filas diarias y cada medición aporta un solo objetivo al modelo. Comparamos regresión logística y Random Forest con ambas ventanas, con y sin IITH, usando las mismas particiones temporales.
+- `config/proyecto.json`: parámetros aprobados y rutas.
+- `scripts/` y `tests/`: procesamiento, ajuste, evaluación y verificaciones.
+- `data/raw/`, `data/interim/`, `data/processed/`: fuentes y productos locales excluidos de Git.
+- `models/` y `results/predictions/`: ocho modelos y predicciones individuales locales excluidos de Git.
+- `results/`: métricas, selección congelada, búsquedas y entorno del experimento aprobado.
+- `provenance/`: hashes, auditoría y correspondencia de rutas tras la consolidación.
+- `reports/INFORME.md` y `reports/figuras/`: resultados oficiales de la Etapa D.
+- `specs/`: desarrollo interno SDD, excluido de la entrega y de las exportaciones públicas.
 
-Seleccionamos Random Forest de 7 días sin IITH por su F1 medio de validación (0,653). En las 66 mediciones reservadas para prueba, el F1 fue 0,473 y el modelo detectó 13 de los 37 positivos. Extender la ventana a 14 días no mejoró el F1 de forma consistente. El estudio evalúa resultados históricos y deja abierta la validación en nuevas campañas.
+## Reproducción
 
-## Materiales
+Usamos Python 3.10.11 y `requirements-lock.txt`. La [documentación técnica](docs/PROCESAMIENTO.md) describe los insumos necesarios, las restricciones de redistribución y los comandos para reproducir el procesamiento y los experimentos.
 
-- [Informe](reports/INFORME.md)
-- [Presentación](presentation/Presentacion_TP_Roya.pptx)
-- [Metodología](docs/METODOLOGIA.md) y [diccionario de datos](docs/DICCIONARIO.md)
-- [Notebooks de auditoría, exploración y modelado](notebooks/)
-- [Métricas de los ocho experimentos](reports/comparacion_modelos.csv)
+```powershell
+python -m pip install -r requirements-lock.txt
+python -m unittest discover -s tests -v
+python scripts/verificar.py
+python scripts/verificar_integracion.py
+```
 
-En el portal incluimos los gráficos, un comparador y seis ejemplos de prueba sin identificadores de origen. El portal se puede ejecutar con Node.js 24 mediante `npm ci` y `npm run dev` desde `web/`. Para reproducir los experimentos en Python 3.10, los scripts requieren los archivos originales y la caché meteorológica del paquete local.
+La integración verifica los datos locales y los resultados sin entrenar nuevos modelos ni sobrescribir artefactos oficiales. El acceso autorizado a los insumos es necesario: los datos individuales no se distribuyen en Git.
 
-## Datos
+## Estado de la comunicación académica
 
-Usamos los registros de [Epagri/CIRAM Agroconnect](https://ciram.epagri.sc.gov.br/agroconnect/) como etiquetas y datos horarios ERA5 de [Open-Meteo](https://open-meteo.com/) bajo [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). A partir de estos datos calculamos los resúmenes diarios y por ventana, el IITH y las componentes del viento.
+Los notebooks, la metodología, el diccionario, la presentación y el portal conservan su contenido anterior y están pendientes de actualización en la siguiente parte de la Etapa E. Sus cifras anteriores no representan el experimento vigente. La revisión editorial y la publicación se realizarán después de aprobar esta consolidación técnica.
+
+Usamos etiquetas de [Epagri/CIRAM Agroconnect](https://ciram.epagri.sc.gov.br/agroconnect/) y meteorología horaria ERA5 de [Open-Meteo](https://open-meteo.com/), con atribución [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) para los datos meteorológicos. La redistribución de las etiquetas sigue pendiente de aclaración.

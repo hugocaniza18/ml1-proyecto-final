@@ -1,153 +1,97 @@
-# Predicción de roya de soja con datos climáticos
+# Experimentos definitivos de la Etapa D
 
-Machine Learning 1 (23433), FIUNA, Ingeniería Electrónica, 2026.
+Machine Learning 1, FIUNA. Hugo Rene Caniza Portillo y Ruben Dario Lopez Sanabria.
 
-- Hugo Rene Caniza Portillo — hcaniza@fiuna.edu.py — [GitHub](https://github.com/hugocaniza18)
-- Ruben Dario Lopez Sanabria — rubenlopez@fiuna.edu.py — [GitHub](https://github.com/Rub3nL0pez)
+## Diseño experimental
 
-## Problema, datos y metodología
+Evaluamos dos horizontes, h0 y h7, con ventanas meteorológicas de 7 y 14 días. Utilizamos exclusivamente horizontes_v2_c02, diez predictores y las particiones aprobadas. LR incluye StandardScaler dentro del pipeline. RF utiliza 300 árboles. Mantuvimos semilla 42 y umbral 0,5.
 
+Las entradas son HR media/mínima/máxima, temperatura media/mínima/máxima, precipitación acumulada, velocidad media del viento y componentes u/v. Se excluye IITH. El estado actual solo se utiliza para la referencia de persistencia h7.
 
-## Problema y propósito
+GridSearchCV ajustó LR con C en {0,1; 1; 10} y RF con profundidad {3,5,sin límite} y mínimo por hoja {3,5,10}. Usamos tres validaciones crecientes de seis fechas semanales de etiqueta y la purga aprobada respecto de referencias. Seleccionamos por F1 positivo medio dentro de cada horizonte. Los empates redondeados a tres decimales favorecen 7 días y luego LR.
 
-Estudiamos si las condiciones meteorológicas anteriores a una observación permiten clasificar el resultado positivo o negativo publicado por CIRAM. Es una clasificación binaria retrospectiva, útil para evaluar asociaciones y construir una base experimental para investigaciones posteriores.
+La mayoría se ajusta solo con entrenamiento y elige negativo en empate. Su puntuación es la prevalencia de entrenamiento. Persistencia usa y(t) como clase y puntuación binaria para h7. Las referencias se evalúan una vez por población y partición.
 
-**Entrada del modelo:** diez resúmenes meteorológicos de los 7 o 14 días completos anteriores a la fecha objetivo, con una variante que agrega IITH (once predictores). **Salida:** puntuación probabilística de resultado positivo y clasificación positiva si es mayor o igual a 0,5. La probabilidad no ha sido calibrada para uso agronómico.
+## Poblaciones y evaluación
 
-La ubicación y fecha identifican qué registros meteorológicos recuperar, pero no entran al clasificador. El resultado del día objetivo solo sirve como etiqueta de entrenamiento y evaluación. No se usan como entrada su clima, su resultado ni las etiquetas históricas de roya.
+H0 comprende 428 muestras, con 359 en desarrollo, 3 en purga y 66 en evaluación histórica (29 negativas, 37 positivas). H7 comprende 362, con 313 en desarrollo, 3 en purga y 46 históricas (22 negativas, 24 positivas). Las dos ventanas comparten muestras dentro de cada horizonte.
 
-## Etiquetas y unidad de observación
+Las validaciones tienen etiquetas 18/08–22/09/2025, 29/09–03/11/2025 y 10/11–15/12/2025. En h7, las referencias son siete días anteriores. Los tamaños entrenamiento/validación son h0: 164/38, 188/55 y 239/100; h7: 141/31, 150/51 y 196/90. El primer bloque evalúa transferencia desde datos de la campaña anterior.
 
-El original contiene 650 registros deduplicados por punto y fecha: 211 `Positivo`, 217 `Negativo` y 222 `Não Avaliado`. Conservamos 428 objetivos binarios. Los códigos originales 79, 80 y 82 corresponden respectivamente a esas tres clases. La auditoría comprueba esta correspondencia y ausencia de conflictos. Un identificador `id_medicion` representa un único objetivo, incluso cuando aparece 14 veces en el archivo largo.
+Enero–marzo de 2026 es una evaluación histórica previamente observada. Conservamos las particiones y la selección de desarrollo. Esta evaluación no constituye una prueba inédita. El historial anterior de experimentos se considera exposición previa, no una fuente para ajustar parámetros en esta ejecución.
 
-La documentación pública de Epagri describe visitas semanales, evaluación de láminas de colectores y observación de síntomas. IFSC describe el monitoreo de esporos publicado en Agroconnect. Esto respalda interpretar los resultados como monitoreo fitosanitario, pero no confirma de forma individual el protocolo y momento de muestreo de cada fila del endpoint. Por ello la salida se denomina **resultado positivo registrado**, sin equipararla a infección clínica, incidencia, severidad ni riesgo futuro. Las fechas de consulta y snapshots tampoco constituyen muestras biológicas independientes. No se conoce la hora de disponibilidad de cada etiqueta.
+## Resultados comparativos
 
-Fuentes: [Epagri, descripción del monitoreo](https://blog.epagri.sc.gov.br/alertas-emitidos-pela-epagri-ajudam-no-controle-de-doenca-que-pode-dizimar-lavouras-de-soja/), [IFSC, colectores y Agroconnect](https://www.ifsc.edu.br/en/web/noticias/w/campus-canoinhas-reforca-servico-de-monitoramento-da-ferrugem-asiatica-da-soja-no-planalto-norte), [Agroconnect](https://ciram.epagri.sc.gov.br/agroconnect/).
+F1, precisión y recall corresponden a la clase positiva. DE es la desviación estándar poblacional entre tres folds, descriptiva. CV participó en ajuste y selección, por lo que su resultado tampoco es una evaluación independiente.
 
-## Meteorología y preprocesamiento
+| config | seleccionado | cv_f1 | cv_std | historico_f1 | historico_precision | historico_recall | historico_accuracy | historico_balanced_accuracy | historico_roc_auc | historico_average_precision |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| LR_14d_h0 | False | 0.622 | 0.026 | 0.377 | 0.625 | 0.270 | 0.500 | 0.532 | 0.565 | 0.659 |
+| LR_14d_h7 | True | 0.631 | 0.054 | 0.485 | 0.889 | 0.333 | 0.630 | 0.644 | 0.464 | 0.622 |
+| LR_7d_h0 | False | 0.602 | 0.072 | 0.327 | 0.667 | 0.216 | 0.500 | 0.539 | 0.661 | 0.648 |
+| LR_7d_h7 | False | 0.574 | 0.083 | 0.444 | 0.667 | 0.333 | 0.565 | 0.576 | 0.489 | 0.621 |
+| RF_14d_h0 | False | 0.616 | 0.057 | 0.320 | 0.615 | 0.216 | 0.485 | 0.522 | 0.715 | 0.682 |
+| RF_14d_h7 | False | 0.614 | 0.066 | 0.343 | 0.545 | 0.250 | 0.500 | 0.511 | 0.636 | 0.593 |
+| RF_7d_h0 | True | 0.629 | 0.102 | 0.385 | 0.667 | 0.270 | 0.515 | 0.549 | 0.649 | 0.695 |
+| RF_7d_h7 | False | 0.597 | 0.096 | 0.444 | 0.667 | 0.333 | 0.565 | 0.576 | 0.574 | 0.635 |
+| mayoria_h0 | False | 0.189 | 0.267 | 0.000 | 0.000 | 0.000 | 0.439 | 0.500 | 0.500 | 0.561 |
+| mayoria_h7 | False | 0.613 | 0.048 | 0.000 | 0.000 | 0.000 | 0.478 | 0.500 | 0.500 | 0.522 |
+| persistencia_h7 | False | 0.518 | 0.261 | 0.735 | 0.720 | 0.750 | 0.717 | 0.716 | 0.716 | 0.670 |
 
-Consultamos ERA5 mediante Open-Meteo, con resolución nominal 0,25°, hora local `America/Sao_Paulo` y viento en m/s. Es reanálisis de una celda y no medición de una estación situada en el punto. Se conserva cada respuesta JSON con URL y SHA-256. Las ventanas contienen exactamente 24 horas por día (00 a 23), d−14 a d−1. Los acumulados de precipitación usan la asignación temporal de la API, cuyas cantidades horarias describen la hora anterior. Excluir d0 no convierte ERA5 en un predictor disponible en tiempo real, pues tiene demora de publicación y asimilación retrospectiva.
+## Modelos seleccionados exclusivamente en validación
 
-Calculamos HR y temperatura media, mínima y máxima; precipitación total; velocidad media del viento y sus componentes vectoriales medias u/v. La dirección se expresa en grados de procedencia, u=−velocidad·sen(dirección), v=−velocidad·cos(dirección). Promediar u/v evita tratar 359° y 1° como direcciones opuestas.
+Para h0 seleccionamos **RF_7d_h0**, parámetros {'model__max_depth': 3, 'model__min_samples_leaf': 10}, F1 CV 0.629 ± 0.102. En histórico obtuvo F1 0.385, precisión 0.667, recall 0.270, ROC-AUC 0.649 y AP 0.695. Reconoció 10 positivos y omitió 27.
 
-IITH diario = número de horas con HR ≥ 85 % y 15 °C ≤ T ≤ 28 °C, inclusive. Sumamos el valor diario en cada ventana. Es la definición operativa elegida para este TP, sin afirmar que sea el índice oficial CIRAM ni una regla validada de infección. HMF sigue pendiente y no se reemplaza por horas húmedas. Las horas con HR≥90 % se guardan solo como dato auxiliar.
+Para h7 seleccionamos **LR_14d_h7**, parámetros {'model__C': 10}, F1 CV 0.631 ± 0.054. En histórico obtuvo F1 0.485, precisión 0.889, recall 0.333, ROC-AUC 0.464 y AP 0.622. Reconoció 8 positivos y omitió 16.
 
-Verificamos la integridad horaria, finitud, HR en [0,100] y precipitación/viento no negativos. Si falta clima se intenta recuperar y, si persiste, se excluye el objetivo de ambas ventanas; no se imputan series. Los extremos meteorológicos válidos se conservan y se describen mediante la regla exploratoria de 1,5 IQR. No se recortan valores según el conjunto de prueba.
+## Interpretación
 
-La roya histórica se cruza exactamente por coordenadas y fecha: `evaluado`, `no_evaluado` o `sin_registro`. Los dos últimos mantienen vacía la clase binaria. No se arrastra el último valor. Solo son auxiliares.
+En h0, RF de 7 días supera ligeramente a LR de 14 días en F1 de validación; el modelo elegido alcanza F1 histórico 0,385 y reconoce 10 de 37 positivos. La referencia mayoritaria elige negativo en desarrollo y tiene F1 positivo histórico cero. Superarla no establece utilidad agronómica.
 
-Las diez variables base son numéricas. No se necesita OneHotEncoder. Regresión logística utiliza StandardScaler ajustado dentro de cada fold. Random Forest recibe las variables sin escalar. Los resúmenes se calculan con precisión completa, sin redondeos intermedios.
+En h7, LR de 14 días alcanza F1 histórico 0,485 y reconoce 8 de 24 positivos. Persistencia obtiene F1 0,735, recall 0,750 y accuracy 0,717, frente a 0,630 de accuracy del modelo climático elegido. La comparación favorece la referencia en ese período histórico. Persistencia utiliza estado actual, por lo que tiene información diferente de los clasificadores meteorológicos.
 
-## Diseño experimental fijado
+La mayoría h7 tiene F1 medio de validación 0,613 y F1 histórico cero. El cambio de clase mayoritaria entre entrenamientos muestra por qué accuracy o un F1 medio aislado requieren examinar cada fold. Las predicciones de mayoría en empate se evalúan según la regla de clase 0, aunque la puntuación sea 0,5.
 
-Mismas mediciones para 7 y 14 días. Prueba reservada desde 2026-01-01 hasta la última fecha disponible, 2026-03-02. Se excluyen del ajuste los objetivos de los 14 días anteriores a 2026-01-01. Desarrollo efectivo: 359 mediciones; purga: 3; prueba: 66.
+Extender la ventana favorece a LR en F1 de validación en ambos horizontes, mientras RF obtiene mayor F1 con 7 días. No aparece una mejora uniforme para todos los algoritmos. Los deltas completos se incluyen en diferencias_descriptivas.csv. Estos resultados son descriptivos y no prueban significancia estadística.
 
-Tres validaciones crecientes usan las últimas 21 fechas únicas de desarrollo, en bloques de siete fechas consecutivas **observadas**, no siete días calendario. En cada fold solo se entrenan objetivos con fecha estrictamente anterior al inicio de validación menos 14 días. No se dividen filas diarias ni se mezclan ubicaciones de una misma fecha entre entrenamiento y validación. Se verifican ambas clases. La irregularidad del muestreo hace que el primer bloque abarque diciembre de 2024 a septiembre de 2025.
+El ROC-AUC histórico 0,464 de LR de 14 días h7 advierte que su ordenamiento global de puntuaciones es débil en esa población, aunque a umbral 0,5 sus nueve positivos predichos incluyan ocho aciertos. No ajustamos el umbral ni calibramos probabilidades después de observar este comportamiento.
 
-Ocho configuraciones: LR/RF × 7/14 días × sin/con IITH. LR: C en [0,1; 1; 10], máximo 3.000 iteraciones. RF: 300 árboles, profundidad [3,5,sin límite], mínimo por hoja [3,5,10]. Semilla 42. GridSearchCV usa las particiones guardadas. Elegimos el mayor F1 medio de positivos. Empate redondeado a tres decimales: menor ventana, menos predictores, LR. La selección y hashes se escriben antes de evaluar prueba. Todas las configuraciones se reportan en prueba, sin cambiar la seleccionada.
+## Curvas y matrices
 
-Reportamos precisión, recall, F1, accuracy, balanced accuracy, ROC-AUC y average precision. F1 enfatiza el equilibrio entre detección de positivos y falsas alarmas, pero no fija un costo agronómico. La desviación entre folds describe sensibilidad temporal, no es intervalo de confianza. Las curvas de aprendizaje usan prefijos cronológicos de fechas completas (40 %, 70 % y 100 %) dentro de cada entrenamiento, conservando validación y purga.
+Las matrices se normalizan por clase real; sus conteos se guardan en CSV. ROC y PR utilizan las puntuaciones originales. Las curvas de las referencias corresponden a puntuaciones constantes o binarias. La línea de prevalencia en PR describe la proporción positiva de la evaluación.
 
-## Límites de interpretación
+Las curvas de aprendizaje usan prefijos cronológicos de fechas completas al 40 %, 70 % y 100 % del entrenamiento de cada fold, con hiperparámetros ya elegidos. Los puntos representan promedios de bloques. Son diagnósticos de desarrollo y no modificaron la selección.
 
-La prueba mide generalización temporal sobre puntos del mismo sistema, no nuevas regiones. La dependencia espacial, celdas compartidas, repetición de ubicaciones, tamaño pequeño, intervalos irregulares y cambios entre campañas limitan la generalización. Diferencias de métricas son descriptivas y no prueban significancia ni causalidad. No se incluyen manejo, variedad, fenología, disponibilidad de hospedantes o tratamientos.
+![confusion, horizonte 0](figuras/confusion_h0.png)
 
-Un modelo climático puede captar estacionalidad asociada al monitoreo. No demuestra que el clima cause los positivos observados. Para una alerta futura serían necesarias nuevas campañas, validación por región, datos disponibles en tiempo real, definición de horizonte y evaluación prospectiva. HMF y meteorología de estaciones CIRAM quedan como ampliaciones.
+![roc, horizonte 0](figuras/roc_h0.png)
 
-Documentación meteorológica: [Open-Meteo Historical Weather API](https://open-meteo.com/en/docs/historical-weather-api).
+![pr, horizonte 0](figuras/pr_h0.png)
 
+![aprendizaje, horizonte 0](figuras/aprendizaje_h0.png)
 
-## Auditoría y cobertura
+![confusion, horizonte 7](figuras/confusion_h7.png)
 
-428 objetivos, 211 positivos y 217 negativos, 22 coordenadas y 47 fechas. Correspondencia completa con el original. Las ventanas contienen 5.992 y 2.996 filas, pero cada tabla de aprendizaje tiene 428 muestras. No hubo exclusiones por clima faltante. En 14 días hay 684 antecedentes evaluados, 79 no evaluados y 5.229 sin registro exacto.
+![roc, horizonte 7](figuras/roc_h7.png)
 
-## Particiones utilizadas
+![pr, horizonte 7](figuras/pr_h7.png)
 
-| fold | entrenamiento | validacion | inicio | fin |
-| --- | --- | --- | --- | --- |
-| 1 | 133 | 27 | 2024-12-23 | 2025-09-08 |
-| 2 | 174 | 62 | 2025-09-15 | 2025-10-27 |
-| 3 | 229 | 109 | 2025-11-03 | 2025-12-15 |
+![aprendizaje, horizonte 7](figuras/aprendizaje_h7.png)
 
-Prueba: 66 mediciones (37 positivas y 29 negativas), enero–marzo de 2026. Purga final: 3.
+## Limitaciones y conclusiones
 
-## Análisis exploratorio
+La etiqueta representa el resultado registrado. fecha_registro coincide con primera_consulta en los originales y no acredita fecha de muestreo. Faltan datos de publicación para confirmar que cada etiqueta estaba disponible al emitir una predicción. El origen específico de cada positivo —esporos, síntomas o persistencia— sigue pendiente de confirmación.
 
-![Desarrollo después de la purga: 188 negativos y 171 positivos. Las clases son cercanas en tamaño, lo que no garantiza equilibrio por fecha o punto.](figures/clases.png)
+ERA5 es retrospectivo y su disponibilidad operacional no está acreditada. Las ubicaciones se repiten, algunas comparten celdas y la identidad física de Jupiá conserva incertidumbre. La cobertura por ubicación y campaña es desigual. H0 y h7 usan poblaciones distintas. Las asociaciones y las diferencias observadas no demuestran causalidad ni generalización a nuevas regiones.
 
-Desarrollo después de la purga: 188 negativos y 171 positivos. Las clases son cercanas en tamaño, lo que no garantiza equilibrio por fecha o punto.
+En este diseño los modelos climáticos seleccionados muestran recall limitado. Para +7, persistencia supera al modelo climático seleccionado en la evaluación histórica. El trabajo conserva su carácter experimental y no respalda una alerta agronómica validada. Las próximas investigaciones requerirían fechas de disponibilidad verificadas y una evaluación prospectiva inédita definida antes de analizar resultados.
 
-![Hay registros en diez meses de desarrollo y un intervalo largo sin observaciones. Ausencia de registros no equivale a ausencia de roya.](figures/tiempo.png)
+## Reproducibilidad y verificación
 
-Hay registros en diez meses de desarrollo y un intervalo largo sin observaciones. Ausencia de registros no equivale a ausencia de roya.
+Verificamos 44 registros de métricas, 2603 predicciones y ocho modelos recargados. Error máximo de puntuaciones recargadas: 8.33e-17. Dos ejecuciones completas coincidieron en selección, métricas y probabilidades con tolerancia absoluta 10⁻¹². La selección congelada precede a la evaluación histórica y mantiene el mismo hash.
 
+Los hashes de entradas, configuración, código y selección se conservan en los manifiestos. entorno.json identifica versiones y commit base; los scripts de esta etapa todavía no confirmados se identifican por SHA-256, para evitar atribuirlos al commit anterior.
 
-Los 22 puntos tienen cantidades distintas de observaciones. El tamaño representa frecuencia de monitoreo, no riesgo ni área cultivada.
+Los modelos y predicciones por muestra permanecen en work/etapa_d/run01, excluido de Git. El reporte agregado conserva las cifras y figuras revisables. Para reproducir el experimento se necesitan los insumos locales autorizados. Las etiquetas Epagri tienen condiciones de redistribución pendientes de aclaración. Datos meteorológicos de Open-Meteo/ERA5, CC BY 4.0, agregados por el equipo.
 
-![La mayor correlación absoluta entre predictores de 7 días es entre temperatura media y máxima (r=0.770). Es redundancia meteorológica, no evidencia causal de roya.](figures/correlaciones.png)
-
-La mayor correlación absoluta entre predictores de 7 días es entre temperatura media y máxima (r=0.770). Es redundancia meteorológica, no evidencia causal de roya.
-
-![Las medianas de precipitación son 35.9 y 79.1 mm. IITH: 39 y 80 h. Los acumulados crecen con la duración de ventana, lo que no demuestra mejor predicción.](figures/ventanas.png)
-
-Las medianas de precipitación son 35.9 y 79.1 mm. IITH: 39 y 80 h. Los acumulados crecen con la duración de ventana, lo que no demuestra mejor predicción.
-
-## Resultados
-
-| config | cv_f1 | cv_std | test_f1 | test_precision | test_recall | test_accuracy | test_balanced_accuracy | test_roc_auc | test_average_precision |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| LR_7d_base | 0.636 | 0.096 | 0.314 | 0.571 | 0.216 | 0.470 | 0.505 | 0.592 | 0.624 |
-| RF_7d_base | 0.653 | 0.097 | 0.473 | 0.722 | 0.351 | 0.561 | 0.589 | 0.642 | 0.726 |
-| LR_7d_iith | 0.588 | 0.066 | 0.385 | 0.667 | 0.270 | 0.515 | 0.549 | 0.603 | 0.641 |
-| RF_7d_iith | 0.614 | 0.114 | 0.481 | 0.765 | 0.351 | 0.576 | 0.607 | 0.701 | 0.743 |
-| LR_14d_base | 0.614 | 0.044 | 0.385 | 0.667 | 0.270 | 0.515 | 0.549 | 0.575 | 0.660 |
-| RF_14d_base | 0.629 | 0.052 | 0.444 | 0.706 | 0.324 | 0.545 | 0.576 | 0.716 | 0.689 |
-| LR_14d_iith | 0.599 | 0.064 | 0.377 | 0.625 | 0.270 | 0.500 | 0.532 | 0.561 | 0.656 |
-| RF_14d_iith | 0.613 | 0.076 | 0.423 | 0.733 | 0.297 | 0.545 | 0.580 | 0.753 | 0.732 |
-
-F1, precisión y recall se refieren a la clase positiva. La dispersión CV corresponde a tres bloques temporales.
-
-### Efecto de la ventana
-
-| modelo | IITH | delta_F1_CV_14_menos_7 | delta_F1_prueba_14_menos_7 |
-| --- | --- | --- | --- |
-| LR | False | -0.022 | 0.0709 |
-| LR | True | 0.0111 | -0.0073 |
-| RF | False | -0.0234 | -0.0283 |
-| RF | True | -0.0012 | -0.0584 |
-
-![Promedios de tres folds con prefijos de fechas completas. El eje horizontal es el tamaño medio de entrenamiento. Son diagnósticos de desarrollo, no una estimación independiente del rendimiento seleccionado.](figures/aprendizaje.png)
-
-Promedios de tres folds con prefijos de fechas completas. El eje horizontal es el tamaño medio de entrenamiento. Son diagnósticos de desarrollo, no una estimación independiente del rendimiento seleccionado.
-
-![Filas normalizadas por clase real. El modelo seleccionado reconoce el 35,1 % de positivos y el 82,8 % de negativos; la sensibilidad a positivos es limitada.](figures/confusion.png)
-
-Filas normalizadas por clase real. El modelo seleccionado reconoce el 35,1 % de positivos y el 82,8 % de negativos; la sensibilidad a positivos es limitada.
-
-![La ROC compara sensibilidad y falsas alarmas al variar el umbral. No se utilizó para cambiar el umbral fijado en 0,5.](figures/roc.png)
-
-La ROC compara sensibilidad y falsas alarmas al variar el umbral. No se utilizó para cambiar el umbral fijado en 0,5.
-
-![La curva precisión–recall centra la atención en positivos. La línea horizontal es la prevalencia en prueba (37/66), no un modelo adicional entrenado.](figures/precision_recall.png)
-
-La curva precisión–recall centra la atención en positivos. La línea horizontal es la prevalencia en prueba (37/66), no un modelo adicional entrenado.
-
-## Conclusiones
-
-La selección por validación fue RF_7d_base, con F1 medio 0.653 y desviación entre bloques 0.097.
-
-En prueba, su F1 fue 0.473, precisión 0.722 y recall 0.351. Detectó 13 de los 37 positivos y omitió 24. Clasificó correctamente 24 de los 29 negativos.
-
-Ampliar a 14 días no mostró una mejora consistente: el F1 de validación bajó en tres de cuatro comparaciones equivalentes. En prueba mejoró solo LR sin IITH. Son diferencias descriptivas, sin evidencia de significancia estadística.
-
-RF con 7 días e IITH logró el mayor F1 de prueba (0,481), pero no reemplaza al modelo seleccionado previamente. RF con 14 días e IITH logró el mayor ROC-AUC (0,753): el ordenamiento de probabilidades y el F1 con umbral 0,5 miden propiedades diferentes.
-
-Agregar IITH no mejoró F1 de validación en ninguna comparación equivalente. Su utilidad futura no queda descartada por este conjunto pequeño.
-
-La caída entre validación y prueba señala generalización temporal limitada. Las curvas de aprendizaje muestran diferencias entre ajuste y validación, compatibles con sobreajuste y cambios de distribución. No permiten separar sus causas.
-
-## Trabajo futuro
-
-Validar nuevas campañas y regiones; confirmar protocolo de etiqueta y disponibilidad temporal; incorporar HMF, estaciones y contexto agronómico. Explorar calibración y umbrales en un nuevo desarrollo, conservando una prueba futura intacta.
-
-Datos meteorológicos de [Open-Meteo](https://open-meteo.com/), modelo ERA5, bajo [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+La ejecución utiliza scripts/experimentos_etapa_d.py, scripts/verificar_experimentos_d.py y scripts/reportar_etapa_d.py, con config/etapa_d.json. Los notebooks finales, presentación y portal corresponden a una etapa posterior.

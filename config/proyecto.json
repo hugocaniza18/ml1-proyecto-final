@@ -1,0 +1,44 @@
+{
+  "experimento": {
+    "version": "etapa-d-v1",
+    "features_source": "predictores.json",
+    "seed": 42,
+    "threshold": 0.5,
+    "lr_c": [
+      0.1,
+      1,
+      10
+    ],
+    "lr_max_iter": 3000,
+    "rf_n_estimators": 300,
+    "rf_max_depth": [
+      3,
+      5,
+      null
+    ],
+    "rf_min_samples_leaf": [
+      3,
+      5,
+      10
+    ],
+    "learning_fractions": [
+      0.4,
+      0.7,
+      1.0
+    ],
+    "selection": "F1 medio CV; empate a 3 decimales: 7 días, luego LR",
+    "evaluation": "enero-marzo 2026, histórica previamente observada"
+  },
+  "rutas": {
+    "original": "data/raw/monitoreo/monitoreo_deduplicado.csv",
+    "identificadores": "data/raw/monitoreo/identificadores.csv",
+    "era5": "data/raw/era5",
+    "intermedios": "data/interim",
+    "datos": "data/processed",
+    "resultados": "results",
+    "modelos": "models",
+    "informe": "reports",
+    "predicciones": "results/predictions/predicciones.csv"
+  },
+  "comunicacion_academica": "pendiente_de_revision"
+}

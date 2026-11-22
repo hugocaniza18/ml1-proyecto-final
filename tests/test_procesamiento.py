@@ -7,7 +7,7 @@ from io import StringIO
 import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]/'scripts'))
-from procesar_horizontes import (FEATURES, observations, weather_windows, make_samples,
+from procesar_datos import (FEATURES, observations, weather_windows, make_samples,
                                 verify_samples, check_separation, run, location_id)
 
 
