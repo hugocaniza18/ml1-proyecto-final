@@ -1,0 +1,651 @@
+﻿punto_id,punto_nombre,longitud,latitud,clase_codigo,clase_original,municipio,fecha_registro,campo_8_original,campo_9_original,fuente_url,primera_consulta,ultima_consulta,n_snapshots,conflicto_clase_mismo_punto_fecha
+1,Chapecó,-52.641756,-27.024303,79,Positivo,Chapecó,2024-09-02,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-09-02,2024-09-08,7,0
+2,Campos Novos,-51.29401,-27.468864,80,Negativo,Campos Novos,2024-09-02,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-09-02,2024-09-08,7,0
+3,Concórdia,-52.031852,-27.192519,80,Negativo,Concórdia,2024-09-02,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-09-02,2024-09-08,7,0
+4,Canoinhas,-50.449254,-26.151944,80,Negativo,Canoinhas,2024-09-02,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-09-02,2024-09-08,7,0
+5,Lages,-50.181428,-27.770456,82,Não Avaliado,Lages,2024-09-02,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-09-02,2024-09-08,7,0
+6,São Miguel do Oeste,-53.544454,-26.759542,80,Negativo,São Miguel do Oeste,2024-09-02,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-09-02,2024-09-08,7,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,79,Positivo,São Lourenço do Oeste,2024-09-02,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-09-02,2024-09-08,7,0
+8,Xanxerê,-52.432514,-26.832518,79,Positivo,Xanxerê,2024-09-02,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-09-02,2024-09-08,7,0
+17,Vargeão,-52.11977,-26.73417,82,Não Avaliado,Vargeão,2024-09-02,9,890,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-09-02,2024-09-08,7,0
+1,Chapecó,-52.641756,-27.024303,79,Positivo,Chapecó,2024-09-09,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-09-09,2024-09-15,7,0
+2,Campos Novos,-51.29401,-27.468864,79,Positivo,Campos Novos,2024-09-09,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-09-09,2024-09-15,7,0
+3,Concórdia,-52.031852,-27.192519,80,Negativo,Concórdia,2024-09-09,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-09-09,2024-09-15,7,0
+4,Canoinhas,-50.449254,-26.151944,80,Negativo,Canoinhas,2024-09-09,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-09-09,2024-09-15,7,0
+5,Lages,-50.181428,-27.770456,82,Não Avaliado,Lages,2024-09-09,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-09-09,2024-09-15,7,0
+6,São Miguel do Oeste,-53.544454,-26.759542,82,Não Avaliado,São Miguel do Oeste,2024-09-09,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-09-09,2024-09-15,7,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,79,Positivo,São Lourenço do Oeste,2024-09-09,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-09-09,2024-09-15,7,0
+8,Xanxerê,-52.432514,-26.832518,79,Positivo,Xanxerê,2024-09-09,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-09-09,2024-09-15,7,0
+17,Vargeão,-52.11977,-26.73417,82,Não Avaliado,Vargeão,2024-09-09,9,890,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-09-09,2024-09-15,7,0
+1,Chapecó,-52.641756,-27.024303,79,Positivo,Chapecó,2024-09-16,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-09-16,2024-09-22,7,0
+2,Campos Novos,-51.29401,-27.468864,79,Positivo,Campos Novos,2024-09-16,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-09-16,2024-09-22,7,0
+3,Concórdia,-52.031852,-27.192519,80,Negativo,Concórdia,2024-09-16,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-09-16,2024-09-22,7,0
+4,Canoinhas,-50.449254,-26.151944,80,Negativo,Canoinhas,2024-09-16,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-09-16,2024-09-22,7,0
+5,Lages,-50.181428,-27.770456,82,Não Avaliado,Lages,2024-09-16,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-09-16,2024-09-22,7,0
+6,São Miguel do Oeste,-53.544454,-26.759542,82,Não Avaliado,São Miguel do Oeste,2024-09-16,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-09-16,2024-09-22,7,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,79,Positivo,São Lourenço do Oeste,2024-09-16,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-09-16,2024-09-22,7,0
+8,Xanxerê,-52.432514,-26.832518,79,Positivo,Xanxerê,2024-09-16,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-09-16,2024-09-22,7,0
+17,Vargeão,-52.11977,-26.73417,82,Não Avaliado,Vargeão,2024-09-16,9,890,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-09-16,2024-09-22,7,0
+1,Chapecó,-52.641756,-27.024303,79,Positivo,Chapecó,2024-09-23,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-09-23,2024-09-29,7,0
+2,Campos Novos,-51.29401,-27.468864,79,Positivo,Campos Novos,2024-09-23,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-09-23,2024-09-29,7,0
+3,Concórdia,-52.031852,-27.192519,79,Positivo,Concórdia,2024-09-23,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-09-23,2024-09-29,7,0
+4,Canoinhas,-50.449254,-26.151944,79,Positivo,Canoinhas,2024-09-23,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-09-23,2024-09-29,7,0
+5,Lages,-50.181428,-27.770456,80,Negativo,Lages,2024-09-23,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-09-23,2024-09-29,7,0
+6,São Miguel do Oeste,-53.544454,-26.759542,79,Positivo,São Miguel do Oeste,2024-09-23,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-09-23,2024-09-29,7,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,79,Positivo,São Lourenço do Oeste,2024-09-23,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-09-23,2024-09-29,7,0
+8,Xanxerê,-52.432514,-26.832518,79,Positivo,Xanxerê,2024-09-23,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-09-23,2024-09-29,7,0
+17,Vargeão,-52.11977,-26.73417,82,Não Avaliado,Vargeão,2024-09-23,9,890,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-09-23,2024-09-29,7,0
+1,Chapecó,-52.641756,-27.024303,79,Positivo,Chapecó,2024-09-30,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-09-30,2024-10-06,7,0
+2,Campos Novos,-51.29401,-27.468864,79,Positivo,Campos Novos,2024-09-30,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-09-30,2024-10-06,7,0
+3,Concórdia,-52.031852,-27.192519,79,Positivo,Concórdia,2024-09-30,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-09-30,2024-10-06,7,0
+4,Canoinhas,-50.449254,-26.151944,79,Positivo,Canoinhas,2024-09-30,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-09-30,2024-10-06,7,0
+5,Lages,-50.181428,-27.770456,80,Negativo,Lages,2024-09-30,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-09-30,2024-10-06,7,0
+6,São Miguel do Oeste,-53.544454,-26.759542,79,Positivo,São Miguel do Oeste,2024-09-30,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-09-30,2024-10-06,7,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,79,Positivo,São Lourenço do Oeste,2024-09-30,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-09-30,2024-10-06,7,0
+8,Xanxerê,-52.432514,-26.832518,79,Positivo,Xanxerê,2024-09-30,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-09-30,2024-10-06,7,0
+17,Vargeão,-52.11977,-26.73417,82,Não Avaliado,Vargeão,2024-09-30,9,890,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-09-30,2024-10-06,7,0
+1,Chapecó,-52.641756,-27.024303,79,Positivo,Chapecó,2024-10-07,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-10-07,2024-10-13,7,0
+2,Campos Novos,-51.29401,-27.468864,79,Positivo,Campos Novos,2024-10-07,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-10-07,2024-10-13,7,0
+3,Concórdia,-52.031852,-27.192519,79,Positivo,Concórdia,2024-10-07,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-10-07,2024-10-13,7,0
+4,Canoinhas,-50.449254,-26.151944,79,Positivo,Canoinhas,2024-10-07,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-10-07,2024-10-13,7,0
+5,Lages,-50.181428,-27.770456,80,Negativo,Lages,2024-10-07,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-10-07,2024-10-13,7,0
+6,São Miguel do Oeste,-53.544454,-26.759542,79,Positivo,São Miguel do Oeste,2024-10-07,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-10-07,2024-10-13,7,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,79,Positivo,São Lourenço do Oeste,2024-10-07,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-10-07,2024-10-13,7,0
+8,Xanxerê,-52.432514,-26.832518,79,Positivo,Xanxerê,2024-10-07,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-10-07,2024-10-13,7,0
+17,Vargeão,-52.11977,-26.73417,82,Não Avaliado,Vargeão,2024-10-07,9,890,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-10-07,2024-10-13,7,0
+1,Chapecó,-52.641756,-27.024303,79,Positivo,Chapecó,2024-10-14,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-10-14,2024-10-20,7,0
+2,Campos Novos,-51.29401,-27.468864,79,Positivo,Campos Novos,2024-10-14,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-10-14,2024-10-20,7,0
+3,Concórdia,-52.031852,-27.192519,79,Positivo,Concórdia,2024-10-14,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-10-14,2024-10-20,7,0
+4,Canoinhas,-50.449254,-26.151944,79,Positivo,Canoinhas,2024-10-14,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-10-14,2024-10-20,7,0
+5,Lages,-50.181428,-27.770456,80,Negativo,Lages,2024-10-14,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-10-14,2024-10-20,7,0
+6,São Miguel do Oeste,-53.544454,-26.759542,80,Negativo,São Miguel do Oeste,2024-10-14,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-10-14,2024-10-20,7,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,79,Positivo,São Lourenço do Oeste,2024-10-14,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-10-14,2024-10-20,7,0
+8,Xanxerê,-52.432514,-26.832518,79,Positivo,Xanxerê,2024-10-14,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-10-14,2024-10-20,7,0
+17,Vargeão,-52.11977,-26.73417,82,Não Avaliado,Vargeão,2024-10-14,9,890,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-10-14,2024-10-20,7,0
+1,Chapecó,-52.641756,-27.024303,79,Positivo,Chapecó,2024-10-21,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-10-21,2024-10-27,7,0
+2,Campos Novos,-51.29401,-27.468864,79,Positivo,Campos Novos,2024-10-21,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-10-21,2024-10-27,7,0
+3,Concórdia,-52.031852,-27.192519,79,Positivo,Concórdia,2024-10-21,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-10-21,2024-10-27,7,0
+4,Canoinhas,-50.449254,-26.151944,79,Positivo,Canoinhas,2024-10-21,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-10-21,2024-10-27,7,0
+5,Lages,-50.181428,-27.770456,80,Negativo,Lages,2024-10-21,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-10-21,2024-10-27,7,0
+6,São Miguel do Oeste,-53.544454,-26.759542,80,Negativo,São Miguel do Oeste,2024-10-21,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-10-21,2024-10-27,7,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,79,Positivo,São Lourenço do Oeste,2024-10-21,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-10-21,2024-10-27,7,0
+8,Xanxerê,-52.432514,-26.832518,79,Positivo,Xanxerê,2024-10-21,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-10-21,2024-10-27,7,0
+17,Vargeão,-52.11977,-26.73417,82,Não Avaliado,Vargeão,2024-10-21,9,890,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-10-21,2024-10-27,7,0
+1,Chapecó,-52.641756,-27.024303,79,Positivo,Chapecó,2024-10-28,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-10-28,2024-11-03,7,0
+2,Campos Novos,-51.29401,-27.468864,79,Positivo,Campos Novos,2024-10-28,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-10-28,2024-11-03,7,0
+3,Concórdia,-52.031852,-27.192519,79,Positivo,Concórdia,2024-10-28,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-10-28,2024-11-03,7,0
+4,Canoinhas,-50.449254,-26.151944,79,Positivo,Canoinhas,2024-10-28,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-10-28,2024-11-03,7,0
+5,Lages,-50.181428,-27.770456,80,Negativo,Lages,2024-10-28,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-10-28,2024-11-03,7,0
+6,São Miguel do Oeste,-53.544454,-26.759542,79,Positivo,São Miguel do Oeste,2024-10-28,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-10-28,2024-11-03,7,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,79,Positivo,São Lourenço do Oeste,2024-10-28,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-10-28,2024-11-03,7,0
+8,Xanxerê,-52.432514,-26.832518,79,Positivo,Xanxerê,2024-10-28,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-10-28,2024-11-03,7,0
+17,Vargeão,-52.11977,-26.73417,82,Não Avaliado,Vargeão,2024-10-28,9,890,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-10-28,2024-11-03,7,0
+1,Chapecó,-52.641756,-27.024303,80,Negativo,Chapecó,2024-11-04,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-04,2024-11-10,7,0
+2,Campos Novos,-51.29401,-27.468864,79,Positivo,Campos Novos,2024-11-04,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-04,2024-11-10,7,0
+3,Concórdia,-52.031852,-27.192519,79,Positivo,Concórdia,2024-11-04,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-04,2024-11-10,7,0
+4,Canoinhas,-50.449254,-26.151944,79,Positivo,Canoinhas,2024-11-04,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-04,2024-11-10,7,0
+5,Lages,-50.181428,-27.770456,80,Negativo,Lages,2024-11-04,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-04,2024-11-10,7,0
+6,São Miguel do Oeste,-53.544454,-26.759542,80,Negativo,São Miguel do Oeste,2024-11-04,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-04,2024-11-10,7,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,79,Positivo,São Lourenço do Oeste,2024-11-04,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-04,2024-11-10,7,0
+8,Xanxerê,-52.432514,-26.832518,79,Positivo,Xanxerê,2024-11-04,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-04,2024-11-10,7,0
+17,Vargeão,-52.11977,-26.73417,82,Não Avaliado,Vargeão,2024-11-04,9,890,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-04,2024-11-10,7,0
+1,Chapecó,-52.641756,-27.024303,80,Negativo,Chapecó,2024-11-11,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-11,2024-11-17,7,0
+2,Campos Novos,-51.29401,-27.468864,79,Positivo,Campos Novos,2024-11-11,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-11,2024-11-17,7,0
+3,Concórdia,-52.031852,-27.192519,80,Negativo,Concórdia,2024-11-11,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-11,2024-11-17,7,0
+4,Canoinhas,-50.449254,-26.151944,79,Positivo,Canoinhas,2024-11-11,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-11,2024-11-17,7,0
+5,Lages,-50.181428,-27.770456,80,Negativo,Lages,2024-11-11,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-11,2024-11-17,7,0
+6,São Miguel do Oeste,-53.544454,-26.759542,79,Positivo,São Miguel do Oeste,2024-11-11,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-11,2024-11-17,7,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,80,Negativo,São Lourenço do Oeste,2024-11-11,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-11,2024-11-17,7,0
+8,Xanxerê,-52.432514,-26.832518,80,Negativo,Xanxerê,2024-11-11,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-11,2024-11-17,7,0
+9,Rio do Campo,-50.15544,-26.92884,82,Não Avaliado,Rio do Campo,2024-11-11,9,570,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-11,2024-11-17,7,0
+10,Pouso Redondo,-49.94379,-27.24431,82,Não Avaliado,Pouso Redondo,2024-11-11,9,354,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-11,2024-11-17,7,0
+11,Agronômica,-49.74242,-27.37829,82,Não Avaliado,Agronômica,2024-11-11,9,347,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-11,2024-11-17,7,0
+12,Atalanta,-49.72031,-27.43817,80,Negativo,Atalanta,2024-11-11,9,545,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-11,2024-11-17,7,0
+13,Marema,-52.649944,-26.808271,80,Negativo,Marema,2024-11-11,9,417,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-11,2024-11-17,7,0
+14,Galvão-Jupiá,-52.692097,-26.420925,79,Positivo,Jupiá,2024-11-11,9,855,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-11,2024-11-17,7,0
+15,Galvão,-52.669425,-26.479759,80,Negativo,Galvão,2024-11-11,9,655,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-11,2024-11-17,7,0
+16,Xaxim,-52.54948,-26.939679,82,Não Avaliado,Xaxim,2024-11-11,9,770,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-11,2024-11-17,7,0
+17,Vargeão,-52.11977,-26.73417,82,Não Avaliado,Vargeão,2024-11-11,9,890,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-11,2024-11-17,7,0
+1,Chapecó,-52.641756,-27.024303,80,Negativo,Chapecó,2024-11-18,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-18,2024-11-24,7,0
+2,Campos Novos,-51.29401,-27.468864,79,Positivo,Campos Novos,2024-11-18,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-18,2024-11-24,7,0
+3,Concórdia,-52.031852,-27.192519,80,Negativo,Concórdia,2024-11-18,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-18,2024-11-24,7,0
+4,Canoinhas,-50.449254,-26.151944,80,Negativo,Canoinhas,2024-11-18,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-18,2024-11-24,7,0
+5,Lages,-50.181428,-27.770456,80,Negativo,Lages,2024-11-18,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-18,2024-11-24,7,0
+6,São Miguel do Oeste,-53.544454,-26.759542,79,Positivo,São Miguel do Oeste,2024-11-18,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-18,2024-11-24,7,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,79,Positivo,São Lourenço do Oeste,2024-11-18,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-18,2024-11-24,7,0
+8,Xanxerê,-52.432514,-26.832518,80,Negativo,Xanxerê,2024-11-18,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-18,2024-11-24,7,0
+9,Rio do Campo,-50.15544,-26.92884,80,Negativo,Rio do Campo,2024-11-18,9,570,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-18,2024-11-24,7,0
+10,Pouso Redondo,-49.94379,-27.24431,82,Não Avaliado,Pouso Redondo,2024-11-18,9,354,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-18,2024-11-24,7,0
+11,Agronômica,-49.74242,-27.37829,80,Negativo,Agronômica,2024-11-18,9,347,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-18,2024-11-24,7,0
+12,Atalanta,-49.72031,-27.43817,80,Negativo,Atalanta,2024-11-18,9,545,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-18,2024-11-24,7,0
+13,Marema,-52.649944,-26.808271,80,Negativo,Marema,2024-11-18,9,417,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-18,2024-11-24,7,0
+14,Galvão-Jupiá,-52.692097,-26.420925,79,Positivo,Jupiá,2024-11-18,9,855,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-18,2024-11-24,7,0
+15,Galvão,-52.669425,-26.479759,79,Positivo,Galvão,2024-11-18,9,655,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-18,2024-11-24,7,0
+16,Xaxim,-52.54948,-26.939679,80,Negativo,Xaxim,2024-11-18,9,770,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-18,2024-11-24,7,0
+17,Vargeão,-52.11977,-26.73417,82,Não Avaliado,Vargeão,2024-11-18,9,890,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-18,2024-11-24,7,0
+1,Chapecó,-52.641756,-27.024303,80,Negativo,Chapecó,2024-11-25,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-25,2024-12-01,7,0
+2,Campos Novos,-51.29401,-27.468864,79,Positivo,Campos Novos,2024-11-25,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-25,2024-12-01,7,0
+3,Concórdia,-52.031852,-27.192519,80,Negativo,Concórdia,2024-11-25,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-25,2024-12-01,7,0
+4,Canoinhas,-50.449254,-26.151944,80,Negativo,Canoinhas,2024-11-25,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-25,2024-12-01,7,0
+5,Lages,-50.181428,-27.770456,79,Positivo,Lages,2024-11-25,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-25,2024-12-01,7,0
+6,São Miguel do Oeste,-53.544454,-26.759542,82,Não Avaliado,São Miguel do Oeste,2024-11-25,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-25,2024-12-01,7,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,82,Não Avaliado,São Lourenço do Oeste,2024-11-25,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-25,2024-12-01,7,0
+8,Xanxerê,-52.432514,-26.832518,80,Negativo,Xanxerê,2024-11-25,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-25,2024-12-01,7,0
+9,Rio do Campo,-50.15544,-26.92884,80,Negativo,Rio do Campo,2024-11-25,9,570,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-25,2024-12-01,7,0
+10,Pouso Redondo,-49.94379,-27.24431,80,Negativo,Pouso Redondo,2024-11-25,9,354,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-25,2024-12-01,7,0
+11,Agronômica,-49.74242,-27.37829,80,Negativo,Agronômica,2024-11-25,9,347,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-25,2024-12-01,7,0
+12,Atalanta,-49.72031,-27.43817,80,Negativo,Atalanta,2024-11-25,9,545,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-25,2024-12-01,7,0
+13,Marema,-52.649944,-26.808271,80,Negativo,Marema,2024-11-25,9,417,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-25,2024-12-01,7,0
+14,Galvão-Jupiá,-52.692097,-26.420925,80,Negativo,Jupiá,2024-11-25,9,855,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-25,2024-12-01,7,0
+15,Galvão,-52.669425,-26.479759,79,Positivo,Galvão,2024-11-25,9,655,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-25,2024-12-01,7,0
+16,Xaxim,-52.54948,-26.939679,80,Negativo,Xaxim,2024-11-25,9,770,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-25,2024-12-01,7,0
+17,Vargeão,-52.11977,-26.73417,80,Negativo,Vargeão,2024-11-25,9,890,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-11-25,2024-12-01,7,0
+1,Chapecó,-52.641756,-27.024303,80,Negativo,Chapecó,2024-12-02,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-02,2024-12-08,7,0
+2,Campos Novos,-51.29401,-27.468864,79,Positivo,Campos Novos,2024-12-02,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-02,2024-12-08,7,0
+3,Concórdia,-52.031852,-27.192519,79,Positivo,Concórdia,2024-12-02,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-02,2024-12-08,7,0
+4,Canoinhas,-50.449254,-26.151944,80,Negativo,Canoinhas,2024-12-02,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-02,2024-12-08,7,0
+5,Lages,-50.181428,-27.770456,79,Positivo,Lages,2024-12-02,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-02,2024-12-08,7,0
+6,São Miguel do Oeste,-53.544454,-26.759542,80,Negativo,São Miguel do Oeste,2024-12-02,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-02,2024-12-08,7,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,80,Negativo,São Lourenço do Oeste,2024-12-02,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-02,2024-12-08,7,0
+8,Xanxerê,-52.432514,-26.832518,79,Positivo,Xanxerê,2024-12-02,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-02,2024-12-08,7,0
+9,Rio do Campo,-50.15544,-26.92884,80,Negativo,Rio do Campo,2024-12-02,9,570,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-02,2024-12-08,7,0
+10,Pouso Redondo,-49.94379,-27.24431,80,Negativo,Pouso Redondo,2024-12-02,9,354,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-02,2024-12-08,7,0
+11,Agronômica,-49.74242,-27.37829,80,Negativo,Agronômica,2024-12-02,9,347,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-02,2024-12-08,7,0
+12,Atalanta,-49.72031,-27.43817,80,Negativo,Atalanta,2024-12-02,9,545,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-02,2024-12-08,7,0
+13,Marema,-52.649944,-26.808271,80,Negativo,Marema,2024-12-02,9,417,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-02,2024-12-08,7,0
+14,Galvão-Jupiá,-52.692097,-26.420925,79,Positivo,Jupiá,2024-12-02,9,855,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-02,2024-12-08,7,0
+15,Galvão,-52.669425,-26.479759,80,Negativo,Galvão,2024-12-02,9,655,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-02,2024-12-08,7,0
+16,Xaxim,-52.54948,-26.939679,80,Negativo,Xaxim,2024-12-02,9,770,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-02,2024-12-08,7,0
+17,Vargeão,-52.11977,-26.73417,82,Não Avaliado,Vargeão,2024-12-02,9,890,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-02,2024-12-08,7,0
+1,Chapecó,-52.641756,-27.024303,79,Positivo,Chapecó,2024-12-09,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-09,2024-12-15,7,0
+2,Campos Novos,-51.29401,-27.468864,79,Positivo,Campos Novos,2024-12-09,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-09,2024-12-15,7,0
+3,Concórdia,-52.031852,-27.192519,79,Positivo,Concórdia,2024-12-09,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-09,2024-12-15,7,0
+4,Canoinhas,-50.449254,-26.151944,80,Negativo,Canoinhas,2024-12-09,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-09,2024-12-15,7,0
+5,Lages,-50.181428,-27.770456,82,Não Avaliado,Lages,2024-12-09,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-09,2024-12-15,7,0
+6,São Miguel do Oeste,-53.544454,-26.759542,79,Positivo,São Miguel do Oeste,2024-12-09,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-09,2024-12-15,7,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,82,Não Avaliado,São Lourenço do Oeste,2024-12-09,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-09,2024-12-15,7,0
+8,Xanxerê,-52.432514,-26.832518,80,Negativo,Xanxerê,2024-12-09,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-09,2024-12-15,7,0
+9,Rio do Campo,-50.15544,-26.92884,80,Negativo,Rio do Campo,2024-12-09,9,570,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-09,2024-12-15,7,0
+10,Pouso Redondo,-49.94379,-27.24431,80,Negativo,Pouso Redondo,2024-12-09,9,354,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-09,2024-12-15,7,0
+11,Agronômica,-49.74242,-27.37829,80,Negativo,Agronômica,2024-12-09,9,347,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-09,2024-12-15,7,0
+12,Atalanta,-49.72031,-27.43817,80,Negativo,Atalanta,2024-12-09,9,545,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-09,2024-12-15,7,0
+13,Marema,-52.649944,-26.808271,80,Negativo,Marema,2024-12-09,9,417,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-09,2024-12-15,7,0
+14,Galvão-Jupiá,-52.692097,-26.420925,80,Negativo,Jupiá,2024-12-09,9,855,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-09,2024-12-15,7,0
+15,Galvão,-52.669425,-26.479759,79,Positivo,Galvão,2024-12-09,9,655,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-09,2024-12-15,7,0
+16,Xaxim,-52.54948,-26.939679,80,Negativo,Xaxim,2024-12-09,9,770,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-09,2024-12-15,7,0
+17,Vargeão,-52.11977,-26.73417,80,Negativo,Vargeão,2024-12-09,9,890,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-09,2024-12-15,7,0
+1,Chapecó,-52.641756,-27.024303,80,Negativo,Chapecó,2024-12-16,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-16,2024-12-22,7,0
+2,Campos Novos,-51.29401,-27.468864,80,Negativo,Campos Novos,2024-12-16,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-16,2024-12-22,7,0
+3,Concórdia,-52.031852,-27.192519,79,Positivo,Concórdia,2024-12-16,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-16,2024-12-22,7,0
+4,Canoinhas,-50.449254,-26.151944,82,Não Avaliado,Canoinhas,2024-12-16,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-16,2024-12-22,7,0
+5,Lages,-50.181428,-27.770456,82,Não Avaliado,Lages,2024-12-16,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-16,2024-12-22,7,0
+6,São Miguel do Oeste,-53.544454,-26.759542,79,Positivo,São Miguel do Oeste,2024-12-16,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-16,2024-12-22,7,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,79,Positivo,São Lourenço do Oeste,2024-12-16,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-16,2024-12-22,7,0
+8,Xanxerê,-52.432514,-26.832518,79,Positivo,Xanxerê,2024-12-16,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-16,2024-12-22,7,0
+9,Rio do Campo,-50.15544,-26.92884,80,Negativo,Rio do Campo,2024-12-16,9,570,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-16,2024-12-22,7,0
+10,Pouso Redondo,-49.94379,-27.24431,80,Negativo,Pouso Redondo,2024-12-16,9,354,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-16,2024-12-22,7,0
+11,Agronômica,-49.74242,-27.37829,80,Negativo,Agronômica,2024-12-16,9,347,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-16,2024-12-22,7,0
+12,Atalanta,-49.72031,-27.43817,80,Negativo,Atalanta,2024-12-16,9,545,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-16,2024-12-22,7,0
+13,Marema,-52.649944,-26.808271,80,Negativo,Marema,2024-12-16,9,417,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-16,2024-12-22,7,0
+14,Galvão-Jupiá,-52.692097,-26.420925,82,Não Avaliado,Jupiá,2024-12-16,9,855,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-16,2024-12-22,7,0
+15,Galvão,-52.669425,-26.479759,82,Não Avaliado,Galvão,2024-12-16,9,655,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-16,2024-12-22,7,0
+16,Xaxim,-52.54948,-26.939679,79,Positivo,Xaxim,2024-12-16,9,770,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-16,2024-12-22,7,0
+17,Vargeão,-52.11977,-26.73417,80,Negativo,Vargeão,2024-12-16,9,890,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-16,2024-12-22,7,0
+1,Chapecó,-52.641756,-27.024303,82,Não Avaliado,Chapecó,2024-12-23,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-23,2024-12-29,7,0
+2,Campos Novos,-51.29401,-27.468864,82,Não Avaliado,Campos Novos,2024-12-23,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-23,2024-12-29,7,0
+3,Concórdia,-52.031852,-27.192519,82,Não Avaliado,Concórdia,2024-12-23,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-23,2024-12-29,7,0
+4,Canoinhas,-50.449254,-26.151944,82,Não Avaliado,Canoinhas,2024-12-23,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-23,2024-12-29,7,0
+5,Lages,-50.181428,-27.770456,82,Não Avaliado,Lages,2024-12-23,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-23,2024-12-29,7,0
+6,São Miguel do Oeste,-53.544454,-26.759542,82,Não Avaliado,São Miguel do Oeste,2024-12-23,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-23,2024-12-29,7,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,79,Positivo,São Lourenço do Oeste,2024-12-23,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-23,2024-12-29,7,0
+8,Xanxerê,-52.432514,-26.832518,82,Não Avaliado,Xanxerê,2024-12-23,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-23,2024-12-29,7,0
+9,Rio do Campo,-50.15544,-26.92884,82,Não Avaliado,Rio do Campo,2024-12-23,9,570,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-23,2024-12-29,7,0
+10,Pouso Redondo,-49.94379,-27.24431,82,Não Avaliado,Pouso Redondo,2024-12-23,9,354,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-23,2024-12-29,7,0
+11,Agronômica,-49.74242,-27.37829,82,Não Avaliado,Agronômica,2024-12-23,9,347,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-23,2024-12-29,7,0
+12,Atalanta,-49.72031,-27.43817,82,Não Avaliado,Atalanta,2024-12-23,9,545,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-23,2024-12-29,7,0
+13,Marema,-52.649944,-26.808271,82,Não Avaliado,Marema,2024-12-23,9,417,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-23,2024-12-29,7,0
+14,Galvão-Jupiá,-52.692097,-26.420925,82,Não Avaliado,Jupiá,2024-12-23,9,855,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-23,2024-12-29,7,0
+15,Galvão,-52.669425,-26.479759,82,Não Avaliado,Galvão,2024-12-23,9,655,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-23,2024-12-29,7,0
+16,Xaxim,-52.54948,-26.939679,79,Positivo,Xaxim,2024-12-23,9,770,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-23,2024-12-29,7,0
+17,Vargeão,-52.11977,-26.73417,82,Não Avaliado,Vargeão,2024-12-23,9,890,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-23,2024-12-29,7,0
+1,Chapecó,-52.641756,-27.024303,82,Não Avaliado,Chapecó,2024-12-30,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-30,2025-01-05,7,0
+2,Campos Novos,-51.29401,-27.468864,82,Não Avaliado,Campos Novos,2024-12-30,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-30,2025-01-05,7,0
+3,Concórdia,-52.031852,-27.192519,82,Não Avaliado,Concórdia,2024-12-30,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-30,2025-01-05,7,0
+4,Canoinhas,-50.449254,-26.151944,82,Não Avaliado,Canoinhas,2024-12-30,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-30,2025-01-05,7,0
+5,Lages,-50.181428,-27.770456,82,Não Avaliado,Lages,2024-12-30,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-30,2025-01-05,7,0
+6,São Miguel do Oeste,-53.544454,-26.759542,82,Não Avaliado,São Miguel do Oeste,2024-12-30,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-30,2025-01-05,7,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,82,Não Avaliado,São Lourenço do Oeste,2024-12-30,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-30,2025-01-05,7,0
+8,Xanxerê,-52.432514,-26.832518,82,Não Avaliado,Xanxerê,2024-12-30,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-30,2025-01-05,7,0
+9,Rio do Campo,-50.15544,-26.92884,82,Não Avaliado,Rio do Campo,2024-12-30,9,570,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-30,2025-01-05,7,0
+10,Pouso Redondo,-49.94379,-27.24431,82,Não Avaliado,Pouso Redondo,2024-12-30,9,354,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-30,2025-01-05,7,0
+11,Agronômica,-49.74242,-27.37829,82,Não Avaliado,Agronômica,2024-12-30,9,347,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-30,2025-01-05,7,0
+12,Atalanta,-49.72031,-27.43817,82,Não Avaliado,Atalanta,2024-12-30,9,545,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-30,2025-01-05,7,0
+13,Marema,-52.649944,-26.808271,82,Não Avaliado,Marema,2024-12-30,9,417,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-30,2025-01-05,7,0
+14,Galvão-Jupiá,-52.692097,-26.420925,82,Não Avaliado,Jupiá,2024-12-30,9,855,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-30,2025-01-05,7,0
+15,Galvão,-52.669425,-26.479759,82,Não Avaliado,Galvão,2024-12-30,9,655,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-30,2025-01-05,7,0
+16,Xaxim,-52.54948,-26.939679,82,Não Avaliado,Xaxim,2024-12-30,9,770,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-30,2025-01-05,7,0
+17,Vargeão,-52.11977,-26.73417,82,Não Avaliado,Vargeão,2024-12-30,9,890,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2024-12-30,2025-01-05,7,0
+1,Chapecó,-52.641756,-27.024303,82,Não Avaliado,Chapecó,2025-01-06,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-01-06,2025-07-31,207,0
+2,Campos Novos,-51.29401,-27.468864,82,Não Avaliado,Campos Novos,2025-01-06,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-01-06,2025-07-31,207,0
+3,Concórdia,-52.031852,-27.192519,82,Não Avaliado,Concórdia,2025-01-06,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-01-06,2025-07-31,207,0
+4,Canoinhas,-50.449254,-26.151944,82,Não Avaliado,Canoinhas,2025-01-06,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-01-06,2025-07-31,207,0
+5,Lages,-50.181428,-27.770456,82,Não Avaliado,Lages,2025-01-06,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-01-06,2025-07-31,207,0
+6,São Miguel do Oeste,-53.544454,-26.759542,82,Não Avaliado,São Miguel do Oeste,2025-01-06,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-01-06,2025-07-31,207,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,82,Não Avaliado,São Lourenço do Oeste,2025-01-06,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-01-06,2025-07-31,207,0
+8,Xanxerê,-52.432514,-26.832518,82,Não Avaliado,Xanxerê,2025-01-06,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-01-06,2025-07-31,207,0
+9,Rio do Campo,-50.15544,-26.92884,82,Não Avaliado,Rio do Campo,2025-01-06,9,570,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-01-06,2025-07-31,207,0
+10,Pouso Redondo,-49.94379,-27.24431,82,Não Avaliado,Pouso Redondo,2025-01-06,9,354,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-01-06,2025-07-31,207,0
+11,Agronômica,-49.74242,-27.37829,82,Não Avaliado,Agronômica,2025-01-06,9,347,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-01-06,2025-07-31,207,0
+12,Atalanta,-49.72031,-27.43817,82,Não Avaliado,Atalanta,2025-01-06,9,545,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-01-06,2025-07-31,207,0
+13,Marema,-52.649944,-26.808271,82,Não Avaliado,Marema,2025-01-06,9,417,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-01-06,2025-07-31,207,0
+14,Galvão-Jupiá,-52.692097,-26.420925,82,Não Avaliado,Jupiá,2025-01-06,9,855,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-01-06,2025-07-31,207,0
+15,Galvão,-52.669425,-26.479759,82,Não Avaliado,Galvão,2025-01-06,9,655,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-01-06,2025-07-31,207,0
+16,Xaxim,-52.54948,-26.939679,82,Não Avaliado,Xaxim,2025-01-06,9,770,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-01-06,2025-07-31,207,0
+17,Vargeão,-52.11977,-26.73417,79,Positivo,Vargeão,2025-01-06,9,890,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-01-06,2025-07-31,207,0
+1,Chapecó,-52.641756,-27.024303,80,Negativo,Chapecó,2025-08-11,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-08-11,2025-08-17,7,0
+2,Campos Novos,-51.29401,-27.468864,82,Não Avaliado,Campos Novos,2025-08-11,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-08-11,2025-08-17,7,0
+3,Concórdia,-52.031852,-27.192519,82,Não Avaliado,Concórdia,2025-08-11,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-08-11,2025-08-17,7,0
+4,Canoinhas,-50.449254,-26.151944,82,Não Avaliado,Canoinhas,2025-08-11,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-08-11,2025-08-17,7,0
+5,Lages,-50.181428,-27.770456,82,Não Avaliado,Lages,2025-08-11,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-08-11,2025-08-17,7,0
+6,São Miguel do Oeste,-53.544454,-26.759542,82,Não Avaliado,São Miguel do Oeste,2025-08-11,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-08-11,2025-08-17,7,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,80,Negativo,São Lourenço do Oeste,2025-08-11,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-08-11,2025-08-17,7,0
+8,Xanxerê,-52.432514,-26.832518,82,Não Avaliado,Xanxerê,2025-08-11,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-08-11,2025-08-17,7,0
+1,Chapecó,-52.641756,-27.024303,80,Negativo,Chapecó,2025-08-18,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-08-18,2025-08-24,7,0
+2,Campos Novos,-51.29401,-27.468864,80,Negativo,Campos Novos,2025-08-18,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-08-18,2025-08-24,7,0
+3,Concórdia,-52.031852,-27.192519,82,Não Avaliado,Concórdia,2025-08-18,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-08-18,2025-08-24,7,0
+4,Canoinhas,-50.449254,-26.151944,82,Não Avaliado,Canoinhas,2025-08-18,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-08-18,2025-08-24,7,0
+5,Lages,-50.181428,-27.770456,80,Negativo,Lages,2025-08-18,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-08-18,2025-08-24,7,0
+6,São Miguel do Oeste,-53.544454,-26.759542,82,Não Avaliado,São Miguel do Oeste,2025-08-18,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-08-18,2025-08-24,7,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,80,Negativo,São Lourenço do Oeste,2025-08-18,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-08-18,2025-08-24,7,0
+8,Xanxerê,-52.432514,-26.832518,82,Não Avaliado,Xanxerê,2025-08-18,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-08-18,2025-08-24,7,0
+1,Chapecó,-52.641756,-27.024303,79,Positivo,Chapecó,2025-08-25,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-08-25,2025-08-31,7,0
+2,Campos Novos,-51.29401,-27.468864,82,Não Avaliado,Campos Novos,2025-08-25,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-08-25,2025-08-31,7,0
+3,Concórdia,-52.031852,-27.192519,82,Não Avaliado,Concórdia,2025-08-25,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-08-25,2025-08-31,7,0
+4,Canoinhas,-50.449254,-26.151944,82,Não Avaliado,Canoinhas,2025-08-25,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-08-25,2025-08-31,7,0
+5,Lages,-50.181428,-27.770456,80,Negativo,Lages,2025-08-25,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-08-25,2025-08-31,7,0
+6,São Miguel do Oeste,-53.544454,-26.759542,82,Não Avaliado,São Miguel do Oeste,2025-08-25,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-08-25,2025-08-31,7,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,79,Positivo,São Lourenço do Oeste,2025-08-25,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-08-25,2025-08-31,7,0
+8,Xanxerê,-52.432514,-26.832518,79,Positivo,Xanxerê,2025-08-25,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-08-25,2025-08-31,7,0
+1,Chapecó,-52.641756,-27.024303,80,Negativo,Chapecó,2025-09-01,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-09-01,2025-09-07,7,0
+2,Campos Novos,-51.29401,-27.468864,82,Não Avaliado,Campos Novos,2025-09-01,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-09-01,2025-09-07,7,0
+3,Concórdia,-52.031852,-27.192519,82,Não Avaliado,Concórdia,2025-09-01,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-09-01,2025-09-07,7,0
+4,Canoinhas,-50.449254,-26.151944,80,Negativo,Canoinhas,2025-09-01,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-09-01,2025-09-07,7,0
+5,Lages,-50.181428,-27.770456,80,Negativo,Lages,2025-09-01,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-09-01,2025-09-07,7,0
+6,São Miguel do Oeste,-53.544454,-26.759542,79,Positivo,São Miguel do Oeste,2025-09-01,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-09-01,2025-09-07,7,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,80,Negativo,São Lourenço do Oeste,2025-09-01,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-09-01,2025-09-07,7,0
+8,Xanxerê,-52.432514,-26.832518,79,Positivo,Xanxerê,2025-09-01,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-09-01,2025-09-07,7,0
+1,Chapecó,-52.641756,-27.024303,79,Positivo,Chapecó,2025-09-08,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-09-08,2025-09-14,7,0
+2,Campos Novos,-51.29401,-27.468864,79,Positivo,Campos Novos,2025-09-08,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-09-08,2025-09-14,7,0
+3,Concórdia,-52.031852,-27.192519,80,Negativo,Concórdia,2025-09-08,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-09-08,2025-09-14,7,0
+4,Canoinhas,-50.449254,-26.151944,80,Negativo,Canoinhas,2025-09-08,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-09-08,2025-09-14,7,0
+5,Lages,-50.181428,-27.770456,80,Negativo,Lages,2025-09-08,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-09-08,2025-09-14,7,0
+6,São Miguel do Oeste,-53.544454,-26.759542,80,Negativo,São Miguel do Oeste,2025-09-08,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-09-08,2025-09-14,7,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,80,Negativo,São Lourenço do Oeste,2025-09-08,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-09-08,2025-09-14,7,0
+8,Xanxerê,-52.432514,-26.832518,80,Negativo,Xanxerê,2025-09-08,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-09-08,2025-09-14,7,0
+1,Chapecó,-52.641756,-27.024303,80,Negativo,Chapecó,2025-09-15,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-09-15,2025-09-21,7,0
+2,Campos Novos,-51.29401,-27.468864,80,Negativo,Campos Novos,2025-09-15,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-09-15,2025-09-21,7,0
+3,Concórdia,-52.031852,-27.192519,80,Negativo,Concórdia,2025-09-15,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-09-15,2025-09-21,7,0
+4,Canoinhas,-50.449254,-26.151944,79,Positivo,Canoinhas,2025-09-15,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-09-15,2025-09-21,7,0
+5,Lages,-50.181428,-27.770456,80,Negativo,Lages,2025-09-15,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-09-15,2025-09-21,7,0
+6,São Miguel do Oeste,-53.544454,-26.759542,80,Negativo,São Miguel do Oeste,2025-09-15,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-09-15,2025-09-21,7,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,79,Positivo,São Lourenço do Oeste,2025-09-15,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-09-15,2025-09-21,7,0
+8,Xanxerê,-52.432514,-26.832518,80,Negativo,Xanxerê,2025-09-15,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-09-15,2025-09-21,7,0
+1,Chapecó,-52.641756,-27.024303,79,Positivo,Chapecó,2025-09-22,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-09-22,2025-09-28,7,0
+2,Campos Novos,-51.29401,-27.468864,79,Positivo,Campos Novos,2025-09-22,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-09-22,2025-09-28,7,0
+3,Concórdia,-52.031852,-27.192519,79,Positivo,Concórdia,2025-09-22,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-09-22,2025-09-28,7,0
+4,Canoinhas,-50.449254,-26.151944,80,Negativo,Canoinhas,2025-09-22,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-09-22,2025-09-28,7,0
+5,Lages,-50.181428,-27.770456,80,Negativo,Lages,2025-09-22,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-09-22,2025-09-28,7,0
+6,São Miguel do Oeste,-53.544454,-26.759542,79,Positivo,São Miguel do Oeste,2025-09-22,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-09-22,2025-09-28,7,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,79,Positivo,São Lourenço do Oeste,2025-09-22,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-09-22,2025-09-28,7,0
+8,Xanxerê,-52.432514,-26.832518,79,Positivo,Xanxerê,2025-09-22,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-09-22,2025-09-28,7,0
+1,Chapecó,-52.641756,-27.024303,79,Positivo,Chapecó,2025-09-29,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-09-29,2025-10-05,7,0
+2,Campos Novos,-51.29401,-27.468864,79,Positivo,Campos Novos,2025-09-29,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-09-29,2025-10-05,7,0
+3,Concórdia,-52.031852,-27.192519,79,Positivo,Concórdia,2025-09-29,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-09-29,2025-10-05,7,0
+4,Canoinhas,-50.449254,-26.151944,80,Negativo,Canoinhas,2025-09-29,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-09-29,2025-10-05,7,0
+5,Lages,-50.181428,-27.770456,80,Negativo,Lages,2025-09-29,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-09-29,2025-10-05,7,0
+6,São Miguel do Oeste,-53.544454,-26.759542,79,Positivo,São Miguel do Oeste,2025-09-29,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-09-29,2025-10-05,7,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,80,Negativo,São Lourenço do Oeste,2025-09-29,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-09-29,2025-10-05,7,0
+8,Xanxerê,-52.432514,-26.832518,79,Positivo,Xanxerê,2025-09-29,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-09-29,2025-10-05,7,0
+1,Chapecó,-52.641756,-27.024303,79,Positivo,Chapecó,2025-10-06,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-10-06,2025-10-12,7,0
+2,Campos Novos,-51.29401,-27.468864,79,Positivo,Campos Novos,2025-10-06,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-10-06,2025-10-12,7,0
+3,Concórdia,-52.031852,-27.192519,79,Positivo,Concórdia,2025-10-06,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-10-06,2025-10-12,7,0
+4,Canoinhas,-50.449254,-26.151944,80,Negativo,Canoinhas,2025-10-06,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-10-06,2025-10-12,7,0
+5,Lages,-50.181428,-27.770456,80,Negativo,Lages,2025-10-06,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-10-06,2025-10-12,7,0
+6,São Miguel do Oeste,-53.544454,-26.759542,79,Positivo,São Miguel do Oeste,2025-10-06,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-10-06,2025-10-12,7,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,80,Negativo,São Lourenço do Oeste,2025-10-06,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-10-06,2025-10-12,7,0
+8,Xanxerê,-52.432514,-26.832518,79,Positivo,Xanxerê,2025-10-06,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-10-06,2025-10-12,7,0
+1,Chapecó,-52.641756,-27.024303,79,Positivo,Chapecó,2025-10-13,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-10-13,2025-10-19,7,0
+2,Campos Novos,-51.29401,-27.468864,79,Positivo,Campos Novos,2025-10-13,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-10-13,2025-10-19,7,0
+3,Concórdia,-52.031852,-27.192519,80,Negativo,Concórdia,2025-10-13,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-10-13,2025-10-19,7,0
+4,Canoinhas,-50.449254,-26.151944,80,Negativo,Canoinhas,2025-10-13,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-10-13,2025-10-19,7,0
+5,Lages,-50.181428,-27.770456,80,Negativo,Lages,2025-10-13,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-10-13,2025-10-19,7,0
+6,São Miguel do Oeste,-53.544454,-26.759542,79,Positivo,São Miguel do Oeste,2025-10-13,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-10-13,2025-10-19,7,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,80,Negativo,São Lourenço do Oeste,2025-10-13,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-10-13,2025-10-19,7,0
+8,Xanxerê,-52.432514,-26.832518,79,Positivo,Xanxerê,2025-10-13,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-10-13,2025-10-19,7,0
+17,Vargeão,-52.11977,-26.73417,80,Negativo,Vargeão,2025-10-13,9,890,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-10-13,2025-10-19,7,0
+1,Chapecó,-52.641756,-27.024303,79,Positivo,Chapecó,2025-10-20,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-10-20,2025-10-26,7,0
+2,Campos Novos,-51.29401,-27.468864,79,Positivo,Campos Novos,2025-10-20,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-10-20,2025-10-26,7,0
+3,Concórdia,-52.031852,-27.192519,80,Negativo,Concórdia,2025-10-20,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-10-20,2025-10-26,7,0
+4,Canoinhas,-50.449254,-26.151944,79,Positivo,Canoinhas,2025-10-20,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-10-20,2025-10-26,7,0
+5,Lages,-50.181428,-27.770456,80,Negativo,Lages,2025-10-20,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-10-20,2025-10-26,7,0
+6,São Miguel do Oeste,-53.544454,-26.759542,80,Negativo,São Miguel do Oeste,2025-10-20,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-10-20,2025-10-26,7,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,80,Negativo,São Lourenço do Oeste,2025-10-20,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-10-20,2025-10-26,7,0
+8,Xanxerê,-52.432514,-26.832518,79,Positivo,Xanxerê,2025-10-20,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-10-20,2025-10-26,7,0
+17,Vargeão,-52.11977,-26.73417,80,Negativo,Vargeão,2025-10-20,9,890,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-10-20,2025-10-26,7,0
+18,União do Oeste,-52.868573,-26.762279,80,Negativo,União do Oeste,2025-10-20,9,462,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-10-20,2025-10-26,7,0
+1,Chapecó,-52.641756,-27.024303,79,Positivo,Chapecó,2025-10-27,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-10-27,2025-11-02,7,0
+2,Campos Novos,-51.29401,-27.468864,79,Positivo,Campos Novos,2025-10-27,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-10-27,2025-11-02,7,0
+3,Concórdia,-52.031852,-27.192519,80,Negativo,Concórdia,2025-10-27,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-10-27,2025-11-02,7,0
+4,Canoinhas,-50.449254,-26.151944,80,Negativo,Canoinhas,2025-10-27,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-10-27,2025-11-02,7,0
+5,Lages,-50.181428,-27.770456,79,Positivo,Lages,2025-10-27,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-10-27,2025-11-02,7,0
+6,São Miguel do Oeste,-53.544454,-26.759542,79,Positivo,São Miguel do Oeste,2025-10-27,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-10-27,2025-11-02,7,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,79,Positivo,São Lourenço do Oeste,2025-10-27,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-10-27,2025-11-02,7,0
+8,Xanxerê,-52.432514,-26.832518,79,Positivo,Xanxerê,2025-10-27,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-10-27,2025-11-02,7,0
+15,Galvão,-52.669425,-26.479759,80,Negativo,Galvão,2025-10-27,9,655,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-10-27,2025-11-02,7,0
+17,Vargeão,-52.11977,-26.73417,80,Negativo,Vargeão,2025-10-27,9,890,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-10-27,2025-11-02,7,0
+18,União do Oeste,-52.868573,-26.762279,80,Negativo,União do Oeste,2025-10-27,9,462,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-10-27,2025-11-02,7,0
+1,Chapecó,-52.641756,-27.024303,79,Positivo,Chapecó,2025-11-03,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-03,2025-11-09,7,0
+2,Campos Novos,-51.29401,-27.468864,82,Não Avaliado,Campos Novos,2025-11-03,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-03,2025-11-09,7,0
+3,Concórdia,-52.031852,-27.192519,80,Negativo,Concórdia,2025-11-03,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-03,2025-11-09,7,0
+4,Canoinhas,-50.449254,-26.151944,80,Negativo,Canoinhas,2025-11-03,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-03,2025-11-09,7,0
+5,Lages,-50.181428,-27.770456,82,Não Avaliado,Lages,2025-11-03,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-03,2025-11-09,7,0
+6,São Miguel do Oeste,-53.544454,-26.759542,82,Não Avaliado,São Miguel do Oeste,2025-11-03,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-03,2025-11-09,7,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,80,Negativo,São Lourenço do Oeste,2025-11-03,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-03,2025-11-09,7,0
+8,Xanxerê,-52.432514,-26.832518,79,Positivo,Xanxerê,2025-11-03,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-03,2025-11-09,7,0
+15,Galvão,-52.669425,-26.479759,80,Negativo,Galvão,2025-11-03,9,655,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-03,2025-11-09,7,0
+17,Vargeão,-52.11977,-26.73417,80,Negativo,Vargeão,2025-11-03,9,890,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-03,2025-11-09,7,0
+18,União do Oeste,-52.868573,-26.762279,80,Negativo,União do Oeste,2025-11-03,9,462,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-03,2025-11-09,7,0
+21,Campo Erê,-53.133145,-26.363592,80,Negativo,Campo Erê,2025-11-03,9,910,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-03,2025-11-09,7,0
+1,Chapecó,-52.641756,-27.024303,79,Positivo,Chapecó,2025-11-10,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-10,2025-11-16,7,0
+2,Campos Novos,-51.29401,-27.468864,79,Positivo,Campos Novos,2025-11-10,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-10,2025-11-16,7,0
+3,Concórdia,-52.031852,-27.192519,79,Positivo,Concórdia,2025-11-10,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-10,2025-11-16,7,0
+4,Canoinhas,-50.449254,-26.151944,80,Negativo,Canoinhas,2025-11-10,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-10,2025-11-16,7,0
+5,Lages,-50.181428,-27.770456,80,Negativo,Lages,2025-11-10,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-10,2025-11-16,7,0
+6,São Miguel do Oeste,-53.544454,-26.759542,80,Negativo,São Miguel do Oeste,2025-11-10,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-10,2025-11-16,7,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,79,Positivo,São Lourenço do Oeste,2025-11-10,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-10,2025-11-16,7,0
+8,Xanxerê,-52.432514,-26.832518,79,Positivo,Xanxerê,2025-11-10,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-10,2025-11-16,7,0
+15,Galvão,-52.669425,-26.479759,80,Negativo,Galvão,2025-11-10,9,655,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-10,2025-11-16,7,0
+16,Xaxim,-52.54948,-26.939679,79,Positivo,Xaxim,2025-11-10,9,770,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-10,2025-11-16,7,0
+17,Vargeão,-52.11977,-26.73417,80,Negativo,Vargeão,2025-11-10,9,890,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-10,2025-11-16,7,0
+18,União do Oeste,-52.868573,-26.762279,80,Negativo,União do Oeste,2025-11-10,9,462,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-10,2025-11-16,7,0
+19,Ouro Verde,-52.371211,-26.647383,79,Positivo,Ouro Verde,2025-11-10,9,758,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-10,2025-11-16,7,0
+20,Jupiá,-52.692097,-26.420925,80,Negativo,Jupiá,2025-11-10,9,855,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-10,2025-11-16,7,0
+21,Campo Erê,-53.133145,-26.363592,80,Negativo,Campo Erê,2025-11-10,9,910,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-10,2025-11-16,7,0
+1,Chapecó,-52.641756,-27.024303,79,Positivo,Chapecó,2025-11-17,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-17,2025-11-23,7,0
+2,Campos Novos,-51.29401,-27.468864,79,Positivo,Campos Novos,2025-11-17,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-17,2025-11-23,7,0
+3,Concórdia,-52.031852,-27.192519,80,Negativo,Concórdia,2025-11-17,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-17,2025-11-23,7,0
+4,Canoinhas,-50.449254,-26.151944,80,Negativo,Canoinhas,2025-11-17,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-17,2025-11-23,7,0
+5,Lages,-50.181428,-27.770456,80,Negativo,Lages,2025-11-17,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-17,2025-11-23,7,0
+6,São Miguel do Oeste,-53.544454,-26.759542,79,Positivo,São Miguel do Oeste,2025-11-17,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-17,2025-11-23,7,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,79,Positivo,São Lourenço do Oeste,2025-11-17,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-17,2025-11-23,7,0
+8,Xanxerê,-52.432514,-26.832518,79,Positivo,Xanxerê,2025-11-17,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-17,2025-11-23,7,0
+15,Galvão,-52.669425,-26.479759,80,Negativo,Galvão,2025-11-17,9,655,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-17,2025-11-23,7,0
+16,Xaxim,-52.54948,-26.939679,80,Negativo,Xaxim,2025-11-17,9,770,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-17,2025-11-23,7,0
+17,Vargeão,-52.11977,-26.73417,80,Negativo,Vargeão,2025-11-17,9,890,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-17,2025-11-23,7,0
+18,União do Oeste,-52.868573,-26.762279,80,Negativo,União do Oeste,2025-11-17,9,462,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-17,2025-11-23,7,0
+19,Ouro Verde,-52.371211,-26.647383,80,Negativo,Ouro Verde,2025-11-17,9,758,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-17,2025-11-23,7,0
+20,Jupiá,-52.692097,-26.420925,80,Negativo,Jupiá,2025-11-17,9,855,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-17,2025-11-23,7,0
+21,Campo Erê,-53.133145,-26.363592,80,Negativo,Campo Erê,2025-11-17,9,910,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-17,2025-11-23,7,0
+1,Chapecó,-52.641756,-27.024303,80,Negativo,Chapecó,2025-11-24,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-24,2025-11-30,7,0
+2,Campos Novos,-51.29401,-27.468864,79,Positivo,Campos Novos,2025-11-24,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-24,2025-11-30,7,0
+3,Concórdia,-52.031852,-27.192519,80,Negativo,Concórdia,2025-11-24,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-24,2025-11-30,7,0
+4,Canoinhas,-50.449254,-26.151944,79,Positivo,Canoinhas,2025-11-24,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-24,2025-11-30,7,0
+5,Lages,-50.181428,-27.770456,79,Positivo,Lages,2025-11-24,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-24,2025-11-30,7,0
+6,São Miguel do Oeste,-53.544454,-26.759542,80,Negativo,São Miguel do Oeste,2025-11-24,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-24,2025-11-30,7,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,80,Negativo,São Lourenço do Oeste,2025-11-24,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-24,2025-11-30,7,0
+8,Xanxerê,-52.432514,-26.832518,79,Positivo,Xanxerê,2025-11-24,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-24,2025-11-30,7,0
+15,Galvão,-52.669425,-26.479759,79,Positivo,Galvão,2025-11-24,9,655,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-24,2025-11-30,7,0
+16,Xaxim,-52.54948,-26.939679,80,Negativo,Xaxim,2025-11-24,9,770,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-24,2025-11-30,7,0
+17,Vargeão,-52.11977,-26.73417,80,Negativo,Vargeão,2025-11-24,9,890,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-24,2025-11-30,7,0
+18,União do Oeste,-52.868573,-26.762279,79,Positivo,União do Oeste,2025-11-24,9,462,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-24,2025-11-30,7,0
+19,Ouro Verde,-52.371211,-26.647383,80,Negativo,Ouro Verde,2025-11-24,9,758,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-24,2025-11-30,7,0
+20,Jupiá,-52.692097,-26.420925,80,Negativo,Jupiá,2025-11-24,9,855,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-24,2025-11-30,7,0
+21,Campo Erê,-53.133145,-26.363592,80,Negativo,Campo Erê,2025-11-24,9,910,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-24,2025-11-30,7,0
+22,Faxinal dos Guedes,-52.293385,-26.875426,79,Positivo,Faxinal dos Guedes,2025-11-24,9,1005,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-11-24,2025-11-30,7,0
+1,Chapecó,-52.641756,-27.024303,79,Positivo,Chapecó,2025-12-01,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-01,2025-12-07,7,0
+2,Campos Novos,-51.29401,-27.468864,79,Positivo,Campos Novos,2025-12-01,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-01,2025-12-07,7,0
+3,Concórdia,-52.031852,-27.192519,79,Positivo,Concórdia,2025-12-01,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-01,2025-12-07,7,0
+4,Canoinhas,-50.449254,-26.151944,80,Negativo,Canoinhas,2025-12-01,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-01,2025-12-07,7,0
+5,Lages,-50.181428,-27.770456,79,Positivo,Lages,2025-12-01,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-01,2025-12-07,7,0
+6,São Miguel do Oeste,-53.544454,-26.759542,80,Negativo,São Miguel do Oeste,2025-12-01,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-01,2025-12-07,7,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,80,Negativo,São Lourenço do Oeste,2025-12-01,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-01,2025-12-07,7,0
+8,Xanxerê,-52.432514,-26.832518,80,Negativo,Xanxerê,2025-12-01,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-01,2025-12-07,7,0
+11,Agronômica,-49.74242,-27.37829,80,Negativo,Agronômica,2025-12-01,9,347,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-01,2025-12-07,7,0
+12,Atalanta,-49.72031,-27.43817,80,Negativo,Atalanta,2025-12-01,9,545,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-01,2025-12-07,7,0
+15,Galvão,-52.669425,-26.479759,79,Positivo,Galvão,2025-12-01,9,655,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-01,2025-12-07,7,0
+16,Xaxim,-52.54948,-26.939679,80,Negativo,Xaxim,2025-12-01,9,770,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-01,2025-12-07,7,0
+17,Vargeão,-52.11977,-26.73417,80,Negativo,Vargeão,2025-12-01,9,890,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-01,2025-12-07,7,0
+18,União do Oeste,-52.868573,-26.762279,79,Positivo,União do Oeste,2025-12-01,9,462,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-01,2025-12-07,7,0
+19,Ouro Verde,-52.371211,-26.647383,80,Negativo,Ouro Verde,2025-12-01,9,758,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-01,2025-12-07,7,0
+20,Jupiá,-52.692097,-26.420925,80,Negativo,Jupiá,2025-12-01,9,855,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-01,2025-12-07,7,0
+21,Campo Erê,-53.133145,-26.363592,79,Positivo,Campo Erê,2025-12-01,9,910,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-01,2025-12-07,7,0
+22,Faxinal dos Guedes,-52.293385,-26.875426,80,Negativo,Faxinal dos Guedes,2025-12-01,9,1005,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-01,2025-12-07,7,0
+23,Bom Jesus,-52.418805,-26.773989,79,Positivo,Bom Jesus,2025-12-01,9,669,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-01,2025-12-07,7,0
+1,Chapecó,-52.641756,-27.024303,80,Negativo,Chapecó,2025-12-08,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-08,2025-12-14,7,0
+2,Campos Novos,-51.29401,-27.468864,80,Negativo,Campos Novos,2025-12-08,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-08,2025-12-14,7,0
+3,Concórdia,-52.031852,-27.192519,80,Negativo,Concórdia,2025-12-08,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-08,2025-12-14,7,0
+4,Canoinhas,-50.449254,-26.151944,80,Negativo,Canoinhas,2025-12-08,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-08,2025-12-14,7,0
+5,Lages,-50.181428,-27.770456,79,Positivo,Lages,2025-12-08,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-08,2025-12-14,7,0
+6,São Miguel do Oeste,-53.544454,-26.759542,79,Positivo,São Miguel do Oeste,2025-12-08,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-08,2025-12-14,7,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,80,Negativo,São Lourenço do Oeste,2025-12-08,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-08,2025-12-14,7,0
+8,Xanxerê,-52.432514,-26.832518,79,Positivo,Xanxerê,2025-12-08,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-08,2025-12-14,7,0
+11,Agronômica,-49.74242,-27.37829,80,Negativo,Agronômica,2025-12-08,9,347,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-08,2025-12-14,7,0
+12,Atalanta,-49.72031,-27.43817,80,Negativo,Atalanta,2025-12-08,9,545,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-08,2025-12-14,7,0
+15,Galvão,-52.669425,-26.479759,80,Negativo,Galvão,2025-12-08,9,655,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-08,2025-12-14,7,0
+16,Xaxim,-52.54948,-26.939679,79,Positivo,Xaxim,2025-12-08,9,770,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-08,2025-12-14,7,0
+17,Vargeão,-52.11977,-26.73417,79,Positivo,Vargeão,2025-12-08,9,890,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-08,2025-12-14,7,0
+18,União do Oeste,-52.868573,-26.762279,80,Negativo,União do Oeste,2025-12-08,9,462,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-08,2025-12-14,7,0
+19,Ouro Verde,-52.371211,-26.647383,79,Positivo,Ouro Verde,2025-12-08,9,758,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-08,2025-12-14,7,0
+20,Jupiá,-52.692097,-26.420925,80,Negativo,Jupiá,2025-12-08,9,855,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-08,2025-12-14,7,0
+21,Campo Erê,-53.133145,-26.363592,80,Negativo,Campo Erê,2025-12-08,9,910,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-08,2025-12-14,7,0
+22,Faxinal dos Guedes,-52.293385,-26.875426,79,Positivo,Faxinal dos Guedes,2025-12-08,9,1005,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-08,2025-12-14,7,0
+23,Bom Jesus,-52.418805,-26.773989,79,Positivo,Bom Jesus,2025-12-08,9,669,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-08,2025-12-14,7,0
+1,Chapecó,-52.641756,-27.024303,80,Negativo,Chapecó,2025-12-15,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-15,2025-12-21,7,0
+2,Campos Novos,-51.29401,-27.468864,80,Negativo,Campos Novos,2025-12-15,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-15,2025-12-21,7,0
+3,Concórdia,-52.031852,-27.192519,79,Positivo,Concórdia,2025-12-15,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-15,2025-12-21,7,0
+4,Canoinhas,-50.449254,-26.151944,79,Positivo,Canoinhas,2025-12-15,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-15,2025-12-21,7,0
+5,Lages,-50.181428,-27.770456,79,Positivo,Lages,2025-12-15,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-15,2025-12-21,7,0
+6,São Miguel do Oeste,-53.544454,-26.759542,80,Negativo,São Miguel do Oeste,2025-12-15,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-15,2025-12-21,7,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,79,Positivo,São Lourenço do Oeste,2025-12-15,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-15,2025-12-21,7,0
+8,Xanxerê,-52.432514,-26.832518,79,Positivo,Xanxerê,2025-12-15,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-15,2025-12-21,7,0
+11,Agronômica,-49.74242,-27.37829,80,Negativo,Agronômica,2025-12-15,9,347,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-15,2025-12-21,7,0
+12,Atalanta,-49.72031,-27.43817,80,Negativo,Atalanta,2025-12-15,9,545,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-15,2025-12-21,7,0
+15,Galvão,-52.669425,-26.479759,82,Não Avaliado,Galvão,2025-12-15,9,655,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-15,2025-12-21,7,0
+16,Xaxim,-52.54948,-26.939679,79,Positivo,Xaxim,2025-12-15,9,770,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-15,2025-12-21,7,0
+17,Vargeão,-52.11977,-26.73417,79,Positivo,Vargeão,2025-12-15,9,890,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-15,2025-12-21,7,0
+18,União do Oeste,-52.868573,-26.762279,80,Negativo,União do Oeste,2025-12-15,9,462,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-15,2025-12-21,7,0
+19,Ouro Verde,-52.371211,-26.647383,82,Não Avaliado,Ouro Verde,2025-12-15,9,758,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-15,2025-12-21,7,0
+20,Jupiá,-52.692097,-26.420925,82,Não Avaliado,Jupiá,2025-12-15,9,855,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-15,2025-12-21,7,0
+21,Campo Erê,-53.133145,-26.363592,80,Negativo,Campo Erê,2025-12-15,9,910,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-15,2025-12-21,7,0
+22,Faxinal dos Guedes,-52.293385,-26.875426,79,Positivo,Faxinal dos Guedes,2025-12-15,9,1005,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-15,2025-12-21,7,0
+23,Bom Jesus,-52.418805,-26.773989,79,Positivo,Bom Jesus,2025-12-15,9,669,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-15,2025-12-21,7,0
+1,Chapecó,-52.641756,-27.024303,79,Positivo,Chapecó,2025-12-22,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-22,2026-01-04,14,0
+2,Campos Novos,-51.29401,-27.468864,82,Não Avaliado,Campos Novos,2025-12-22,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-22,2026-01-04,14,0
+3,Concórdia,-52.031852,-27.192519,82,Não Avaliado,Concórdia,2025-12-22,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-22,2026-01-04,14,0
+4,Canoinhas,-50.449254,-26.151944,82,Não Avaliado,Canoinhas,2025-12-22,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-22,2026-01-04,14,0
+5,Lages,-50.181428,-27.770456,82,Não Avaliado,Lages,2025-12-22,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-22,2026-01-04,14,0
+6,São Miguel do Oeste,-53.544454,-26.759542,82,Não Avaliado,São Miguel do Oeste,2025-12-22,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-22,2026-01-04,14,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,82,Não Avaliado,São Lourenço do Oeste,2025-12-22,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-22,2026-01-04,14,0
+8,Xanxerê,-52.432514,-26.832518,82,Não Avaliado,Xanxerê,2025-12-22,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-22,2026-01-04,14,0
+11,Agronômica,-49.74242,-27.37829,82,Não Avaliado,Agronômica,2025-12-22,9,347,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-22,2026-01-04,14,0
+12,Atalanta,-49.72031,-27.43817,82,Não Avaliado,Atalanta,2025-12-22,9,545,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-22,2026-01-04,14,0
+15,Galvão,-52.669425,-26.479759,82,Não Avaliado,Galvão,2025-12-22,9,655,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-22,2026-01-04,14,0
+16,Xaxim,-52.54948,-26.939679,82,Não Avaliado,Xaxim,2025-12-22,9,770,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-22,2026-01-04,14,0
+17,Vargeão,-52.11977,-26.73417,82,Não Avaliado,Vargeão,2025-12-22,9,890,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-22,2026-01-04,14,0
+18,União do Oeste,-52.868573,-26.762279,79,Positivo,União do Oeste,2025-12-22,9,462,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-22,2026-01-04,14,0
+19,Ouro Verde,-52.371211,-26.647383,82,Não Avaliado,Ouro Verde,2025-12-22,9,758,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-22,2026-01-04,14,0
+20,Jupiá,-52.692097,-26.420925,82,Não Avaliado,Jupiá,2025-12-22,9,855,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-22,2026-01-04,14,0
+21,Campo Erê,-53.133145,-26.363592,82,Não Avaliado,Campo Erê,2025-12-22,9,910,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-22,2026-01-04,14,0
+22,Faxinal dos Guedes,-52.293385,-26.875426,79,Positivo,Faxinal dos Guedes,2025-12-22,9,1005,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-22,2026-01-04,14,0
+23,Bom Jesus,-52.418805,-26.773989,82,Não Avaliado,Bom Jesus,2025-12-22,9,669,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2025-12-22,2026-01-04,14,0
+1,Chapecó,-52.641756,-27.024303,82,Não Avaliado,Chapecó,2026-01-05,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-05,2026-01-11,7,0
+2,Campos Novos,-51.29401,-27.468864,79,Positivo,Campos Novos,2026-01-05,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-05,2026-01-11,7,0
+3,Concórdia,-52.031852,-27.192519,82,Não Avaliado,Concórdia,2026-01-05,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-05,2026-01-11,7,0
+4,Canoinhas,-50.449254,-26.151944,80,Negativo,Canoinhas,2026-01-05,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-05,2026-01-11,7,0
+5,Lages,-50.181428,-27.770456,82,Não Avaliado,Lages,2026-01-05,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-05,2026-01-11,7,0
+6,São Miguel do Oeste,-53.544454,-26.759542,82,Não Avaliado,São Miguel do Oeste,2026-01-05,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-05,2026-01-11,7,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,79,Positivo,São Lourenço do Oeste,2026-01-05,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-05,2026-01-11,7,0
+8,Xanxerê,-52.432514,-26.832518,82,Não Avaliado,Xanxerê,2026-01-05,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-05,2026-01-11,7,0
+11,Agronômica,-49.74242,-27.37829,80,Negativo,Agronômica,2026-01-05,9,347,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-05,2026-01-11,7,0
+12,Atalanta,-49.72031,-27.43817,80,Negativo,Atalanta,2026-01-05,9,545,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-05,2026-01-11,7,0
+15,Galvão,-52.669425,-26.479759,82,Não Avaliado,Galvão,2026-01-05,9,655,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-05,2026-01-11,7,0
+16,Xaxim,-52.54948,-26.939679,82,Não Avaliado,Xaxim,2026-01-05,9,770,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-05,2026-01-11,7,0
+17,Vargeão,-52.11977,-26.73417,82,Não Avaliado,Vargeão,2026-01-05,9,890,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-05,2026-01-11,7,0
+18,União do Oeste,-52.868573,-26.762279,79,Positivo,União do Oeste,2026-01-05,9,462,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-05,2026-01-11,7,0
+19,Ouro Verde,-52.371211,-26.647383,82,Não Avaliado,Ouro Verde,2026-01-05,9,758,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-05,2026-01-11,7,0
+20,Jupiá,-52.692097,-26.420925,82,Não Avaliado,Jupiá,2026-01-05,9,855,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-05,2026-01-11,7,0
+21,Campo Erê,-53.133145,-26.363592,82,Não Avaliado,Campo Erê,2026-01-05,9,910,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-05,2026-01-11,7,0
+22,Faxinal dos Guedes,-52.293385,-26.875426,79,Positivo,Faxinal dos Guedes,2026-01-05,9,1005,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-05,2026-01-11,7,0
+23,Bom Jesus,-52.418805,-26.773989,79,Positivo,Bom Jesus,2026-01-05,9,669,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-05,2026-01-11,7,0
+1,Chapecó,-52.641756,-27.024303,82,Não Avaliado,Chapecó,2026-01-12,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-12,2026-01-18,7,0
+2,Campos Novos,-51.29401,-27.468864,79,Positivo,Campos Novos,2026-01-12,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-12,2026-01-18,7,0
+3,Concórdia,-52.031852,-27.192519,82,Não Avaliado,Concórdia,2026-01-12,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-12,2026-01-18,7,0
+4,Canoinhas,-50.449254,-26.151944,80,Negativo,Canoinhas,2026-01-12,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-12,2026-01-18,7,0
+5,Lages,-50.181428,-27.770456,79,Positivo,Lages,2026-01-12,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-12,2026-01-18,7,0
+6,São Miguel do Oeste,-53.544454,-26.759542,82,Não Avaliado,São Miguel do Oeste,2026-01-12,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-12,2026-01-18,7,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,79,Positivo,São Lourenço do Oeste,2026-01-12,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-12,2026-01-18,7,0
+8,Xanxerê,-52.432514,-26.832518,79,Positivo,Xanxerê,2026-01-12,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-12,2026-01-18,7,0
+11,Agronômica,-49.74242,-27.37829,82,Não Avaliado,Agronômica,2026-01-12,9,347,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-12,2026-01-18,7,0
+12,Atalanta,-49.72031,-27.43817,82,Não Avaliado,Atalanta,2026-01-12,9,545,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-12,2026-01-18,7,0
+15,Galvão,-52.669425,-26.479759,82,Não Avaliado,Galvão,2026-01-12,9,655,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-12,2026-01-18,7,0
+16,Xaxim,-52.54948,-26.939679,79,Positivo,Xaxim,2026-01-12,9,770,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-12,2026-01-18,7,0
+17,Vargeão,-52.11977,-26.73417,82,Não Avaliado,Vargeão,2026-01-12,9,890,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-12,2026-01-18,7,0
+18,União do Oeste,-52.868573,-26.762279,79,Positivo,União do Oeste,2026-01-12,9,462,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-12,2026-01-18,7,0
+19,Ouro Verde,-52.371211,-26.647383,82,Não Avaliado,Ouro Verde,2026-01-12,9,758,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-12,2026-01-18,7,0
+20,Jupiá,-52.692097,-26.420925,82,Não Avaliado,Jupiá,2026-01-12,9,855,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-12,2026-01-18,7,0
+21,Campo Erê,-53.133145,-26.363592,82,Não Avaliado,Campo Erê,2026-01-12,9,910,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-12,2026-01-18,7,0
+22,Faxinal dos Guedes,-52.293385,-26.875426,79,Positivo,Faxinal dos Guedes,2026-01-12,9,1005,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-12,2026-01-18,7,0
+23,Bom Jesus,-52.418805,-26.773989,79,Positivo,Bom Jesus,2026-01-12,9,669,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-12,2026-01-18,7,0
+1,Chapecó,-52.641756,-27.024303,82,Não Avaliado,Chapecó,2026-01-19,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-19,2026-01-25,7,0
+2,Campos Novos,-51.29401,-27.468864,80,Negativo,Campos Novos,2026-01-19,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-19,2026-01-25,7,0
+3,Concórdia,-52.031852,-27.192519,82,Não Avaliado,Concórdia,2026-01-19,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-19,2026-01-25,7,0
+4,Canoinhas,-50.449254,-26.151944,79,Positivo,Canoinhas,2026-01-19,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-19,2026-01-25,7,0
+5,Lages,-50.181428,-27.770456,80,Negativo,Lages,2026-01-19,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-19,2026-01-25,7,0
+6,São Miguel do Oeste,-53.544454,-26.759542,82,Não Avaliado,São Miguel do Oeste,2026-01-19,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-19,2026-01-25,7,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,79,Positivo,São Lourenço do Oeste,2026-01-19,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-19,2026-01-25,7,0
+8,Xanxerê,-52.432514,-26.832518,79,Positivo,Xanxerê,2026-01-19,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-19,2026-01-25,7,0
+11,Agronômica,-49.74242,-27.37829,80,Negativo,Agronômica,2026-01-19,9,347,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-19,2026-01-25,7,0
+12,Atalanta,-49.72031,-27.43817,80,Negativo,Atalanta,2026-01-19,9,545,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-19,2026-01-25,7,0
+15,Galvão,-52.669425,-26.479759,82,Não Avaliado,Galvão,2026-01-19,9,655,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-19,2026-01-25,7,0
+16,Xaxim,-52.54948,-26.939679,82,Não Avaliado,Xaxim,2026-01-19,9,770,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-19,2026-01-25,7,0
+17,Vargeão,-52.11977,-26.73417,82,Não Avaliado,Vargeão,2026-01-19,9,890,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-19,2026-01-25,7,0
+18,União do Oeste,-52.868573,-26.762279,79,Positivo,União do Oeste,2026-01-19,9,462,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-19,2026-01-25,7,0
+19,Ouro Verde,-52.371211,-26.647383,82,Não Avaliado,Ouro Verde,2026-01-19,9,758,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-19,2026-01-25,7,0
+20,Jupiá,-52.692097,-26.420925,82,Não Avaliado,Jupiá,2026-01-19,9,855,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-19,2026-01-25,7,0
+21,Campo Erê,-53.133145,-26.363592,82,Não Avaliado,Campo Erê,2026-01-19,9,910,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-19,2026-01-25,7,0
+22,Faxinal dos Guedes,-52.293385,-26.875426,79,Positivo,Faxinal dos Guedes,2026-01-19,9,1005,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-19,2026-01-25,7,0
+23,Bom Jesus,-52.418805,-26.773989,82,Não Avaliado,Bom Jesus,2026-01-19,9,669,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-19,2026-01-25,7,0
+1,Chapecó,-52.641756,-27.024303,80,Negativo,Chapecó,2026-01-26,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-26,2026-02-01,7,0
+2,Campos Novos,-51.29401,-27.468864,80,Negativo,Campos Novos,2026-01-26,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-26,2026-02-01,7,0
+3,Concórdia,-52.031852,-27.192519,82,Não Avaliado,Concórdia,2026-01-26,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-26,2026-02-01,7,0
+4,Canoinhas,-50.449254,-26.151944,80,Negativo,Canoinhas,2026-01-26,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-26,2026-02-01,7,0
+5,Lages,-50.181428,-27.770456,79,Positivo,Lages,2026-01-26,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-26,2026-02-01,7,0
+6,São Miguel do Oeste,-53.544454,-26.759542,82,Não Avaliado,São Miguel do Oeste,2026-01-26,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-26,2026-02-01,7,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,79,Positivo,São Lourenço do Oeste,2026-01-26,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-26,2026-02-01,7,0
+8,Xanxerê,-52.432514,-26.832518,80,Negativo,Xanxerê,2026-01-26,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-26,2026-02-01,7,0
+11,Agronômica,-49.74242,-27.37829,80,Negativo,Agronômica,2026-01-26,9,347,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-26,2026-02-01,7,0
+12,Atalanta,-49.72031,-27.43817,80,Negativo,Atalanta,2026-01-26,9,545,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-26,2026-02-01,7,0
+15,Galvão,-52.669425,-26.479759,82,Não Avaliado,Galvão,2026-01-26,9,655,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-26,2026-02-01,7,0
+16,Xaxim,-52.54948,-26.939679,82,Não Avaliado,Xaxim,2026-01-26,9,770,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-26,2026-02-01,7,0
+17,Vargeão,-52.11977,-26.73417,82,Não Avaliado,Vargeão,2026-01-26,9,890,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-26,2026-02-01,7,0
+18,União do Oeste,-52.868573,-26.762279,79,Positivo,União do Oeste,2026-01-26,9,462,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-26,2026-02-01,7,0
+19,Ouro Verde,-52.371211,-26.647383,82,Não Avaliado,Ouro Verde,2026-01-26,9,758,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-26,2026-02-01,7,0
+20,Jupiá,-52.692097,-26.420925,82,Não Avaliado,Jupiá,2026-01-26,9,855,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-26,2026-02-01,7,0
+21,Campo Erê,-53.133145,-26.363592,82,Não Avaliado,Campo Erê,2026-01-26,9,910,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-26,2026-02-01,7,0
+22,Faxinal dos Guedes,-52.293385,-26.875426,82,Não Avaliado,Faxinal dos Guedes,2026-01-26,9,1005,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-26,2026-02-01,7,0
+23,Bom Jesus,-52.418805,-26.773989,82,Não Avaliado,Bom Jesus,2026-01-26,9,669,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-01-26,2026-02-01,7,0
+1,Chapecó,-52.641756,-27.024303,79,Positivo,Chapecó,2026-02-02,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-02,2026-02-08,7,0
+2,Campos Novos,-51.29401,-27.468864,79,Positivo,Campos Novos,2026-02-02,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-02,2026-02-08,7,0
+3,Concórdia,-52.031852,-27.192519,82,Não Avaliado,Concórdia,2026-02-02,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-02,2026-02-08,7,0
+4,Canoinhas,-50.449254,-26.151944,82,Não Avaliado,Canoinhas,2026-02-02,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-02,2026-02-08,7,0
+5,Lages,-50.181428,-27.770456,80,Negativo,Lages,2026-02-02,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-02,2026-02-08,7,0
+6,São Miguel do Oeste,-53.544454,-26.759542,82,Não Avaliado,São Miguel do Oeste,2026-02-02,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-02,2026-02-08,7,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,82,Não Avaliado,São Lourenço do Oeste,2026-02-02,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-02,2026-02-08,7,0
+8,Xanxerê,-52.432514,-26.832518,79,Positivo,Xanxerê,2026-02-02,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-02,2026-02-08,7,0
+11,Agronômica,-49.74242,-27.37829,80,Negativo,Agronômica,2026-02-02,9,347,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-02,2026-02-08,7,0
+12,Atalanta,-49.72031,-27.43817,80,Negativo,Atalanta,2026-02-02,9,545,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-02,2026-02-08,7,0
+15,Galvão,-52.669425,-26.479759,82,Não Avaliado,Galvão,2026-02-02,9,655,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-02,2026-02-08,7,0
+16,Xaxim,-52.54948,-26.939679,82,Não Avaliado,Xaxim,2026-02-02,9,770,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-02,2026-02-08,7,0
+17,Vargeão,-52.11977,-26.73417,82,Não Avaliado,Vargeão,2026-02-02,9,890,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-02,2026-02-08,7,0
+18,União do Oeste,-52.868573,-26.762279,79,Positivo,União do Oeste,2026-02-02,9,462,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-02,2026-02-08,7,0
+19,Ouro Verde,-52.371211,-26.647383,82,Não Avaliado,Ouro Verde,2026-02-02,9,758,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-02,2026-02-08,7,0
+20,Jupiá,-52.692097,-26.420925,82,Não Avaliado,Jupiá,2026-02-02,9,855,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-02,2026-02-08,7,0
+21,Campo Erê,-53.133145,-26.363592,82,Não Avaliado,Campo Erê,2026-02-02,9,910,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-02,2026-02-08,7,0
+22,Faxinal dos Guedes,-52.293385,-26.875426,79,Positivo,Faxinal dos Guedes,2026-02-02,9,1005,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-02,2026-02-08,7,0
+23,Bom Jesus,-52.418805,-26.773989,82,Não Avaliado,Bom Jesus,2026-02-02,9,669,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-02,2026-02-08,7,0
+1,Chapecó,-52.641756,-27.024303,79,Positivo,Chapecó,2026-02-09,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-09,2026-02-15,7,0
+2,Campos Novos,-51.29401,-27.468864,80,Negativo,Campos Novos,2026-02-09,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-09,2026-02-15,7,0
+3,Concórdia,-52.031852,-27.192519,82,Não Avaliado,Concórdia,2026-02-09,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-09,2026-02-15,7,0
+4,Canoinhas,-50.449254,-26.151944,82,Não Avaliado,Canoinhas,2026-02-09,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-09,2026-02-15,7,0
+5,Lages,-50.181428,-27.770456,80,Negativo,Lages,2026-02-09,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-09,2026-02-15,7,0
+6,São Miguel do Oeste,-53.544454,-26.759542,82,Não Avaliado,São Miguel do Oeste,2026-02-09,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-09,2026-02-15,7,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,82,Não Avaliado,São Lourenço do Oeste,2026-02-09,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-09,2026-02-15,7,0
+8,Xanxerê,-52.432514,-26.832518,79,Positivo,Xanxerê,2026-02-09,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-09,2026-02-15,7,0
+11,Agronômica,-49.74242,-27.37829,80,Negativo,Agronômica,2026-02-09,9,347,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-09,2026-02-15,7,0
+12,Atalanta,-49.72031,-27.43817,80,Negativo,Atalanta,2026-02-09,9,545,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-09,2026-02-15,7,0
+15,Galvão,-52.669425,-26.479759,82,Não Avaliado,Galvão,2026-02-09,9,655,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-09,2026-02-15,7,0
+16,Xaxim,-52.54948,-26.939679,82,Não Avaliado,Xaxim,2026-02-09,9,770,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-09,2026-02-15,7,0
+17,Vargeão,-52.11977,-26.73417,82,Não Avaliado,Vargeão,2026-02-09,9,890,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-09,2026-02-15,7,0
+18,União do Oeste,-52.868573,-26.762279,79,Positivo,União do Oeste,2026-02-09,9,462,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-09,2026-02-15,7,0
+19,Ouro Verde,-52.371211,-26.647383,82,Não Avaliado,Ouro Verde,2026-02-09,9,758,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-09,2026-02-15,7,0
+20,Jupiá,-52.692097,-26.420925,82,Não Avaliado,Jupiá,2026-02-09,9,855,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-09,2026-02-15,7,0
+21,Campo Erê,-53.133145,-26.363592,82,Não Avaliado,Campo Erê,2026-02-09,9,910,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-09,2026-02-15,7,0
+22,Faxinal dos Guedes,-52.293385,-26.875426,79,Positivo,Faxinal dos Guedes,2026-02-09,9,1005,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-09,2026-02-15,7,0
+23,Bom Jesus,-52.418805,-26.773989,82,Não Avaliado,Bom Jesus,2026-02-09,9,669,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-09,2026-02-15,7,0
+1,Chapecó,-52.641756,-27.024303,82,Não Avaliado,Chapecó,2026-02-16,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-16,2026-02-22,7,0
+2,Campos Novos,-51.29401,-27.468864,82,Não Avaliado,Campos Novos,2026-02-16,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-16,2026-02-22,7,0
+3,Concórdia,-52.031852,-27.192519,82,Não Avaliado,Concórdia,2026-02-16,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-16,2026-02-22,7,0
+4,Canoinhas,-50.449254,-26.151944,82,Não Avaliado,Canoinhas,2026-02-16,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-16,2026-02-22,7,0
+5,Lages,-50.181428,-27.770456,82,Não Avaliado,Lages,2026-02-16,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-16,2026-02-22,7,0
+6,São Miguel do Oeste,-53.544454,-26.759542,82,Não Avaliado,São Miguel do Oeste,2026-02-16,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-16,2026-02-22,7,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,82,Não Avaliado,São Lourenço do Oeste,2026-02-16,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-16,2026-02-22,7,0
+8,Xanxerê,-52.432514,-26.832518,82,Não Avaliado,Xanxerê,2026-02-16,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-16,2026-02-22,7,0
+11,Agronômica,-49.74242,-27.37829,80,Negativo,Agronômica,2026-02-16,9,347,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-16,2026-02-22,7,0
+12,Atalanta,-49.72031,-27.43817,80,Negativo,Atalanta,2026-02-16,9,545,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-16,2026-02-22,7,0
+15,Galvão,-52.669425,-26.479759,82,Não Avaliado,Galvão,2026-02-16,9,655,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-16,2026-02-22,7,0
+16,Xaxim,-52.54948,-26.939679,82,Não Avaliado,Xaxim,2026-02-16,9,770,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-16,2026-02-22,7,0
+17,Vargeão,-52.11977,-26.73417,82,Não Avaliado,Vargeão,2026-02-16,9,890,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-16,2026-02-22,7,0
+18,União do Oeste,-52.868573,-26.762279,82,Não Avaliado,União do Oeste,2026-02-16,9,462,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-16,2026-02-22,7,0
+19,Ouro Verde,-52.371211,-26.647383,82,Não Avaliado,Ouro Verde,2026-02-16,9,758,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-16,2026-02-22,7,0
+20,Jupiá,-52.692097,-26.420925,82,Não Avaliado,Jupiá,2026-02-16,9,855,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-16,2026-02-22,7,0
+21,Campo Erê,-53.133145,-26.363592,82,Não Avaliado,Campo Erê,2026-02-16,9,910,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-16,2026-02-22,7,0
+22,Faxinal dos Guedes,-52.293385,-26.875426,82,Não Avaliado,Faxinal dos Guedes,2026-02-16,9,1005,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-16,2026-02-22,7,0
+23,Bom Jesus,-52.418805,-26.773989,82,Não Avaliado,Bom Jesus,2026-02-16,9,669,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-16,2026-02-22,7,0
+1,Chapecó,-52.641756,-27.024303,79,Positivo,Chapecó,2026-02-23,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-23,2026-03-01,7,0
+2,Campos Novos,-51.29401,-27.468864,79,Positivo,Campos Novos,2026-02-23,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-23,2026-03-01,7,0
+3,Concórdia,-52.031852,-27.192519,82,Não Avaliado,Concórdia,2026-02-23,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-23,2026-03-01,7,0
+4,Canoinhas,-50.449254,-26.151944,82,Não Avaliado,Canoinhas,2026-02-23,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-23,2026-03-01,7,0
+5,Lages,-50.181428,-27.770456,80,Negativo,Lages,2026-02-23,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-23,2026-03-01,7,0
+6,São Miguel do Oeste,-53.544454,-26.759542,82,Não Avaliado,São Miguel do Oeste,2026-02-23,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-23,2026-03-01,7,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,82,Não Avaliado,São Lourenço do Oeste,2026-02-23,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-23,2026-03-01,7,0
+8,Xanxerê,-52.432514,-26.832518,79,Positivo,Xanxerê,2026-02-23,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-23,2026-03-01,7,0
+11,Agronômica,-49.74242,-27.37829,80,Negativo,Agronômica,2026-02-23,9,347,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-23,2026-03-01,7,0
+12,Atalanta,-49.72031,-27.43817,80,Negativo,Atalanta,2026-02-23,9,545,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-23,2026-03-01,7,0
+15,Galvão,-52.669425,-26.479759,82,Não Avaliado,Galvão,2026-02-23,9,655,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-23,2026-03-01,7,0
+16,Xaxim,-52.54948,-26.939679,82,Não Avaliado,Xaxim,2026-02-23,9,770,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-23,2026-03-01,7,0
+17,Vargeão,-52.11977,-26.73417,82,Não Avaliado,Vargeão,2026-02-23,9,890,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-23,2026-03-01,7,0
+18,União do Oeste,-52.868573,-26.762279,79,Positivo,União do Oeste,2026-02-23,9,462,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-23,2026-03-01,7,0
+19,Ouro Verde,-52.371211,-26.647383,82,Não Avaliado,Ouro Verde,2026-02-23,9,758,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-23,2026-03-01,7,0
+20,Jupiá,-52.692097,-26.420925,82,Não Avaliado,Jupiá,2026-02-23,9,855,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-23,2026-03-01,7,0
+21,Campo Erê,-53.133145,-26.363592,82,Não Avaliado,Campo Erê,2026-02-23,9,910,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-23,2026-03-01,7,0
+22,Faxinal dos Guedes,-52.293385,-26.875426,82,Não Avaliado,Faxinal dos Guedes,2026-02-23,9,1005,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-23,2026-03-01,7,0
+23,Bom Jesus,-52.418805,-26.773989,82,Não Avaliado,Bom Jesus,2026-02-23,9,669,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-02-23,2026-03-01,7,0
+1,Chapecó,-52.641756,-27.024303,79,Positivo,Chapecó,2026-03-02,9,674,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-03-02,2026-07-31,152,0
+2,Campos Novos,-51.29401,-27.468864,80,Negativo,Campos Novos,2026-03-02,9,934,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-03-02,2026-07-31,152,0
+3,Concórdia,-52.031852,-27.192519,82,Não Avaliado,Concórdia,2026-03-02,9,569,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-03-02,2026-07-31,152,0
+4,Canoinhas,-50.449254,-26.151944,82,Não Avaliado,Canoinhas,2026-03-02,9,839,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-03-02,2026-07-31,152,0
+5,Lages,-50.181428,-27.770456,80,Negativo,Lages,2026-03-02,9,884,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-03-02,2026-07-31,152,0
+6,São Miguel do Oeste,-53.544454,-26.759542,82,Não Avaliado,São Miguel do Oeste,2026-03-02,9,645,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-03-02,2026-07-31,152,0
+7,São Lourenço do Oeste,-52.942158,-26.364384,82,Não Avaliado,São Lourenço do Oeste,2026-03-02,9,893,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-03-02,2026-07-31,152,0
+8,Xanxerê,-52.432514,-26.832518,79,Positivo,Xanxerê,2026-03-02,9,800,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-03-02,2026-07-31,152,0
+11,Agronômica,-49.74242,-27.37829,80,Negativo,Agronômica,2026-03-02,9,347,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-03-02,2026-07-31,152,0
+12,Atalanta,-49.72031,-27.43817,79,Positivo,Atalanta,2026-03-02,9,545,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-03-02,2026-07-31,152,0
+15,Galvão,-52.669425,-26.479759,82,Não Avaliado,Galvão,2026-03-02,9,655,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-03-02,2026-07-31,152,0
+16,Xaxim,-52.54948,-26.939679,82,Não Avaliado,Xaxim,2026-03-02,9,770,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-03-02,2026-07-31,152,0
+17,Vargeão,-52.11977,-26.73417,82,Não Avaliado,Vargeão,2026-03-02,9,890,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-03-02,2026-07-31,152,0
+18,União do Oeste,-52.868573,-26.762279,82,Não Avaliado,União do Oeste,2026-03-02,9,462,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-03-02,2026-07-31,152,0
+19,Ouro Verde,-52.371211,-26.647383,82,Não Avaliado,Ouro Verde,2026-03-02,9,758,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-03-02,2026-07-31,152,0
+20,Jupiá,-52.692097,-26.420925,82,Não Avaliado,Jupiá,2026-03-02,9,855,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-03-02,2026-07-31,152,0
+21,Campo Erê,-53.133145,-26.363592,82,Não Avaliado,Campo Erê,2026-03-02,9,910,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-03-02,2026-07-31,152,0
+22,Faxinal dos Guedes,-52.293385,-26.875426,82,Não Avaliado,Faxinal dos Guedes,2026-03-02,9,1005,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-03-02,2026-07-31,152,0
+23,Bom Jesus,-52.418805,-26.773989,82,Não Avaliado,Bom Jesus,2026-03-02,9,669,https://ciram.epagri.sc.gov.br/agroconnect/busca-doenca-munic.jsp,2026-03-02,2026-07-31,152,0

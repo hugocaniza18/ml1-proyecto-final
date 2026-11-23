@@ -8,16 +8,15 @@ web/out/
 web/.vercel/
 .env*
 work/
-# Fuentes CIRAM: conservar localmente hasta aclarar redistribución.
-data/raw/*.csv
-data/processed/*.csv
 models/*.joblib
 
 
 # Archivos locales con correspondencia a observaciones individuales
-/data/raw/
-/data/processed/
 /reports/predicciones_prueba.csv
 /reports/exclusiones.json
 /web/*.tsbuildinfo
 /*.zip
+
+/models/
+/results/predictions/
+/.cache/

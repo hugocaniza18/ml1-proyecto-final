@@ -1,0 +1,12 @@
+[
+  {
+    "evento": "seleccion_congelada",
+    "utc": "2026-11-22T22:09:24.347385+00:00",
+    "sha256": "91c611198f14d92348b6e3a17e70f3a940096f426318c7e53220c5a5f3a092c4"
+  },
+  {
+    "evento": "evaluacion_historica_completada",
+    "utc": "2026-11-22T22:09:25.082275+00:00",
+    "seleccion_sha256": "91c611198f14d92348b6e3a17e70f3a940096f426318c7e53220c5a5f3a092c4"
+  }
+]

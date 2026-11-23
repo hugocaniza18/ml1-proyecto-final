@@ -1,27 +1,65 @@
-# Predicción de roya de soja con datos climáticos
+# Roya de la soja y meteorología
 
-Trabajo final de Machine Learning 1 (23433), Facultad de Ingeniería, Universidad Nacional de Asunción, 2026.
+Trabajo final de Machine Learning 1 · FIUNA · 2026
 
-**Integrantes:** [Hugo Rene Caniza Portillo](https://github.com/hugocaniza18) y [Ruben Dario Lopez Sanabria](https://github.com/Rub3nL0pez).
+Hugo Rene Caniza Portillo y Ruben Dario Lopez Sanabria
 
-Evaluamos si la humedad, la temperatura, la precipitación y el viento de los 7 o 14 días anteriores permiten clasificar el resultado de una medición de roya de soja. En una variante incorporamos el índice térmico-humedad (IITH). El modelo devuelve una puntuación para la clase positiva y una clasificación con umbral de 0,5.
+[Portal en Vercel](https://ml1-proyecto-final-b2uvlo4xv-hugo1-75fb.vercel.app/) · [Informe académico](reports/INFORME.md)
+
+Estudiamos cuánto aporta la meteorología para clasificar el estado de roya asiática registrado en un punto de monitoreo. Evaluamos dos horizontes: **h0**, el estado registrado en la fecha de referencia, y **h7**, el estado registrado en la misma ubicación exactamente siete días después, incluidos los positivos que continúan de una semana a otra.
+
+## Datos y método
+
+El repositorio incluye los datos originales de monitoreo y las respuestas horarias de ERA5 en `data/raw/`, los resúmenes diarios y su trazabilidad en `data/interim/`, y las muestras, exclusiones y particiones en `data/processed/`. Partimos de 650 registros. Obtuvimos 428 muestras para h0 y 362 para h7. [Diccionario de datos](data/DICCIONARIO.md)
+
+Para cada muestra resumimos diez variables de humedad, temperatura, precipitación y viento durante los **7 o 14 días anteriores** a la referencia. Comparamos regresión logística y Random Forest en ambas ventanas. Seleccionamos por F1 de la clase positiva en tres bloques de validación temporal con una purga de 14 días. Usamos la clase mayoritaria como referencia en ambos horizontes y la persistencia en h7. [Particiones](results/academicos/particiones.csv)
+
+Las etiquetas provienen de [Epagri/CIRAM Agroconnect](https://ciram.epagri.sc.gov.br/agroconnect/). La meteorología corresponde al reanálisis ERA5 de ECMWF, obtenido mediante [Open-Meteo](https://open-meteo.com/en/docs/historical-weather-api) y agregado por día y ventana, con atribución [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) para los datos meteorológicos.
 
 ## Resultados
 
-Analizamos 428 mediciones de 22 puntos. La ventana de 14 días reúne 5.992 filas diarias y cada medición aporta un solo objetivo al modelo. Comparamos regresión logística y Random Forest con ambas ventanas, con y sin IITH, usando las mismas particiones temporales.
+Evaluación histórica de enero a marzo de 2026, período previamente observado. Las métricas corresponden a la clase positiva. [Comparación completa](results/comparacion.csv)
 
-Seleccionamos Random Forest de 7 días sin IITH por su F1 medio de validación (0,653). En las 66 mediciones reservadas para prueba, el F1 fue 0,473 y el modelo detectó 13 de los 37 positivos. Extender la ventana a 14 días no mejoró el F1 de forma consistente. El estudio evalúa resultados históricos y deja abierta la validación en nuevas campañas.
+| Horizonte | Método | Muestras | Precisión | Sensibilidad | F1 |
+|---|---|---:|---:|---:|---:|
+| h0 | Random Forest · 7 días | 66 | 0,667 | 0,270 | 0,385 |
+| h7 | Regresión logística · 14 días | 46 | 0,889 | 0,333 | 0,485 |
+| h7 | Persistencia | 46 | 0,720 | 0,750 | 0,735 |
 
-## Materiales
+En h7, repetir el estado observado en la fecha de referencia recuperó 18 de los 24 positivos de la semana siguiente. El modelo meteorológico recuperó 8. **Persistencia obtuvo el mayor F1** en esas 46 muestras. Esta comparación retrospectiva utiliza información distinta para cada método y resulta insuficiente para validar una alerta operativa.
 
-- [Informe](reports/INFORME.md)
-- [Presentación](presentation/Presentacion_TP_Roya.pptx)
-- [Metodología](docs/METODOLOGIA.md) y [diccionario de datos](docs/DICCIONARIO.md)
-- [Notebooks de auditoría, exploración y modelado](notebooks/)
-- [Métricas de los ocho experimentos](reports/comparacion_modelos.csv)
+## Recorrido del repositorio
 
-En el portal incluimos los gráficos, un comparador y seis ejemplos de prueba sin identificadores de origen. El portal se puede ejecutar con Node.js 24 mediante `npm ci` y `npm run dev` desde `web/`. Para reproducir los experimentos en Python 3.10, los scripts requieren los archivos originales y la caché meteorológica del paquete local.
+| Notebook | Qué muestra |
+|---|---|
+| [01 · Auditoría](notebooks/01_auditoria.ipynb) | Etiquetas, exclusiones, construcción de h0/h7 y separación temporal. |
+| [02 · Exploración](notebooks/02_exploracion.ipynb) | Distribuciones meteorológicas, correlaciones y cobertura del conjunto de desarrollo. |
+| [03 · Evaluación](notebooks/03_evaluacion.ipynb) | Comparación de modelos y referencias, matrices de confusión y curvas a partir de resultados guardados. |
 
-## Datos
+`scripts/` contiene el procesamiento, el entrenamiento y la evaluación. `tests/` reúne las pruebas, `results/` conserva los resultados oficiales, `reports/` contiene el informe y sus figuras, y `web/` aloja el portal estático.
 
-Usamos los registros de [Epagri/CIRAM Agroconnect](https://ciram.epagri.sc.gov.br/agroconnect/) como etiquetas y datos horarios ERA5 de [Open-Meteo](https://open-meteo.com/) bajo [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). A partir de estos datos calculamos los resúmenes diarios y por ventana, el IITH y las componentes del viento.
+## Reproducción
+
+En PowerShell, con Git y Python 3.10.11, clonamos la rama del proyecto e instalamos las dependencias en un entorno virtual:
+
+```powershell
+git clone --branch feat/reformulacion-horizontes https://github.com/hugocaniza18/ml1-proyecto-final.git
+cd ml1-proyecto-final
+python -m venv .venv
+.\.venv\Scripts\python -m pip install -r requirements.txt
+```
+
+Desde la raíz, estos comandos ejecutan las pruebas, reconstruyen las muestras en una carpeta nueva y comprueban los tres notebooks conservando sus salidas guardadas:
+
+```powershell
+.\.venv\Scripts\python -m unittest discover -s tests -v
+.\.venv\Scripts\python scripts/procesar_datos.py --output-dir .cache/procesamiento
+.\.venv\Scripts\python scripts/ejecutar_notebooks.py --comprobar (Get-ChildItem notebooks/*.ipynb).FullName
+```
+
+Para repetir el ajuste y la evaluación, usamos un destino nuevo. El primer comando selecciona los modelos mediante validación y guarda la selección. El segundo evalúa el período histórico:
+
+```powershell
+.\.venv\Scripts\python scripts/entrenar.py --output-dir .cache/reproduccion/results
+.\.venv\Scripts\python scripts/evaluar.py --results-dir .cache/reproduccion/results
+```

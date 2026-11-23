@@ -1,0 +1,26 @@
+{
+  "features": [
+    "hr_media_pct",
+    "hr_min_pct",
+    "hr_max_pct",
+    "temperatura_media_c",
+    "temperatura_min_c",
+    "temperatura_max_c",
+    "precipitacion_mm",
+    "viento_vel_media_10m_ms",
+    "viento_u_media_10m_ms",
+    "viento_v_media_10m_ms"
+  ],
+  "unidades": [
+    "%",
+    "%",
+    "%",
+    "°C",
+    "°C",
+    "°C",
+    "mm",
+    "m/s",
+    "m/s",
+    "m/s"
+  ]
+}

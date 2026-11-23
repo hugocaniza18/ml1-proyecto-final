@@ -1,0 +1,11 @@
+variable,ventana,horizonte,extremos_iqr,tratamiento
+hr_media_pct,14,0,1,conservar; descriptor exploratorio
+hr_min_pct,14,0,4,conservar; descriptor exploratorio
+hr_max_pct,14,0,35,conservar; descriptor exploratorio
+temperatura_media_c,14,0,4,conservar; descriptor exploratorio
+temperatura_min_c,14,0,13,conservar; descriptor exploratorio
+temperatura_max_c,14,0,3,conservar; descriptor exploratorio
+precipitacion_mm,14,0,8,conservar; descriptor exploratorio
+viento_vel_media_10m_ms,14,0,1,conservar; descriptor exploratorio
+viento_u_media_10m_ms,14,0,1,conservar; descriptor exploratorio
+viento_v_media_10m_ms,14,0,4,conservar; descriptor exploratorio
