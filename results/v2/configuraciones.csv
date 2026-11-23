@@ -1,0 +1,17 @@
+grupo,config,horizonte,ventana,modelo,cv_f1,cv_std,parametros
+favorabilidad,favorabilidad_LR_7d_h0,0,7,LR,0.6244656810694545,0.09754671577367349,{'model__C': 10}
+favorabilidad,favorabilidad_RF_7d_h0,0,7,RF,0.6421183987221722,0.10714989165680036,"{'model__max_depth': 5, 'model__min_samples_leaf': 5}"
+favorabilidad,favorabilidad_LR_14d_h0,0,14,LR,0.6172506738544474,0.06864942136529406,{'model__C': 10}
+favorabilidad,favorabilidad_RF_14d_h0,0,14,RF,0.6766718417572307,0.05009821163409607,"{'model__max_depth': None, 'model__min_samples_leaf': 5}"
+favorabilidad,favorabilidad_LR_7d_h7,7,7,LR,0.6180512884602699,0.047876995305486496,{'model__C': 0.1}
+favorabilidad,favorabilidad_RF_7d_h7,7,7,RF,0.6358268003912465,0.06726889355896638,"{'model__max_depth': 5, 'model__min_samples_leaf': 10}"
+favorabilidad,favorabilidad_LR_14d_h7,7,14,LR,0.6170152377911412,0.05180338051258797,{'model__C': 0.1}
+favorabilidad,favorabilidad_RF_14d_h7,7,14,RF,0.6252429340885114,0.05267610818425785,"{'model__max_depth': 3, 'model__min_samples_leaf': 3}"
+combinadas,combinadas_LR_7d_h0,0,7,LR,0.6324867724867724,0.049266959314974296,{'model__C': 10}
+combinadas,combinadas_RF_7d_h0,0,7,RF,0.661226318484383,0.07211696871344404,"{'model__max_depth': 3, 'model__min_samples_leaf': 10}"
+combinadas,combinadas_LR_14d_h0,0,14,LR,0.6534453787974914,0.021263589058343763,{'model__C': 10}
+combinadas,combinadas_RF_14d_h0,0,14,RF,0.6653312487785813,0.03194210456151976,"{'model__max_depth': 3, 'model__min_samples_leaf': 3}"
+combinadas,combinadas_LR_7d_h7,7,7,LR,0.5985413985413987,0.07381161517257037,{'model__C': 1}
+combinadas,combinadas_RF_7d_h7,7,7,RF,0.6260696059245615,0.046433399418511025,"{'model__max_depth': 3, 'model__min_samples_leaf': 10}"
+combinadas,combinadas_LR_14d_h7,7,14,LR,0.6094647320827934,0.04810702409754983,{'model__C': 1}
+combinadas,combinadas_RF_14d_h7,7,14,RF,0.6402661242478177,0.03918203910756775,"{'model__max_depth': 3, 'model__min_samples_leaf': 3}"

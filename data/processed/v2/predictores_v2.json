@@ -1,0 +1,29 @@
+{
+  "originales": [
+    "hr_media_pct",
+    "hr_min_pct",
+    "hr_max_pct",
+    "temperatura_media_c",
+    "temperatura_min_c",
+    "temperatura_max_c",
+    "precipitacion_mm",
+    "viento_vel_media_10m_ms",
+    "viento_u_media_10m_ms",
+    "viento_v_media_10m_ms"
+  ],
+  "favorabilidad": [
+    "horas_favorables",
+    "dias_6h_favorables",
+    "racha_max_favorable_h",
+    "horas_hr90",
+    "depresion_rocio_media_c"
+  ],
+  "umbrales_exploratorios": {
+    "temperatura_min_c": 18,
+    "temperatura_max_c": 26.5,
+    "humedad_relativa_min_pct": 90,
+    "horas_por_dia_favorable": 6
+  },
+  "advertencia": "La HR es un proxy; no se mide mojado foliar",
+  "origen_muestras_sha256": "ec0f0e7187572a38162a06aec6b457bcbc9b2517cdea36defeda9851abb17496"
+}

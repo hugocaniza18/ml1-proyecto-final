@@ -317,11 +317,128 @@ def run(input_dir, output_dir):
     return samples, exclusions, summary, manifest
 
 
+# V2: características derivadas exclusivamente de ERA5 horario anterior a la referencia.
+FAVORABILITY_FEATURES = [
+    'horas_favorables', 'dias_6h_favorables', 'racha_max_favorable_h',
+    'horas_hr90', 'depresion_rocio_media_c',
+]
+
+
+def load_hourly_era5(base_dir):
+    """Lee los tres lotes horarios y verifica unicidad por ubicación y fecha/hora."""
+    records = {}
+    for batch in ('weather_14dias', 'weather_previos', 'weather'):
+        folder = Path(base_dir) / batch
+        manifest = json.loads((folder / 'manifest.json').read_text(encoding='utf-8'))
+        for request in manifest['requests']:
+            from urllib.parse import parse_qs, urlparse
+            params = parse_qs(urlparse(request['url']).query)
+            lat = request.get('latitude', params['latitude'][0])
+            lon = request.get('longitude', params['longitude'][0])
+            key = location_id(lat, lon)
+            filename = folder / f"{int(request['id']):02}.json"
+            raw = json.loads(filename.read_text(encoding='utf-8'))['hourly']
+            t = raw['time']
+            temp = raw['temperature_2m']
+            humidity = raw['relative_humidity_2m']
+            require(len(t) == len(temp) == len(humidity), 'Longitudes horarias distintas')
+            data = records.setdefault(key, {})
+            for stamp, c, rh in zip(t, temp, humidity):
+                moment = pd.Timestamp(stamp)
+                require(moment.minute == 0 and moment.second == 0, 'Hora ERA5 irregular')
+                require(c is not None and rh is not None and
+                        np.isfinite(c) and np.isfinite(rh) and 0 <= rh <= 100,
+                        'Datos horarios faltantes o fuera de rango')
+                point = (float(c), float(rh))
+                if moment in data:
+                    require(data[moment] == point, 'Hora ERA5 duplicada con valores diferentes')
+                data[moment] = point
+    return records
+
+
+def favorable_summary(temperatures, humidities):
+    """Computa indicadores horarios para una ventana contigua completa."""
+    t = np.asarray(temperatures, dtype=float)
+    rh = np.asarray(humidities, dtype=float)
+    require(len(t) == len(rh) and len(t) > 0 and len(t) % 24 == 0,
+            'Ventana horaria incompleta')
+    require(np.isfinite(t).all() and np.isfinite(rh).all() and
+            ((rh >= 0) & (rh <= 100)).all(), 'Clima horario inválido')
+    favorable = (t >= 18) & (t <= 26.5) & (rh >= 90)
+    days = favorable.reshape(-1, 24).sum(axis=1)
+    longest = current = 0
+    for hour in favorable:
+        current = current + 1 if hour else 0
+        longest = max(longest, current)
+    gamma = np.log(np.maximum(rh, 0.1) / 100) + (17.625 * t) / (243.04 + t)
+    dew = 243.04 * gamma / (17.625 - gamma)
+    return {
+        'horas_favorables': int(favorable.sum()),
+        'dias_6h_favorables': int((days >= 6).sum()),
+        'racha_max_favorable_h': longest,
+        'horas_hr90': int((rh >= 90).sum()),
+        'depresion_rocio_media_c': float(np.mean(t - dew)),
+    }
+
+
+def make_favorability_dataset(samples, era5_dir):
+    """Conserva las muestras V1 y añade cinco características sin consultar fechas futuras."""
+    require(not samples.duplicated(['muestra_id', 'ventana_dias']).any(), 'Muestras duplicadas')
+    weather = load_hourly_era5(era5_dir)
+    features = []
+    for row in samples.itertuples(index=False):
+        require(row.ubicacion_id in weather, 'Ubicación ERA5 sin respaldo horario')
+        start = pd.Timestamp(row.ventana_inicio)
+        end = pd.Timestamp(row.ventana_fin)
+        reference = pd.Timestamp(row.fecha_referencia)
+        require(end == reference - pd.Timedelta(days=1), 'Se incluyó fecha de referencia')
+        require((reference - start).days == int(row.ventana_dias), 'Ventana inconsistente')
+        hours = pd.date_range(start, end + pd.Timedelta(hours=23), freq='h')
+        require(len(hours) == 24 * int(row.ventana_dias), 'Longitud horaria incorrecta')
+        values = weather[row.ubicacion_id]
+        require(all(hour in values for hour in hours), 'Horas ERA5 faltantes')
+        array = np.array([values[hour] for hour in hours], dtype=float)
+        features.append(favorable_summary(array[:, 0], array[:, 1]))
+    result = samples.reset_index(drop=True).copy()
+    return pd.concat([result, pd.DataFrame(features)], axis=1)
+
+
+def run_v2(samples_path=None, output_dir=None, era5_dir=None):
+    """Genera V2 en un destino nuevo sin sobrescribir V1 ni sus particiones."""
+    samples_path = Path(samples_path or ROOT/'data/processed/muestras.csv')
+    output_dir = Path(output_dir or ROOT/'data/processed/v2')
+    era5_dir = Path(era5_dir or ROOT/'data/raw/era5')
+    require(not output_dir.exists() or not any(output_dir.iterdir()),
+            'Destino V2 ocupado; no se sobrescribe una ejecución anterior')
+    samples = pd.read_csv(samples_path, dtype={'ubicacion_id': str})
+    verify_samples(samples)
+    result = make_favorability_dataset(samples, era5_dir)
+    require(result.shape[0] == samples.shape[0], 'V2 modificó la población')
+    require(result[['muestra_id','ventana_dias','horizonte_dias','y']].equals(
+            samples[['muestra_id','ventana_dias','horizonte_dias','y']]),
+            'V2 cambió muestras o etiquetas')
+    output_dir.mkdir(parents=True, exist_ok=True)
+    result.to_csv(output_dir/'muestras_v2.csv', index=False)
+    write_json(output_dir/'predictores_v2.json', {
+        'originales': FEATURES, 'favorabilidad': FAVORABILITY_FEATURES,
+        'umbrales_exploratorios': {'temperatura_min_c': 18, 'temperatura_max_c': 26.5,
+                                  'humedad_relativa_min_pct': 90, 'horas_por_dia_favorable': 6},
+        'advertencia': 'La HR es un proxy; no se mide mojado foliar',
+        'origen_muestras_sha256': sha(samples_path),
+    })
+    return result
+
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--input-dir', type=Path, default=configured('original').parents[1])
     parser.add_argument('--output-dir', type=Path, required=True)
+    parser.add_argument('--version', choices=['v1', 'v2'], default='v1')
     args = parser.parse_args()
-    _, _, summary, manifest = run(args.input_dir, args.output_dir)
-    print(summary.to_string(index=False))
-    print(json.dumps(manifest['conteos']))
+    if args.version == 'v2':
+        samples = run_v2(output_dir=args.output_dir)
+        print(f'V2: {len(samples)} filas, {len(FAVORABILITY_FEATURES)} nuevas variables')
+    else:
+        _, _, summary, manifest = run(args.input_dir, args.output_dir)
+        print(summary.to_string(index=False))
+        print(json.dumps(manifest['conteos']))
