@@ -1,7 +1,5 @@
-/specs export-ignore
-/specs/** export-ignore
 *.py text eol=lf
 /requirements*.txt text eol=lf
 /results/** -text whitespace=cr-at-eol
-/provenance/** -text whitespace=cr-at-eol
 /reports/INFORME.md -text whitespace=cr-at-eol
+/data/huellas.json -text whitespace=cr-at-eol

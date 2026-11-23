@@ -34,7 +34,7 @@ class ExperimentTests(unittest.TestCase):
         np.testing.assert_array_equal(hard, [1, 1])
 
     def test_scaler_only_fits_training_and_feature_contract(self):
-        config = json.loads((ROOT/'config/proyecto.json').read_text())['experimento']
+        config = json.loads((ROOT/'scripts/proyecto.json').read_text())['experimento']
         estimator, _ = estimator_grid('LR', config)
         train = pd.DataFrame(np.arange(60).reshape(6, 10), columns=FEATURES)
         estimator.fit(train, [0, 1, 0, 1, 0, 1])
@@ -65,7 +65,7 @@ class ExperimentTests(unittest.TestCase):
         self.assertIsNone(single['balanced_accuracy'])
 
     def test_grid_has_approved_order(self):
-        config = json.loads((ROOT/'config/proyecto.json').read_text())['experimento']
+        config = json.loads((ROOT/'scripts/proyecto.json').read_text())['experimento']
         _, grid = estimator_grid('RF', config)
         self.assertEqual(len(grid), 9)
         self.assertEqual(grid[0], {'model__max_depth': [3], 'model__min_samples_leaf': [3]})

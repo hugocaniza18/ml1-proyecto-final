@@ -25,8 +25,12 @@ BLOCK_STARTS = ['2025-08-18', '2025-09-29', '2025-11-10']
 LABELS = {'Negativo': 0, 'Positivo': 1}
 
 
+def huellas():
+    return json.loads((ROOT/"data/huellas.json").read_text(encoding="utf-8"))
+
+
 def project():
-    return json.loads((ROOT/'config/proyecto.json').read_text(encoding='utf-8'))
+    return json.loads((ROOT/'scripts/proyecto.json').read_text(encoding='utf-8'))
 
 
 def configured(name):
@@ -275,7 +279,7 @@ def run(input_dir, output_dir):
     original_path = input_dir/'monitoreo/monitoreo_deduplicado.csv'
     daily_path = configured('intermedios')/'diarios_reconstruidos.csv'
     hashes = {p.name: sha(p) for p in [original_path, daily_path]}
-    approved = json.loads((ROOT/'provenance/entradas_vigentes.json').read_text(encoding='utf-8'))
+    approved = huellas()['entradas']
     for path in [original_path, daily_path]:
         require(sha(path) == approved[path.name], f'Fuente alterada: {path.name}')
     obs = observations(pd.read_csv(original_path, dtype={'latitud': str, 'longitud': str}))
@@ -301,7 +305,7 @@ def run(input_dir, output_dir):
     write_json(output_dir/'predictores.json', {'features': FEATURES, 'unidades': ['%']*3 + ['°C']*3 + ['mm'] + ['m/s']*3})
     outputs = {p.name: sha(p) for p in sorted(output_dir.iterdir()) if p.is_file()}
     manifest = dict(version='horizontes-vigentes', entradas=hashes,
-                    fuentes_sha256=sha(ROOT/'provenance/entradas_vigentes.json'), script_sha256=sha(__file__),
+                    fuentes_sha256=sha(ROOT/'data/huellas.json'), script_sha256=sha(__file__),
                     python=platform.python_version(), pandas=pd.__version__, numpy=np.__version__,
                     salidas=outputs, disponibilidad_operativa='no_acreditada',
                     meteorologia='diarios auditados Etapa B; 24 horas/día verificadas en respaldo horario',

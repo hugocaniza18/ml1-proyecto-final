@@ -39,6 +39,5 @@
     "modelos": "models",
     "informe": "reports",
     "predicciones": "results/predictions/predicciones.csv"
-  },
-  "comunicacion_academica": "pendiente_de_revision"
+  }
 }

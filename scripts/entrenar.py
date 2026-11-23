@@ -18,7 +18,7 @@ from sklearn.metrics import (accuracy_score, balanced_accuracy_score, f1_score,
 from sklearn.model_selection import GridSearchCV
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
-from procesar_datos import ROOT, FEATURES, sha, require, write_json, check_separation, verify_samples, configured, project
+from procesar_datos import huellas, ROOT, FEATURES, sha, require, write_json, check_separation, verify_samples, configured, project
 
 
 from evaluar import metrics, majority, evaluate_record
@@ -44,8 +44,8 @@ def estimator_grid(model, config):
 
 def input_hashes(data_dir):
     manifest = json.loads((data_dir/'manifiesto.json').read_text(encoding='utf-8'))
-    approved = json.loads((ROOT/'provenance/procesamiento.json').read_text(encoding='utf-8'))
-    require(manifest['salidas'] == approved['salidas'], 'Tablas distintas del cierre de C')
+    approved = huellas()['procesados']
+    require(manifest['salidas'] == approved, 'Tablas distintas del cierre de C')
     for filename, digest in manifest['salidas'].items():
         require(sha(data_dir/filename) == digest, f'Entrada alterada: {filename}')
     require(manifest['version'] in ['horizontes-v2-etapa-c', 'horizontes-vigentes'], 'Versión C inesperada')
@@ -199,6 +199,6 @@ if __name__ == '__main__':
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--data-dir',type=Path,default=configured('datos'))
     parser.add_argument('--output-dir',type=Path,default=configured('resultados'))
-    parser.add_argument('--config',type=Path,default=ROOT/'config/proyecto.json')
+    parser.add_argument('--config',type=Path,default=ROOT/'scripts/proyecto.json')
     args=parser.parse_args()
     print(run(args.data_dir,args.output_dir,args.config))

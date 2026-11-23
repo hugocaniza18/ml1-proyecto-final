@@ -7,7 +7,7 @@ from pathlib import Path
 import pandas as pd
 from auditar_datos import verify as audit
 from evaluar import evaluate
-from procesar_datos import ROOT, configured, run, sha, require, write_json
+from procesar_datos import huellas, ROOT, configured, run, sha, require, write_json
 from verificar import verify
 from entrenar import validate_trace
 
@@ -18,9 +18,9 @@ def compare_csv(a, b, tolerance):
 
 
 def integration():
-    migration=json.loads((ROOT/'provenance/migracion.json').read_text(encoding='utf-8'))
-    for entry in migration['archivos_conservados']:
-        require(sha(ROOT/entry['destino'])==entry['sha256'], 'Artefacto aprobado modificado: '+entry['destino'])
+    official = huellas()['experimento']
+    for path, digest in official.items():
+        require(sha(ROOT/path) == digest, 'Archivo oficial alterado: '+path)
     result=verify(configured('datos'), configured('resultados'))
     result['traza_sha256']=validate_trace(configured('datos'))
     with tempfile.TemporaryDirectory(prefix='roya-integracion-') as temp:
@@ -49,7 +49,7 @@ def integration():
             compare_csv(configured('resultados')/relative,output/relative,1e-12)
         require(sha(output/'seleccion.json')==sha(configured('resultados')/'seleccion.json'), 'Selección alterada')
     result.update(procesamiento_reproducido=True,evaluacion_reproducida=True,
-                  artefactos_inmutables=len(migration['archivos_conservados']),entrenamientos=0)
+                  artefactos_inmutables=len(official),entrenamientos=0)
     return result
 
 

@@ -5,7 +5,7 @@ import argparse
 import json
 import numpy as np
 import pandas as pd
-from procesar_datos import ROOT, FEATURES, AGGREGATIONS, location_id, require, sha, write_json, configured
+from procesar_datos import huellas, ROOT, FEATURES, AGGREGATIONS, location_id, require, sha, write_json, configured
 
 HOURLY = ['temperature_2m', 'relative_humidity_2m', 'precipitation',
           'wind_speed_10m', 'wind_direction_10m']
@@ -13,8 +13,7 @@ HOURLY = ['temperature_2m', 'relative_humidity_2m', 'precipitation',
 
 def verify(hourly_root, input_dir, processed, output_dir):
     require(not output_dir.exists(), 'Destino de trazabilidad ya existente')
-    evidence_path = ROOT/'provenance/horarios.json'
-    evidence = {x['archivo']: x for x in json.loads(evidence_path.read_text(encoding='utf-8'))}
+    evidence = huellas()['horarios']
     response_records, manifest_records, all_days, provenance = [], [], [], []
     for folder in ['weather', 'weather_previos', 'weather_14dias']:
         manifest_path = hourly_root/folder/'manifest.json'
@@ -24,7 +23,7 @@ def verify(hourly_root, input_dir, processed, output_dir):
             relative = f"{folder}/{entry['id']:02d}.json"
             path = hourly_root/relative
             digest = sha(path)
-            require(digest == evidence[relative]['sha256'], 'Respuesta distinta de Etapa B')
+            require(digest == evidence[relative], 'Respuesta distinta de Etapa B')
             if 'sha256' in entry:
                 require(digest == entry['sha256'], 'Hash distinto del manifiesto de consulta')
             query = parse_qs(urlsplit(entry['url']).query)
@@ -71,11 +70,10 @@ def verify(hourly_root, input_dir, processed, output_dir):
     require(not rebuilt.duplicated(['ubicacion_id', 'fecha_dato']).any(), 'Solapamiento de respuestas')
     rebuilt = rebuilt.set_index(['ubicacion_id', 'fecha_dato'])
     source_daily = configured('intermedios')/'diarios_reconstruidos.csv'
-    expected_daily = json.loads((ROOT/'provenance/entradas_vigentes.json').read_text(encoding='utf-8'))[source_daily.name]
+    expected_daily = huellas()['entradas'][source_daily.name]
     require(sha(source_daily) == expected_daily, 'Diario aprobado modificado')
     registry = pd.read_csv(input_dir/'monitoreo/identificadores.csv', dtype={'latitud': str, 'longitud': str})
-    require(sha(input_dir/'monitoreo/identificadores.csv') == json.loads(
-        (ROOT/'provenance/entradas_vigentes.json').read_text(encoding='utf-8'))['identificadores.csv'], 'Registro de IDs alterado')
+    require(sha(input_dir/'monitoreo/identificadores.csv') == huellas()['entradas']['identificadores.csv'], 'Registro de IDs alterado')
     require(registry.id_medicion.is_unique, 'Identificadores repetidos')
     records=[]
     for row in registry.to_dict('records'):
@@ -117,7 +115,7 @@ def verify(hourly_root, input_dir, processed, output_dir):
                    error_maximo_diarios=float(errors_daily.max()),
                    error_maximo_ventanas=max(max(e.values()) for e in errors_windows.values()),
                    tolerancia_absoluta=1e-10, descargas=0,
-                   evidencia_b_sha256=sha(evidence_path), diario_fuente_sha256=sha(source_daily),
+                   evidencia_b_sha256=sha(ROOT/'data/huellas.json'), diario_fuente_sha256=sha(source_daily),
                    muestras_sha256=sha(samples_path), script_sha256=sha(__file__),
                    disponibilidad_operativa='no_acreditada')
     write_json(output_dir/'traza.json', {'resumen': summary, 'manifiestos': manifest_records,
