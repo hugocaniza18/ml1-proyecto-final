@@ -1471,10 +1471,6 @@ Pedregosa, F. et al. (2011). Scikit-learn: Machine Learning in Python. *Journal 
 
 Hersbach, H. et al. (2020). The ERA5 global reanalysis. *Quarterly Journal of the Royal Meteorological Society*, 146, 1999–2049. https://doi.org/10.1002/qj.3803
 
-La ejecución de auditoría y EDA requiere acceso autorizado a los registros originales y tablas procesadas locales. La evaluación académica utiliza resultados agregados públicos. No redistribuimos registros individuales, modelos ni predicciones por muestra. Los notebooks contienen sus resultados visibles y documentan sus requisitos de ejecución.
-
-El portal se despliega en Vercel, plataforma cuya aceptación fue confirmada por la cátedra.
-
 Del Ponte, E. M. y Esker, P. D. (2008). Meteorological factors and Asian soybean rust epidemics: a systems approach and implications for risk assessment. *Scientia Agricola*, 65, 88–97. [Artículo](https://www.scielo.br/j/sa/a/DnFFn5X4cLyTZyKLHQ4YbLt/?lang=en).
 
 Melching, J. S. et al. (1989). Effects of duration, frequency, and temperature of leaf wetness periods on soybean rust. *Plant Disease*, 73, 117–122. [Artículo original](https://www.apsnet.org/publications/PlantDisease/BackIssues/Documents/1989Articles/PlantDisease73n02_117.PDF).
