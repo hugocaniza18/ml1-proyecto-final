@@ -3,3 +3,4 @@
 /results/** -text whitespace=cr-at-eol
 /reports/INFORME.md -text whitespace=cr-at-eol
 /data/huellas.json -text whitespace=cr-at-eol
+/data/processed/predictores.json -text whitespace=cr-at-eol
