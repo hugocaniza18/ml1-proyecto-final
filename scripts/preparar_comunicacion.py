@@ -1,6 +1,7 @@
 """Genera informe y portal desde notebooks ejecutados; no ajusta modelos."""
 from pathlib import Path
 import nbformat,base64,json,shutil
+import zipfile
 import mistune
 import re
 from io import StringIO
@@ -106,6 +107,8 @@ html=render(report)
 for p in figures.glob('*.png'):
  html=html.replace('src="figuras/'+p.name+'"','src="data:image/png;base64,'+base64.b64encode(p.read_bytes()).decode()+'"')
 (public/'INFORME.html').write_text('<!doctype html><html lang="es"><meta charset="utf-8"><title>Roya de soja y clima</title><style>body{font:16px/1.6 Arial;max-width:1100px;margin:40px auto;padding:20px}img{max-width:100%}table{font-size:12px;border-collapse:collapse}td,th{padding:8px;border:1px solid #ccc}</style><body>'+html+'</body></html>',encoding='utf-8')
+with zipfile.ZipFile(public/'informe-academico.zip', 'w', compression=zipfile.ZIP_DEFLATED) as archive:
+ archive.write(public/'INFORME.html', arcname='INFORME.html')
 for p in (R/'notebooks').glob('*.ipynb'):shutil.copy2(p,public/p.name)
 (R/'web/app/academico.json').write_text(json.dumps([dict(id=id,title=title,html=render(body).replace('src="figuras/','src="/academico/figuras/')) for id,title,body in sections],ensure_ascii=False),encoding='utf-8')
 # La interfaz visual se mantiene en web/app; el informe no sobrescribe su diseno.

@@ -2,12 +2,19 @@
 import json
 from pathlib import Path
 import unittest
+import zipfile
 import pandas as pd
 
 ROOT=Path(__file__).resolve().parents[1]
 
 
 class PortalTests(unittest.TestCase):
+    def test_report_download_contains_only_the_existing_report(self):
+        public=ROOT/'web/public/academico'
+        with zipfile.ZipFile(public/'informe-academico.zip') as archive:
+            self.assertEqual(archive.namelist(),['INFORME.html'])
+            self.assertEqual(archive.read('INFORME.html'),(public/'INFORME.html').read_bytes())
+
     def test_official_metrics_and_selection(self):
         data=json.loads((ROOT/'web/app/portal-data.json').read_text(encoding='utf-8'))
         official=pd.read_csv(ROOT/'results/comparacion.csv').set_index('config')
