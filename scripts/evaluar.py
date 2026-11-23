@@ -6,8 +6,11 @@ from datetime import datetime, timezone
 import numpy as np
 import pandas as pd
 import joblib
-from sklearn.metrics import (accuracy_score, balanced_accuracy_score, f1_score,
-    precision_score, recall_score, roc_auc_score, average_precision_score, confusion_matrix)
+from sklearn.metrics import (
+    accuracy_score, balanced_accuracy_score, f1_score,
+    precision_score, recall_score, roc_auc_score, average_precision_score,
+    confusion_matrix, precision_recall_curve, roc_curve,
+)
 from procesar_datos import ROOT, FEATURES, require, sha, write_json, configured
 
 def metrics(y, probability, prediction=None):
@@ -108,6 +111,112 @@ def evaluate(data_dir, output):
 
     return selected
 
+
+
+
+def exportar_academicos(results_dir=None, data_dir=None):
+    """Regenera curvas ROC/PR y particiones para el informe y el portal.
+
+    No entrena modelos ni modifica las métricas oficiales.
+    """
+    results_dir = Path(results_dir) if results_dir is not None else configured('resultados')
+    data_dir = Path(data_dir) if data_dir is not None else configured('datos')
+    output = results_dir / 'academicos'
+    output.mkdir(parents=True, exist_ok=True)
+
+    source = results_dir / 'predictions/predicciones.csv'
+    require(source.is_file(),
+            'Falta results/predictions/predicciones.csv; no está incluido en el ZIP original. '
+            'Regenerar predicciones con una ejecución reproducible antes de exportar curvas.')
+    predictions = pd.read_csv(source)
+    comparison = pd.read_csv(results_dir / 'comparacion.csv').set_index('config')
+    curves = []
+    for name, group in predictions[predictions.rol.eq('historico')].groupby('config'):
+        cm = confusion_matrix(group.y, group.prediccion, labels=[0, 1]).ravel()
+        expected = comparison.loc[
+            name, ['historico_tn', 'historico_fp', 'historico_fn', 'historico_tp']
+        ].tolist()
+        require(list(cm) == expected, 'Matriz de confusión distinta')
+        fpr, tpr, _ = roc_curve(group.y, group.probabilidad)
+        precision, recall, _ = precision_recall_curve(group.y, group.probabilidad)
+        curves.append({
+            'config': name,
+            'horizonte': int(group.horizonte.iloc[0]),
+            'fpr': fpr.tolist(),
+            'tpr': tpr.tolist(),
+            'precision': precision.tolist(),
+            'recall': recall.tolist(),
+        })
+
+    write_json(output / 'curvas.json', curves)
+    summary = data_dir / 'resumen_particiones.csv'
+    pd.read_csv(summary).to_csv(output / 'particiones.csv', index=False)
+    write_json(output / 'manifiesto.json', {
+        'origen_predicciones_sha256': sha(source),
+        'origen_particiones_sha256': sha(summary),
+        'seleccion_sha256': sha(results_dir / 'seleccion.json'),
+        'script_sha256': sha(__file__),
+        'contenido': 'Coordenadas de curvas agregadas; sin IDs, fechas individuales ni puntuaciones por muestra',
+        'salidas': {
+            path.name: sha(path)
+            for path in [output / 'curvas.json', output / 'particiones.csv']
+        },
+    })
+    return output
+
+
+def exportar_portal(results_dir=None, portal_path=None):
+    """Genera el JSON agregado consumido por el portal, sin datos individuales."""
+    results = Path(results_dir) if results_dir is not None else configured('resultados')
+    portal_path = Path(portal_path) if portal_path is not None else ROOT / 'web/app/portal-data.json'
+    selected = json.loads((results / 'seleccion.json').read_text(encoding='utf-8'))['selected']
+    comparison = pd.read_csv(results / 'comparacion.csv')
+
+    models = []
+    for row in comparison.to_dict('records'):
+        models.append({
+            'id': row['config'], 'horizon': row['horizonte'], 'window': row['ventana'],
+            'selected': selected[str(row['horizonte'])] == row['config'],
+            'cv': row['cv_f1'], 'f1': row['historico_f1'],
+            'precision': row['historico_precision'], 'recall': row['historico_recall'],
+            'n': int(row['historico_n']),
+            'matrix': [[int(row['historico_tn']), int(row['historico_fp'])],
+                       [int(row['historico_fn']), int(row['historico_tp'])]],
+        })
+    classes = []
+    for horizon in [0, 7]:
+        counts = pd.read_csv(results / f'eda/eda_clases_h{horizon}.csv').iloc[:, 1:].sum()
+        classes.append({
+            'horizon': horizon,
+            'negative': int(counts.iloc[0]),
+            'positive': int(counts.iloc[1]),
+        })
+    require([c['negative'] + c['positive'] for c in classes] == [359, 313],
+            'Poblaciones de desarrollo distintas de las oficiales')
+
+    monthly = pd.read_csv(results / 'eda/cobertura_mensual_desarrollo_h0.csv').set_index('mes')
+    months = pd.period_range(monthly.index.min(), monthly.index.max(), freq='M')
+    coverage = [{
+        'month': str(month),
+        'negative': int(monthly.loc[str(month)].iloc[0]) if str(month) in monthly.index else None,
+        'positive': int(monthly.loc[str(month)].iloc[1]) if str(month) in monthly.index else None,
+    } for month in months]
+    require(sum((row['negative'] or 0) + (row['positive'] or 0) for row in coverage) == 359,
+            'Cobertura mensual distinta de la oficial')
+
+    variables = [FEATURES[i] for i in [0, 3, 6, 7, 8, 9]]
+    corr = pd.read_csv(results / 'eda/correlaciones_desarrollo_h0_14d.csv', index_col=0)
+    keys = [feature + '_14d' for feature in variables]
+    payload = {
+        'models': models,
+        'classes': classes,
+        'coverage': coverage,
+        'correlations': corr.loc[keys, keys].values.tolist(),
+    }
+    portal_path.parent.mkdir(parents=True, exist_ok=True)
+    portal_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2, allow_nan=False) + '\n',
+                           encoding='utf-8')
+    return portal_path
 
 if __name__ == '__main__':
     parser=argparse.ArgumentParser(description=__doc__)

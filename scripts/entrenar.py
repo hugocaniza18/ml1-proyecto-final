@@ -3,8 +3,6 @@ from pathlib import Path
 import argparse
 import json
 import platform
-import subprocess
-import sys
 from datetime import datetime, timezone
 import joblib
 import numpy as np
@@ -13,15 +11,14 @@ import sklearn
 from sklearn.base import clone
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import (accuracy_score, balanced_accuracy_score, f1_score,
-    precision_score, recall_score, roc_auc_score, average_precision_score, confusion_matrix)
+from sklearn.metrics import f1_score
 from sklearn.model_selection import GridSearchCV
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 from procesar_datos import huellas, ROOT, FEATURES, sha, require, write_json, check_separation, verify_samples, configured, project
 
 
-from evaluar import metrics, majority, evaluate_record
+from evaluar import majority, evaluate_record
 
 def choose(records):
     return sorted(records, key=lambda r: (-round(r['cv_f1'], 3), r['ventana'],
