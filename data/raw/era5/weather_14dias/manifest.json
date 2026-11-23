@@ -1,0 +1,180 @@
+{
+  "requests": [
+    {
+      "id": 1,
+      "folder": "weather_14dias",
+      "latitude": -27.024303,
+      "longitude": -52.641756,
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-27.024303&longitude=-52.641756&start_date=2024-08-19&end_date=2024-08-25&hourly=temperature_2m%2Crelative_humidity_2m%2Cprecipitation%2Crain%2Cwind_speed_10m%2Cwind_direction_10m&models=era5&timezone=America%2FSao_Paulo&wind_speed_unit=ms",
+      "sha256": "f266a471cf3363ab89af9425054d45c6a970dc08f0d331c3112572c97f500fb8"
+    },
+    {
+      "id": 2,
+      "folder": "weather_14dias",
+      "latitude": -27.468864,
+      "longitude": -51.29401,
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-27.468864&longitude=-51.29401&start_date=2024-08-19&end_date=2024-08-25&hourly=temperature_2m%2Crelative_humidity_2m%2Cprecipitation%2Crain%2Cwind_speed_10m%2Cwind_direction_10m&models=era5&timezone=America%2FSao_Paulo&wind_speed_unit=ms",
+      "sha256": "f54b75539996510a714c65b212e55607db7f5c92ffd9aa95d0286175b184742d"
+    },
+    {
+      "id": 3,
+      "folder": "weather_14dias",
+      "latitude": -27.192519,
+      "longitude": -52.031852,
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-27.192519&longitude=-52.031852&start_date=2024-08-19&end_date=2024-08-25&hourly=temperature_2m%2Crelative_humidity_2m%2Cprecipitation%2Crain%2Cwind_speed_10m%2Cwind_direction_10m&models=era5&timezone=America%2FSao_Paulo&wind_speed_unit=ms",
+      "sha256": "29031e2a0ba47005ccfa68233946d7ba0600305207788e6f250f30be35ebf6d3"
+    },
+    {
+      "id": 4,
+      "folder": "weather_14dias",
+      "latitude": -26.151944,
+      "longitude": -50.449254,
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-26.151944&longitude=-50.449254&start_date=2024-08-19&end_date=2024-08-25&hourly=temperature_2m%2Crelative_humidity_2m%2Cprecipitation%2Crain%2Cwind_speed_10m%2Cwind_direction_10m&models=era5&timezone=America%2FSao_Paulo&wind_speed_unit=ms",
+      "sha256": "a6e5ef334973dd340b6cfc7ace395ef194fd72795b45fbe9dbf2852bab5de131"
+    },
+    {
+      "id": 5,
+      "folder": "weather_14dias",
+      "latitude": -26.759542,
+      "longitude": -53.544454,
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-26.759542&longitude=-53.544454&start_date=2024-08-19&end_date=2024-08-25&hourly=temperature_2m%2Crelative_humidity_2m%2Cprecipitation%2Crain%2Cwind_speed_10m%2Cwind_direction_10m&models=era5&timezone=America%2FSao_Paulo&wind_speed_unit=ms",
+      "sha256": "643d0b8fb555fd1750e3523805e8aae8cac44729206715e207b90ce9f9ddf9c7"
+    },
+    {
+      "id": 6,
+      "folder": "weather_14dias",
+      "latitude": -26.364384,
+      "longitude": -52.942158,
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-26.364384&longitude=-52.942158&start_date=2024-08-19&end_date=2024-08-25&hourly=temperature_2m%2Crelative_humidity_2m%2Cprecipitation%2Crain%2Cwind_speed_10m%2Cwind_direction_10m&models=era5&timezone=America%2FSao_Paulo&wind_speed_unit=ms",
+      "sha256": "684cb80fb5bfcf859ae6c845480b96459c740bc54bc52479264092388bc84578"
+    },
+    {
+      "id": 7,
+      "folder": "weather_14dias",
+      "latitude": -26.832518,
+      "longitude": -52.432514,
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-26.832518&longitude=-52.432514&start_date=2024-08-19&end_date=2024-08-25&hourly=temperature_2m%2Crelative_humidity_2m%2Cprecipitation%2Crain%2Cwind_speed_10m%2Cwind_direction_10m&models=era5&timezone=America%2FSao_Paulo&wind_speed_unit=ms",
+      "sha256": "437f21853bc33c6ea7f69483bd4e0b0225a291e63147fd43f2b0032d2052634d"
+    },
+    {
+      "id": 8,
+      "folder": "weather_14dias",
+      "latitude": -27.770456,
+      "longitude": -50.181428,
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-27.770456&longitude=-50.181428&start_date=2024-09-09&end_date=2024-09-15&hourly=temperature_2m%2Crelative_humidity_2m%2Cprecipitation%2Crain%2Cwind_speed_10m%2Cwind_direction_10m&models=era5&timezone=America%2FSao_Paulo&wind_speed_unit=ms",
+      "sha256": "5c51d6fa437f01d7a786330fe0b0212db4c85b82aa805cc4843cb5abf8e4a95a"
+    },
+    {
+      "id": 9,
+      "folder": "weather_14dias",
+      "latitude": -27.43817,
+      "longitude": -49.72031,
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-27.43817&longitude=-49.72031&start_date=2024-10-28&end_date=2024-11-03&hourly=temperature_2m%2Crelative_humidity_2m%2Cprecipitation%2Crain%2Cwind_speed_10m%2Cwind_direction_10m&models=era5&timezone=America%2FSao_Paulo&wind_speed_unit=ms",
+      "sha256": "0da4728085ff788292304ea08a7c919695a858b09c0a80c9ebe933587856379a"
+    },
+    {
+      "id": 10,
+      "folder": "weather_14dias",
+      "latitude": -26.808271,
+      "longitude": -52.649944,
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-26.808271&longitude=-52.649944&start_date=2024-10-28&end_date=2024-11-03&hourly=temperature_2m%2Crelative_humidity_2m%2Cprecipitation%2Crain%2Cwind_speed_10m%2Cwind_direction_10m&models=era5&timezone=America%2FSao_Paulo&wind_speed_unit=ms",
+      "sha256": "fcca7482d0d813dcba2fa68e4e063a6f9bcf7d07ced91f60619d53cd76f59c04"
+    },
+    {
+      "id": 11,
+      "folder": "weather_14dias",
+      "latitude": -26.420925,
+      "longitude": -52.692097,
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-26.420925&longitude=-52.692097&start_date=2024-10-28&end_date=2024-11-03&hourly=temperature_2m%2Crelative_humidity_2m%2Cprecipitation%2Crain%2Cwind_speed_10m%2Cwind_direction_10m&models=era5&timezone=America%2FSao_Paulo&wind_speed_unit=ms",
+      "sha256": "531b83cf76c1653b5d1dd932c16c8f8f21cb2dee21a922bb5998e092a5f118f2"
+    },
+    {
+      "id": 12,
+      "folder": "weather_14dias",
+      "latitude": -26.479759,
+      "longitude": -52.669425,
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-26.479759&longitude=-52.669425&start_date=2024-10-28&end_date=2024-11-03&hourly=temperature_2m%2Crelative_humidity_2m%2Cprecipitation%2Crain%2Cwind_speed_10m%2Cwind_direction_10m&models=era5&timezone=America%2FSao_Paulo&wind_speed_unit=ms",
+      "sha256": "04aefda4900de28fc1a7940677907b188f82f469bfb34c14806459cce998daa7"
+    },
+    {
+      "id": 13,
+      "folder": "weather_14dias",
+      "latitude": -26.92884,
+      "longitude": -50.15544,
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-26.92884&longitude=-50.15544&start_date=2024-11-04&end_date=2024-11-10&hourly=temperature_2m%2Crelative_humidity_2m%2Cprecipitation%2Crain%2Cwind_speed_10m%2Cwind_direction_10m&models=era5&timezone=America%2FSao_Paulo&wind_speed_unit=ms",
+      "sha256": "b97a79218af33a155a3312818152d0e851dcce4c5c22003c524788800ad52555"
+    },
+    {
+      "id": 14,
+      "folder": "weather_14dias",
+      "latitude": -27.37829,
+      "longitude": -49.74242,
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-27.37829&longitude=-49.74242&start_date=2024-11-04&end_date=2024-11-10&hourly=temperature_2m%2Crelative_humidity_2m%2Cprecipitation%2Crain%2Cwind_speed_10m%2Cwind_direction_10m&models=era5&timezone=America%2FSao_Paulo&wind_speed_unit=ms",
+      "sha256": "1bc189f46d6e403dd2f15d0eeadeced656c0e7644871040da7e39740819f563c"
+    },
+    {
+      "id": 15,
+      "folder": "weather_14dias",
+      "latitude": -26.939679,
+      "longitude": -52.54948,
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-26.939679&longitude=-52.54948&start_date=2024-11-04&end_date=2024-11-10&hourly=temperature_2m%2Crelative_humidity_2m%2Cprecipitation%2Crain%2Cwind_speed_10m%2Cwind_direction_10m&models=era5&timezone=America%2FSao_Paulo&wind_speed_unit=ms",
+      "sha256": "22c3b6092009060c1f7b11568193aa35f69d03231ab019cfa31b368c635d82f2"
+    },
+    {
+      "id": 16,
+      "folder": "weather_14dias",
+      "latitude": -27.24431,
+      "longitude": -49.94379,
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-27.24431&longitude=-49.94379&start_date=2024-11-11&end_date=2024-11-17&hourly=temperature_2m%2Crelative_humidity_2m%2Cprecipitation%2Crain%2Cwind_speed_10m%2Cwind_direction_10m&models=era5&timezone=America%2FSao_Paulo&wind_speed_unit=ms",
+      "sha256": "bc007813b5b82cf605abfc6c5d7f29d1098680b191d8837e1635365d72384959"
+    },
+    {
+      "id": 17,
+      "folder": "weather_14dias",
+      "latitude": -26.73417,
+      "longitude": -52.11977,
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-26.73417&longitude=-52.11977&start_date=2024-11-11&end_date=2024-11-17&hourly=temperature_2m%2Crelative_humidity_2m%2Cprecipitation%2Crain%2Cwind_speed_10m%2Cwind_direction_10m&models=era5&timezone=America%2FSao_Paulo&wind_speed_unit=ms",
+      "sha256": "824d6892abc867adce1dc490531f3d6f71166d3ea9c0bcff4b2cd93759c87667"
+    },
+    {
+      "id": 18,
+      "folder": "weather_14dias",
+      "latitude": -26.762279,
+      "longitude": -52.868573,
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-26.762279&longitude=-52.868573&start_date=2025-10-06&end_date=2025-10-12&hourly=temperature_2m%2Crelative_humidity_2m%2Cprecipitation%2Crain%2Cwind_speed_10m%2Cwind_direction_10m&models=era5&timezone=America%2FSao_Paulo&wind_speed_unit=ms",
+      "sha256": "4a83eae99b7055f5053ff9298696714d6b854a472ba0c9eb492a57ea983077c5"
+    },
+    {
+      "id": 19,
+      "folder": "weather_14dias",
+      "latitude": -26.363592,
+      "longitude": -53.133145,
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-26.363592&longitude=-53.133145&start_date=2025-10-20&end_date=2025-10-26&hourly=temperature_2m%2Crelative_humidity_2m%2Cprecipitation%2Crain%2Cwind_speed_10m%2Cwind_direction_10m&models=era5&timezone=America%2FSao_Paulo&wind_speed_unit=ms",
+      "sha256": "c2c82a330ffffedeacb711f6a0035ad542644acb7a54c184860a163b01e0cd58"
+    },
+    {
+      "id": 20,
+      "folder": "weather_14dias",
+      "latitude": -26.647383,
+      "longitude": -52.371211,
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-26.647383&longitude=-52.371211&start_date=2025-10-27&end_date=2025-11-02&hourly=temperature_2m%2Crelative_humidity_2m%2Cprecipitation%2Crain%2Cwind_speed_10m%2Cwind_direction_10m&models=era5&timezone=America%2FSao_Paulo&wind_speed_unit=ms",
+      "sha256": "1a6db6fc84591f134855589d5157445fee0f0e78de4d69eedb085162451b0f9e"
+    },
+    {
+      "id": 21,
+      "folder": "weather_14dias",
+      "latitude": -26.875426,
+      "longitude": -52.293385,
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-26.875426&longitude=-52.293385&start_date=2025-11-10&end_date=2025-11-16&hourly=temperature_2m%2Crelative_humidity_2m%2Cprecipitation%2Crain%2Cwind_speed_10m%2Cwind_direction_10m&models=era5&timezone=America%2FSao_Paulo&wind_speed_unit=ms",
+      "sha256": "00c779b62004b526f183d9b919c40960d59cafeb11084b0797d0ce6dad170b88"
+    },
+    {
+      "id": 22,
+      "folder": "weather_14dias",
+      "latitude": -26.773989,
+      "longitude": -52.418805,
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-26.773989&longitude=-52.418805&start_date=2025-11-17&end_date=2025-11-23&hourly=temperature_2m%2Crelative_humidity_2m%2Cprecipitation%2Crain%2Cwind_speed_10m%2Cwind_direction_10m&models=era5&timezone=America%2FSao_Paulo&wind_speed_unit=ms",
+      "sha256": "c4a17a6d1e16e42c122182f9750b5181f708d74527e7502d6bc2564142d59324"
+    }
+  ]
+}
