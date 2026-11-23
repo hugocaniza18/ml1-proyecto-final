@@ -3,8 +3,6 @@ from pathlib import Path
 import argparse
 import json
 import platform
-import subprocess
-import sys
 from datetime import datetime, timezone
 import joblib
 import numpy as np
@@ -13,15 +11,14 @@ import sklearn
 from sklearn.base import clone
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import (accuracy_score, balanced_accuracy_score, f1_score,
-    precision_score, recall_score, roc_auc_score, average_precision_score, confusion_matrix)
+from sklearn.metrics import f1_score
 from sklearn.model_selection import GridSearchCV
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 from procesar_datos import huellas, ROOT, FEATURES, sha, require, write_json, check_separation, verify_samples, configured, project
 
 
-from evaluar import metrics, majority, evaluate_record
+from evaluar import majority, evaluate_record
 
 def choose(records):
     return sorted(records, key=lambda r: (-round(r['cv_f1'], 3), r['ventana'],
@@ -195,10 +192,138 @@ def run(data_dir, output, config_path):
     return selected
 
 
+
+# V2: experimento adicional, separado del cierre oficial V1.
+def feature_groups_v2():
+    from procesar_datos import FAVORABILITY_FEATURES
+    return {
+        'favorabilidad': list(FAVORABILITY_FEATURES),
+        'combinadas': list(FEATURES) + list(FAVORABILITY_FEATURES),
+    }
+
+
+def prepare_v2(data_path, partitions_path):
+    """Valida población y folds V2 contra las particiones oficiales de V1."""
+    data_path = Path(data_path)
+    partitions_path = Path(partitions_path)
+    source_path = partitions_path.parent / 'muestras.csv'
+    require(source_path.is_file(), 'Falta data/processed/muestras.csv de V1')
+    require(data_path.is_file(), 'Ejecutar primero procesar_datos.py --version v2')
+    frame = pd.read_csv(data_path, dtype={'ubicacion_id': str})
+    original = pd.read_csv(source_path, dtype={'ubicacion_id': str})
+    keys = ['muestra_id', 'ventana_dias']
+    require(not frame.duplicated(keys).any(), 'Claves duplicadas en V2')
+    require(len(frame) == len(original), 'V2 modificó el número de muestras')
+    require(frame[keys + ['horizonte_dias', 'y', 'fecha_referencia', 'fecha_objetivo']].equals(
+        original[keys + ['horizonte_dias', 'y', 'fecha_referencia', 'fecha_objetivo']]),
+        'V2 modificó claves, etiquetas o fechas oficiales')
+    groups = feature_groups_v2()
+    for features in groups.values():
+        require(all(f in frame.columns for f in features), 'Faltan predictores V2')
+        values = frame[features].to_numpy(dtype=float)
+        require(np.isfinite(values).all(), 'Predictores V2 nulos o no finitos')
+    require(all(pd.to_datetime(frame['ventana_fin']) < pd.to_datetime(frame['fecha_referencia'])),
+            'V2 incluye meteorología de la fecha de predicción o posterior')
+    partitions = json.loads(partitions_path.read_text(encoding='utf-8'))
+    frames = {}
+    for h in [0, 7]:
+        for w in [7, 14]:
+            part = frame[(frame.horizonte_dias == h) & (frame.ventana_dias == w)].copy()
+            part = part.set_index('muestra_id', drop=False)
+            require(part.index.is_unique, 'ID repetido en horizonte/ventana V2')
+            require(set(part.index) == set(original.loc[
+                (original.horizonte_dias == h) & (original.ventana_dias == w), 'muestra_id']),
+                'Población V2 distinta de V1')
+            for fold_name in ['1', '2', '3', 'historico']:
+                fold = partitions[str(h)][fold_name]
+                tr, va = part.loc[fold['train_ids']], part.loc[fold['validation_ids']]
+                check_separation(tr, va)
+                require(not set(tr.index).intersection(va.index), 'Solapamiento de IDs')
+            frames[(h, w)] = part
+    return frames, partitions, groups
+
+
+def run_v2(data_path, output, config_path, partitions_path):
+    """Compara favorabilidad y combinadas con CV temporal; evalúa histórico al final."""
+    output = Path(output)
+    require(not output.exists(), 'Salida V2 existente: elegir otra ruta, no sobrescribir')
+    require(not (output.parent/'models_v2').exists(), 'Modelos V2 existentes en esa raíz')
+    config = json.loads(Path(config_path).read_text(encoding='utf-8'))['experimento']
+    # Se conservan los hiperparámetros oficiales, sin exigir hashes de V1 al dataset V2.
+    require(config == project()['experimento'], 'Configuración V1 modificada')
+    frames, partitions, groups = prepare_v2(data_path, partitions_path)
+    output.mkdir(parents=True)
+    (output/'busquedas').mkdir()
+    model_dir = output/'modelos'
+    model_dir.mkdir()
+    configs, metrics_rows, predictions = [], [], []
+    selected = {}
+    for group_name, features in groups.items():
+        selected[group_name] = {}
+        for horizon in [0, 7]:
+            candidates = []
+            for window in [7, 14]:
+                frame = frames[(horizon, window)]
+                historical = partitions[str(horizon)]['historico']
+                dev = frame.loc[historical['train_ids']]
+                folds = []
+                for number in [1, 2, 3]:
+                    fold = partitions[str(horizon)][str(number)]
+                    tr = dev.index.get_indexer(fold['train_ids'])
+                    va = dev.index.get_indexer(fold['validation_ids'])
+                    require((tr >= 0).all() and (va >= 0).all(),
+                            'Fold fuera del conjunto de desarrollo')
+                    folds.append((tr, va))
+                for model_name in ['LR', 'RF']:
+                    name = f'{group_name}_{model_name}_{window}d_h{horizon}'
+                    estimator, grid = estimator_grid(model_name, config)
+                    search = GridSearchCV(estimator, grid, cv=folds, scoring='f1', refit=True,
+                                          n_jobs=2, error_score='raise')
+                    search.fit(dev[features], dev.y)
+                    pd.DataFrame(search.cv_results_).to_csv(output/'busquedas'/f'{name}.csv', index=False)
+                    record = {'grupo': group_name, 'config': name, 'horizonte': horizon,
+                              'ventana': window, 'modelo': model_name, 'cv_f1': float(search.best_score_),
+                              'cv_std': float(search.cv_results_['std_test_score'][search.best_index_]),
+                              'parametros': search.best_params_}
+                    configs.append(record)
+                    candidates.append(record)
+                    print(f"{name}: CV F1={record['cv_f1']:.4f}", flush=True)
+            best_name = choose(candidates)
+            best = next(record for record in candidates if record['config'] == best_name)
+            selected[group_name][str(horizon)] = best_name
+            frame = frames[(horizon, best['ventana'])]
+            historical = partitions[str(horizon)]['historico']
+            dev = frame.loc[historical['train_ids']]
+            holdout = frame.loc[historical['validation_ids']]
+            estimator, _ = estimator_grid(best['modelo'], config)
+            estimator.set_params(**best['parametros'])
+            estimator.fit(dev[features], dev.y)
+            probabilities = estimator.predict_proba(holdout[features])[:, 1]
+            evaluate_record(metrics_rows, predictions, best_name, horizon, best['ventana'],
+                            'historico', 0, holdout, probabilities)
+            joblib.dump({'pipeline': estimator, 'features': features, 'horizonte': horizon,
+                         'ventana': best['ventana'], 'threshold': .5, 'grupo': group_name},
+                        model_dir/f'{best_name}.joblib')
+    pd.DataFrame(configs).to_csv(output/'configuraciones.csv', index=False)
+    pd.DataFrame(metrics_rows).to_csv(output/'metricas.csv', index=False)
+    pd.DataFrame(predictions).to_csv(output/'predicciones.csv', index=False)
+    write_json(output/'seleccion.json', {'version': 'v2-experimental', 'seleccion': selected,
+               'variables': groups, 'datos_sha256': sha(data_path),
+               'particiones_sha256': sha(partitions_path), 'config_sha256': sha(config_path),
+               'nota': 'Seleccion por CV temporal en desarrollo; historico solo evaluacion final'})
+    return selected
+
 if __name__ == '__main__':
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--data-dir',type=Path,default=configured('datos'))
     parser.add_argument('--output-dir',type=Path,default=configured('resultados'))
     parser.add_argument('--config',type=Path,default=ROOT/'scripts/proyecto.json')
+    parser.add_argument('--version', choices=['v1', 'v2'], default='v1')
+    parser.add_argument('--v2-data', type=Path, default=ROOT/'data/processed/v2/muestras_v2.csv')
+    parser.add_argument('--partitions', type=Path, default=ROOT/'data/processed/particiones.json')
     args=parser.parse_args()
-    print(run(args.data_dir,args.output_dir,args.config))
+    if args.version == 'v2':
+        destination = args.output_dir if args.output_dir != configured('resultados') else ROOT/'results/v2'
+        print(run_v2(args.v2_data, destination, args.config, args.partitions))
+    else:
+        print(run(args.data_dir,args.output_dir,args.config))

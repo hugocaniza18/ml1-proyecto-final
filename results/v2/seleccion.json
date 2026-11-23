@@ -1,0 +1,43 @@
+{
+  "version": "v2-experimental",
+  "seleccion": {
+    "favorabilidad": {
+      "0": "favorabilidad_RF_14d_h0",
+      "7": "favorabilidad_RF_7d_h7"
+    },
+    "combinadas": {
+      "0": "combinadas_RF_14d_h0",
+      "7": "combinadas_RF_14d_h7"
+    }
+  },
+  "variables": {
+    "favorabilidad": [
+      "horas_favorables",
+      "dias_6h_favorables",
+      "racha_max_favorable_h",
+      "horas_hr90",
+      "depresion_rocio_media_c"
+    ],
+    "combinadas": [
+      "hr_media_pct",
+      "hr_min_pct",
+      "hr_max_pct",
+      "temperatura_media_c",
+      "temperatura_min_c",
+      "temperatura_max_c",
+      "precipitacion_mm",
+      "viento_vel_media_10m_ms",
+      "viento_u_media_10m_ms",
+      "viento_v_media_10m_ms",
+      "horas_favorables",
+      "dias_6h_favorables",
+      "racha_max_favorable_h",
+      "horas_hr90",
+      "depresion_rocio_media_c"
+    ]
+  },
+  "datos_sha256": "39f216b86d47a247aed3d2a2b0676243641a0f52f388daed197c28b8542d02d7",
+  "particiones_sha256": "5b1a3f034c3161e650ce6cb17416d206fb8cbd44d787734f5740727684ec4f79",
+  "config_sha256": "4dc9adc7c614c858fa6e795a483147159f116628b38bc62927e29ca0b355d5f4",
+  "nota": "Seleccion por CV temporal en desarrollo; historico solo evaluacion final"
+}

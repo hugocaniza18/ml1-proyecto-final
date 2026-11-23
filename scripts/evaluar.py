@@ -6,8 +6,11 @@ from datetime import datetime, timezone
 import numpy as np
 import pandas as pd
 import joblib
-from sklearn.metrics import (accuracy_score, balanced_accuracy_score, f1_score,
-    precision_score, recall_score, roc_auc_score, average_precision_score, confusion_matrix)
+from sklearn.metrics import (
+    accuracy_score, balanced_accuracy_score, f1_score,
+    precision_score, recall_score, roc_auc_score, average_precision_score,
+    confusion_matrix, precision_recall_curve, roc_curve,
+)
 from procesar_datos import ROOT, FEATURES, require, sha, write_json, configured
 
 def metrics(y, probability, prediction=None):
@@ -109,9 +112,192 @@ def evaluate(data_dir, output):
     return selected
 
 
+
+
+def exportar_academicos(results_dir=None, data_dir=None):
+    """Regenera curvas ROC/PR y particiones para el informe y el portal.
+
+    No entrena modelos ni modifica las métricas oficiales.
+    """
+    results_dir = Path(results_dir) if results_dir is not None else configured('resultados')
+    data_dir = Path(data_dir) if data_dir is not None else configured('datos')
+    output = results_dir / 'academicos'
+    output.mkdir(parents=True, exist_ok=True)
+
+    source = results_dir / 'predictions/predicciones.csv'
+    require(source.is_file(),
+            'Falta results/predictions/predicciones.csv; no está incluido en el ZIP original. '
+            'Regenerar predicciones con una ejecución reproducible antes de exportar curvas.')
+    predictions = pd.read_csv(source)
+    comparison = pd.read_csv(results_dir / 'comparacion.csv').set_index('config')
+    curves = []
+    for name, group in predictions[predictions.rol.eq('historico')].groupby('config'):
+        cm = confusion_matrix(group.y, group.prediccion, labels=[0, 1]).ravel()
+        expected = comparison.loc[
+            name, ['historico_tn', 'historico_fp', 'historico_fn', 'historico_tp']
+        ].tolist()
+        require(list(cm) == expected, 'Matriz de confusión distinta')
+        fpr, tpr, _ = roc_curve(group.y, group.probabilidad)
+        precision, recall, _ = precision_recall_curve(group.y, group.probabilidad)
+        curves.append({
+            'config': name,
+            'horizonte': int(group.horizonte.iloc[0]),
+            'fpr': fpr.tolist(),
+            'tpr': tpr.tolist(),
+            'precision': precision.tolist(),
+            'recall': recall.tolist(),
+        })
+
+    write_json(output / 'curvas.json', curves)
+    summary = data_dir / 'resumen_particiones.csv'
+    pd.read_csv(summary).to_csv(output / 'particiones.csv', index=False)
+    write_json(output / 'manifiesto.json', {
+        'origen_predicciones_sha256': sha(source),
+        'origen_particiones_sha256': sha(summary),
+        'seleccion_sha256': sha(results_dir / 'seleccion.json'),
+        'script_sha256': sha(__file__),
+        'contenido': 'Coordenadas de curvas agregadas; sin IDs, fechas individuales ni puntuaciones por muestra',
+        'salidas': {
+            path.name: sha(path)
+            for path in [output / 'curvas.json', output / 'particiones.csv']
+        },
+    })
+    return output
+
+
+def exportar_portal(results_dir=None, portal_path=None):
+    """Genera el JSON agregado consumido por el portal, sin datos individuales."""
+    results = Path(results_dir) if results_dir is not None else configured('resultados')
+    portal_path = Path(portal_path) if portal_path is not None else ROOT / 'web/app/portal-data.json'
+    selected = json.loads((results / 'seleccion.json').read_text(encoding='utf-8'))['selected']
+    comparison = pd.read_csv(results / 'comparacion.csv')
+
+    models = []
+    for row in comparison.to_dict('records'):
+        models.append({
+            'id': row['config'], 'horizon': row['horizonte'], 'window': row['ventana'],
+            'selected': selected[str(row['horizonte'])] == row['config'],
+            'cv': row['cv_f1'], 'f1': row['historico_f1'],
+            'precision': row['historico_precision'], 'recall': row['historico_recall'],
+            'n': int(row['historico_n']),
+            'matrix': [[int(row['historico_tn']), int(row['historico_fp'])],
+                       [int(row['historico_fn']), int(row['historico_tp'])]],
+        })
+    classes = []
+    for horizon in [0, 7]:
+        counts = pd.read_csv(results / f'eda/eda_clases_h{horizon}.csv').iloc[:, 1:].sum()
+        classes.append({
+            'horizon': horizon,
+            'negative': int(counts.iloc[0]),
+            'positive': int(counts.iloc[1]),
+        })
+    require([c['negative'] + c['positive'] for c in classes] == [359, 313],
+            'Poblaciones de desarrollo distintas de las oficiales')
+
+    monthly = pd.read_csv(results / 'eda/cobertura_mensual_desarrollo_h0.csv').set_index('mes')
+    months = pd.period_range(monthly.index.min(), monthly.index.max(), freq='M')
+    coverage = [{
+        'month': str(month),
+        'negative': int(monthly.loc[str(month)].iloc[0]) if str(month) in monthly.index else None,
+        'positive': int(monthly.loc[str(month)].iloc[1]) if str(month) in monthly.index else None,
+    } for month in months]
+    require(sum((row['negative'] or 0) + (row['positive'] or 0) for row in coverage) == 359,
+            'Cobertura mensual distinta de la oficial')
+
+    variables = [FEATURES[i] for i in [0, 3, 6, 7, 8, 9]]
+    corr = pd.read_csv(results / 'eda/correlaciones_desarrollo_h0_14d.csv', index_col=0)
+    keys = [feature + '_14d' for feature in variables]
+    payload = {
+        'models': models,
+        'classes': classes,
+        'coverage': coverage,
+        'correlations': corr.loc[keys, keys].values.tolist(),
+    }
+    portal_path.parent.mkdir(parents=True, exist_ok=True)
+    portal_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2, allow_nan=False) + '\n',
+                           encoding='utf-8')
+    return portal_path
+
+def comparar_v1_v2(v1_dir=None, v2_dir=None):
+    """Compara métricas históricas ya calculadas sin entrenar ni editar la V1.
+
+    Exige mismo horizonte, población histórica y distribución de etiquetas.
+    Los resultados V2 proceden de selección en validación temporal previa.
+    """
+    v1_dir = Path(v1_dir) if v1_dir is not None else configured('resultados')
+    v2_dir = Path(v2_dir) if v2_dir is not None else v1_dir / 'v2'
+    required_v1 = [v1_dir / 'comparacion.csv']
+    required_v2 = [v2_dir / 'seleccion.json', v2_dir / 'metricas.csv', v2_dir / 'configuraciones.csv']
+    for path in required_v1 + required_v2:
+        require(path.is_file(), f'Falta archivo para comparación: {path}')
+
+    v1 = pd.read_csv(required_v1[0])
+    v2 = pd.read_csv(v2_dir / 'metricas.csv')
+    configs = pd.read_csv(v2_dir / 'configuraciones.csv')
+    selection = json.loads((v2_dir / 'seleccion.json').read_text(encoding='utf-8'))
+    require(selection.get('version') == 'v2-experimental', 'Selección V2 desconocida')
+    require(v2.rol.eq('historico').all(), 'El CSV V2 debe contener únicamente métricas históricas')
+    rows = []
+    for h in (0, 7):
+        originals = v1[(v1.horizonte == h) & (v1.seleccionado.astype(str).str.lower() == 'true')]
+        require(len(originals) == 1, f'La V1 debe tener un único seleccionado para h{h}')
+        r = originals.iloc[0]
+        for metric in ('f1', 'precision', 'recall', 'roc_auc', 'average_precision'):
+            require(pd.notna(r[f'historico_{metric}']), f'Falta métrica V1: {metric}')
+        rows.append(dict(experimento='V1', horizonte=h, config=r['config'], ventana=int(r.ventana),
+            n=int(r.historico_n), f1=float(r.historico_f1), precision=float(r.historico_precision),
+            recall=float(r.historico_recall), roc_auc=float(r.historico_roc_auc),
+            average_precision=float(r.historico_average_precision),
+            tn=int(r.historico_tn), fp=int(r.historico_fp), fn=int(r.historico_fn), tp=int(r.historico_tp),
+            cv_f1=float(r.cv_f1)))
+        for group, title in [('favorabilidad', 'V2-A'), ('combinadas', 'V2-B')]:
+            name = selection['seleccion'][group][str(h)]
+            rr = v2[(v2.horizonte == h) & (v2.config == name)]
+            cc = configs[(configs.horizonte == h) & (configs.config == name) & (configs.grupo == group)]
+            require(len(rr) == 1 and len(cc) == 1, f'Selección V2 incompleta: {name}')
+            rr, cc = rr.iloc[0], cc.iloc[0]
+            require(int(rr.n) == int(r.historico_n), f'Poblaciones históricas distintas para h{h}')
+            require(int(rr.tp+rr.fn) == int(r.historico_tp+r.historico_fn),
+                    f'Cantidad de positivos diferente en h{h}')
+            require(int(rr.tn+rr.fp) == int(r.historico_tn+r.historico_fp),
+                    f'Cantidad de negativos diferente en h{h}')
+            rows.append(dict(experimento=title, horizonte=h, config=name, ventana=int(rr.ventana),
+                n=int(rr.n), f1=float(rr.f1), precision=float(rr.precision), recall=float(rr.recall),
+                roc_auc=float(rr.roc_auc), average_precision=float(rr.average_precision),
+                tn=int(rr.tn), fp=int(rr.fp), fn=int(rr.fn), tp=int(rr.tp), cv_f1=float(cc.cv_f1)))
+    comparison = pd.DataFrame(rows)
+    # El reporte añade datos experimentales en V2; no modifica artefactos de la V1 ni del portal.
+    v2_dir.mkdir(parents=True, exist_ok=True)
+    comparison.to_csv(v2_dir / 'comparacion_v1_v2.csv', index=False)
+    text = ['# Comparación final V1 y V2', '',
+            'Selección de modelos mediante validación temporal sobre desarrollo. '
+            'Evaluación histórica con umbral 0,5. No se optimizan umbrales en el histórico.', '',
+            '| Horizonte | Experimento | F1 | Precision | Recall | PR AUC | TP | FN |',
+            '|---|---|---:|---:|---:|---:|---:|---:|']
+    for r in rows:
+        text.append(f"| h{r['horizonte']} | {r['experimento']} | {r['f1']:.4f} | "
+                    f"{r['precision']:.4f} | {r['recall']:.4f} | "
+                    f"{r['average_precision']:.4f} | {r['tp']} | {r['fn']} |")
+    text += ['', '## Interpretación', '',
+         '- h0: V2-A eleva levemente F1 frente a V1, pero no demuestra mejora general.',
+         '- h7: V1 conserva el mejor F1 frente a V2-A y V2-B.',
+         '- V2-B reduce F1 y recall en ambos horizontes.',
+         '- La recuperación de positivos es baja en los tres enfoques.',
+         '- No atribuir causalidad ni significación estadística a estas diferencias pequeñas.',
+         '- El conjunto histórico ya se consultó para comparar V1/V2: no ajustar decisiones basándose en él.',
+         '- ERA5 estima condiciones ambientales; no mide mojado foliar.',
+         '- La V1 permanece como modelo publicado; V2 se conserva como experimento.', '']
+    (v2_dir / 'informe_comparativo.md').write_text(chr(10).join(text), encoding='utf-8')
+    return comparison
+
+
 if __name__ == '__main__':
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--data-dir', type=Path, default=configured('datos'))
     parser.add_argument('--results-dir', type=Path, default=configured('resultados'))
+    parser.add_argument('--comparar-v2', action='store_true', help='Compara V1 y V2 sin reentrenar')
     args=parser.parse_args()
-    print(evaluate(args.data_dir,args.results_dir))
+    if args.comparar_v2:
+        print(comparar_v1_v2(v1_dir=args.results_dir).to_string(index=False))
+    else:
+        print(evaluate(args.data_dir,args.results_dir))
