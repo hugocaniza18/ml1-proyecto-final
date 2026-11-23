@@ -108,12 +108,5 @@ for p in figures.glob('*.png'):
 (public/'INFORME.html').write_text('<!doctype html><html lang="es"><meta charset="utf-8"><title>Roya de soja y clima</title><style>body{font:16px/1.6 Arial;max-width:1100px;margin:40px auto;padding:20px}img{max-width:100%}table{font-size:12px;border-collapse:collapse}td,th{padding:8px;border:1px solid #ccc}</style><body>'+html+'</body></html>',encoding='utf-8')
 for p in (R/'notebooks').glob('*.ipynb'):shutil.copy2(p,public/p.name)
 (R/'web/app/academico.json').write_text(json.dumps([dict(id=id,title=title,html=render(body).replace('src="figuras/','src="/academico/figuras/')) for id,title,body in sections],ensure_ascii=False),encoding='utf-8')
-(R/'web/app/page.tsx').write_text('''import sections from './academico.json';
-export default function Home(){return <><header><div className="wrap"><strong>Roya de soja y clima</strong><nav>{sections.map(s=><a key={s.id} href={'#'+s.id}>{s.title}</a>)}</nav></div></header><main className="wrap"><p className="notice">Estudio retrospectivo · h7 experimental · Evaluación histórica previamente observada</p>{sections.map(s=><section id={s.id} key={s.id}><h2>{s.title}</h2><article dangerouslySetInnerHTML={{__html:s.html}} /></section>)}<section><h2>Material académico</h2>{['INFORME.md','01_auditoria.ipynb','02_exploracion.ipynb','03_evaluacion.ipynb'].map(n=><p key={n}><a href={'/academico/'+n} download>{n}</a></p>)}</section></main><footer className="wrap">FIUNA · Machine Learning 1 · 2026</footer></>}
-''',encoding='utf-8')
-page=R/'web/app/page.tsx'
-page.write_text(page.read_text(encoding='utf-8').replace("['INFORME.md',","['INFORME.html','INFORME.md',"),encoding='utf-8')
-(R/'web/app/globals.css').write_text('''@import "tailwindcss";
-:root{font-family:Arial,sans-serif;color:#18382e;background:#f7faf7}body{margin:0;line-height:1.65}.wrap{max-width:1120px;width:92%;margin:auto}header{background:#173d31;color:white;padding:20px 0}nav{display:flex;flex-wrap:wrap;gap:16px;font-size:13px}nav a{color:white}section{padding:36px 0;border-bottom:1px solid #ccd8ce;scroll-margin-top:20px}h1{font-size:40px}h2{font-size:28px}h3{font-size:21px}a{color:#24684e;text-decoration:underline}article{overflow-x:auto}article img{max-width:100%;height:auto;background:white}table{border-collapse:collapse;font-size:13px;width:100%;margin:24px 0}td,th{padding:10px;text-align:left;border-bottom:1px solid #d2ddd4}th{background:#e2eee4}p,li{max-width:90ch}.notice{background:#e3eee5;padding:18px}footer{padding:30px 0}pre{overflow:auto}@media(max-width:640px){h1{font-size:30px}h2{font-size:23px}td,th{padding:6px}section{padding:24px 0}}
-''',encoding='utf-8')
-print('Informe y portal académico preparados')
+# La interfaz visual se mantiene en web/app; el informe no sobrescribe su diseno.
+print('Informe y recursos academicos preparados; interfaz visual conservada')
